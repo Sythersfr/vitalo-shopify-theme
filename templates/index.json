@@ -1,0 +1,409 @@
+{
+  "sections": {
+    "hero_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Support Your Blood Sugar Naturally",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Vitalo Blood Sugar Support - Formulated with natural ingredients to help maintain healthy glucose metabolism and insulin sensitivity.",
+            "text_style": "subtitle"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "Learn More",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 30,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "trust_badges": {
+      "type": "multicolumn",
+      "blocks": {
+        "badge1": {
+          "type": "column",
+          "settings": {
+            "title": "Natural Ingredients",
+            "text": "<p>Carefully selected botanical extracts and essential nutrients for optimal support.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "badge2": {
+          "type": "column",
+          "settings": {
+            "title": "Made in USA",
+            "text": "<p>Manufactured in FDA-registered facilities following strict GMP guidelines.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "badge3": {
+          "type": "column",
+          "settings": {
+            "title": "Science-Backed",
+            "text": "<p>Formulated based on clinical research and traditional herbal wisdom.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "badge4": {
+          "type": "column",
+          "settings": {
+            "title": "30-Day Supply",
+            "text": "<p>Each bottle contains 60 capsules - a full month of daily wellness support.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "badge1",
+        "badge2",
+        "badge3",
+        "badge4"
+      ],
+      "settings": {
+        "title": "Why Choose Vitalo?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "color_scheme": "scheme-2",
+        "columns_mobile": "2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "featured_product": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Products",
+        "heading_size": "h1",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "about_section": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Vitalo Difference",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Vitalo, we believe in supporting your health journey with premium, natural supplements. Our Blood Sugar Support formula combines time-tested botanicals like Bitter Melon, Cinnamon, and Gymnema with essential minerals including Chromium, Zinc, and Magnesium.</p><p>Every ingredient is carefully selected for purity and potency, ensuring you receive the best possible support for healthy glucose metabolism.</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Ingredients",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "auto",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "ingredients_highlight": {
+      "type": "multicolumn",
+      "blocks": {
+        "ingredient1": {
+          "type": "column",
+          "settings": {
+            "title": "Bitter Melon Extract",
+            "text": "<p>Traditional Ayurvedic herb known for supporting healthy blood sugar levels already within normal range.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ingredient2": {
+          "type": "column",
+          "settings": {
+            "title": "Cinnamon",
+            "text": "<p>Ceylon cinnamon extract that may help support insulin sensitivity and glucose metabolism.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ingredient3": {
+          "type": "column",
+          "settings": {
+            "title": "Chromium",
+            "text": "<p>Essential trace mineral that plays a key role in carbohydrate and lipid metabolism.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "ingredient1",
+        "ingredient2",
+        "ingredient3"
+      ],
+      "settings": {
+        "title": "Key Ingredients",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "See All Ingredients",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "testimonials": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Our Customers Say",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join thousands of satisfied customers who have made Vitalo part of their daily wellness routine. Our commitment to quality and effectiveness has earned us the trust of health-conscious individuals nationwide.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "how_to_use": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "How to Use",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Suggested Use:</strong> As a dietary supplement, adults take two (2) capsules daily. For best results, take with 6-8 oz of water or as directed by healthcare professional.</p><p>Each bottle contains 60 capsules - a full 30-day supply. Consistency is key for optimal results.</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order Now",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "auto",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "faq_section": {
+      "type": "collapsible-content",
+      "blocks": {
+        "faq1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long until I see results?",
+            "icon": "question_mark",
+            "row_content": "<p>While individual results may vary, many customers report noticing benefits within 2-4 weeks of consistent daily use. For optimal results, we recommend taking Vitalo Blood Sugar Support for at least 60-90 days.</p>",
+            "page": ""
+          }
+        },
+        "faq2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any side effects?",
+            "icon": "question_mark",
+            "row_content": "<p>Vitalo Blood Sugar Support is made with natural ingredients and is generally well-tolerated. However, if you are pregnant, nursing, under the age of 18, or have a known medical condition, please consult your physician before using this or any dietary supplement.</p>",
+            "page": ""
+          }
+        },
+        "faq3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is this FDA approved?",
+            "icon": "question_mark",
+            "row_content": "<p>Dietary supplements are not intended to diagnose, treat, cure, or prevent any disease and are not evaluated by the FDA for these purposes. However, our products are manufactured in FDA-registered facilities that follow Good Manufacturing Practices (GMP).</p>",
+            "page": ""
+          }
+        },
+        "faq4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I take this with my current medications?",
+            "icon": "question_mark",
+            "row_content": "<p>If you are currently taking any medications, especially those for blood sugar management, please consult with your healthcare provider before starting any new supplement regimen.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq1",
+        "faq2",
+        "faq3",
+        "faq4"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "color_scheme": "scheme-2",
+        "container_color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "page_content_appearance": "light",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stay Healthy, Stay Informed",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Subscribe to receive health tips, exclusive offers, and updates on new products.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "hero_banner",
+    "trust_badges",
+    "featured_product",
+    "about_section",
+    "ingredients_highlight",
+    "testimonials",
+    "how_to_use",
+    "faq_section",
+    "newsletter"
+  ]
+}

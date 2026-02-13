@@ -1,0 +1,616 @@
+/* ============================================
+   VITALO CUSTOM THEME STYLES
+   Blood Sugar Support Supplement Store
+   ============================================ */
+
+/* CSS Custom Properties - Vitalo Brand Colors */
+:root {
+  --vitalo-primary-green: #4A7C59;
+  --vitalo-dark-green: #3D6549;
+  --vitalo-light-green: #5A9A6D;
+  --vitalo-gold: #C9A84A;
+  --vitalo-gold-light: #D4B85E;
+  --vitalo-cream: #F8F5F0;
+  --vitalo-off-white: #FDFCFA;
+  --vitalo-dark: #2D3A2E;
+  --vitalo-dark-soft: #3A4A3B;
+  --vitalo-text-muted: #5C6B5D;
+  --vitalo-border-light: rgba(74, 124, 89, 0.15);
+  
+  /* Botanical Gradients */
+  --vitalo-gradient-hero: linear-gradient(135deg, #F8F5F0 0%, #FFFFFF 50%, #F5F1E6 100%);
+  --vitalo-gradient-green: linear-gradient(135deg, #4A7C59 0%, #5A9A6D 100%);
+  --vitalo-gradient-gold: linear-gradient(135deg, #C9A84A 0%, #D4B85E 100%);
+  
+  /* Shadows */
+  --vitalo-shadow-soft: 0 4px 20px rgba(45, 58, 46, 0.08);
+  --vitalo-shadow-medium: 0 8px 30px rgba(45, 58, 46, 0.12);
+  --vitalo-shadow-card: 0 4px 16px rgba(74, 124, 89, 0.1);
+  
+  /* Typography */
+  --vitalo-font-display: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+  --vitalo-font-body: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Transitions */
+  --vitalo-transition-fast: 0.2s ease;
+  --vitalo-transition-medium: 0.3s ease;
+  --vitalo-transition-slow: 0.5s ease;
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+body {
+  font-family: var(--vitalo-font-body);
+  color: var(--vitalo-dark);
+  background-color: var(--vitalo-off-white);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--vitalo-primary-green);
+  color: #FFFFFF;
+}
+
+/* ============================================
+   HEADER STYLES
+   ============================================ */
+
+.header {
+  background-color: #FFFFFF;
+  box-shadow: var(--vitalo-shadow-soft);
+  transition: all var(--vitalo-transition-medium);
+}
+
+.header.scrolled {
+  box-shadow: var(--vitalo-shadow-medium);
+}
+
+.header__heading-link {
+  color: var(--vitalo-primary-green);
+  font-weight: 700;
+}
+
+/* Navigation Links */
+.header__menu-item {
+  position: relative;
+  color: var(--vitalo-dark);
+  font-weight: 500;
+  transition: color var(--vitalo-transition-fast);
+}
+
+.header__menu-item:hover {
+  color: var(--vitalo-primary-green);
+}
+
+.header__menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--vitalo-gradient-green);
+  transition: width var(--vitalo-transition-medium);
+}
+
+.header__menu-item:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero-section {
+  background: var(--vitalo-gradient-hero);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0c2.5 8 8 13.5 16 16-8 2.5-13.5 8-16 16-2.5-8-8-13.5-16-16 8-2.5 13.5-8 16-16z' fill='%234A7C59' fill-opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.button,
+.shopify-payment-button__button {
+  font-family: var(--vitalo-font-body);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all var(--vitalo-transition-medium);
+  border-radius: 8px;
+}
+
+.button--primary {
+  background: var(--vitalo-gradient-green);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 4px 12px rgba(74, 124, 89, 0.3);
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 124, 89, 0.4);
+}
+
+.button--secondary {
+  background: transparent;
+  color: var(--vitalo-primary-green);
+  border: 2px solid var(--vitalo-primary-green);
+}
+
+.button--secondary:hover {
+  background: var(--vitalo-primary-green);
+  color: #FFFFFF;
+}
+
+/* Gold accent button */
+.button--accent {
+  background: var(--vitalo-gradient-gold);
+  color: var(--vitalo-dark);
+  border: none;
+}
+
+/* ============================================
+   PRODUCT CARDS
+   ============================================ */
+
+.card-wrapper {
+  transition: transform var(--vitalo-transition-medium);
+}
+
+.card-wrapper:hover {
+  transform: translateY(-8px);
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--vitalo-shadow-card);
+  transition: box-shadow var(--vitalo-transition-medium);
+}
+
+.card:hover {
+  box-shadow: var(--vitalo-shadow-medium);
+}
+
+.card__content {
+  padding: 1.5rem;
+}
+
+.card__heading {
+  color: var(--vitalo-dark);
+  font-weight: 600;
+}
+
+.card__information {
+  color: var(--vitalo-text-muted);
+}
+
+/* Product badges */
+.badge {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.75rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+}
+
+.badge--sale {
+  background: var(--vitalo-gold);
+  color: var(--vitalo-dark);
+}
+
+.badge--sold-out {
+  background: var(--vitalo-dark);
+  color: #FFFFFF;
+}
+
+/* ============================================
+   PRODUCT PAGE
+   ============================================ */
+
+.product__title {
+  color: var(--vitalo-dark);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.product__text {
+  color: var(--vitalo-text-muted);
+  line-height: 1.8;
+}
+
+.product__info-wrapper {
+  background: var(--vitalo-cream);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+/* Price styling */
+.price-item--regular {
+  color: var(--vitalo-primary-green);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.price-item--sale {
+  color: var(--vitalo-gold);
+}
+
+/* Quantity selector */
+.quantity {
+  border: 2px solid var(--vitalo-border-light);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.quantity__button {
+  background: var(--vitalo-cream);
+  color: var(--vitalo-primary-green);
+  transition: all var(--vitalo-transition-fast);
+}
+
+.quantity__button:hover {
+  background: var(--vitalo-primary-green);
+  color: #FFFFFF;
+}
+
+/* ============================================
+   TRUST BADGES / BENEFITS SECTION
+   ============================================ */
+
+.vitalo-trust-badges {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.vitalo-trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: var(--vitalo-shadow-soft);
+}
+
+.vitalo-trust-badge__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--vitalo-cream);
+  border-radius: 50%;
+  color: var(--vitalo-primary-green);
+}
+
+.vitalo-trust-badge__text {
+  font-weight: 600;
+  color: var(--vitalo-dark);
+}
+
+/* ============================================
+   SUPPLEMENT FACTS STYLING
+   ============================================ */
+
+.vitalo-supplement-facts {
+  background: #FFFFFF;
+  border: 2px solid var(--vitalo-border-light);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.vitalo-supplement-facts__header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--vitalo-dark);
+  border-bottom: 2px solid var(--vitalo-dark);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.vitalo-supplement-facts__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--vitalo-border-light);
+}
+
+.vitalo-supplement-facts__row:last-child {
+  border-bottom: none;
+}
+
+/* ============================================
+   TESTIMONIALS
+   ============================================ */
+
+.vitalo-testimonial {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--vitalo-shadow-card);
+  position: relative;
+}
+
+.vitalo-testimonial::before {
+  content: '"';
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 4rem;
+  color: var(--vitalo-primary-green);
+  opacity: 0.2;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.vitalo-testimonial__stars {
+  color: var(--vitalo-gold);
+  margin-bottom: 1rem;
+}
+
+.vitalo-testimonial__text {
+  color: var(--vitalo-dark);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.vitalo-testimonial__author {
+  font-weight: 600;
+  color: var(--vitalo-primary-green);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+  background: var(--vitalo-dark);
+  color: #FFFFFF;
+}
+
+.footer__title {
+  color: var(--vitalo-gold);
+  font-weight: 700;
+}
+
+.footer__list-item a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color var(--vitalo-transition-fast);
+}
+
+.footer__list-item a:hover {
+  color: var(--vitalo-gold);
+}
+
+/* Newsletter form */
+.footer .newsletter-form__field-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.footer .newsletter-form__button {
+  background: var(--vitalo-gold);
+  color: var(--vitalo-dark);
+}
+
+/* ============================================
+   ANNOUNCEMENT BAR
+   ============================================ */
+
+.announcement-bar {
+  background: var(--vitalo-primary-green);
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.announcement-bar--highlight {
+  background: var(--vitalo-gold);
+  color: var(--vitalo-dark);
+}
+
+/* ============================================
+   CART
+   ============================================ */
+
+.cart-drawer {
+  background: #FFFFFF;
+}
+
+.cart-item {
+  border-bottom: 1px solid var(--vitalo-border-light);
+}
+
+.cart-item__name {
+  color: var(--vitalo-dark);
+  font-weight: 600;
+}
+
+.cart-item__discounted-prices {
+  color: var(--vitalo-primary-green);
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+
+.field__input,
+.select__select {
+  border: 2px solid var(--vitalo-border-light);
+  border-radius: 8px;
+  transition: border-color var(--vitalo-transition-fast);
+}
+
+.field__input:focus,
+.select__select:focus {
+  border-color: var(--vitalo-primary-green);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 124, 89, 0.1);
+}
+
+/* ============================================
+   COLLAPSIBLE CONTENT (FAQ, etc.)
+   ============================================ */
+
+.accordion__button {
+  color: var(--vitalo-dark);
+  font-weight: 600;
+}
+
+.accordion__button[aria-expanded="true"] {
+  color: var(--vitalo-primary-green);
+}
+
+/* ============================================
+   IMAGE WITH TEXT SECTION
+   ============================================ */
+
+.image-with-text {
+  background: var(--vitalo-cream);
+}
+
+.image-with-text__content {
+  padding: 3rem;
+}
+
+/* ============================================
+   BOTANICAL DECORATIVE ELEMENTS
+   ============================================ */
+
+.vitalo-leaf-decoration {
+  position: absolute;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.vitalo-leaf-decoration--top-right {
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+.vitalo-leaf-decoration--bottom-left {
+  bottom: 0;
+  left: 0;
+  transform: rotate(-135deg);
+}
+
+/* Section divider with leaf motif */
+.vitalo-section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.vitalo-section-divider__line {
+  flex: 1;
+  height: 1px;
+  background: var(--vitalo-border-light);
+  max-width: 200px;
+}
+
+.vitalo-section-divider__icon {
+  color: var(--vitalo-primary-green);
+  opacity: 0.5;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media screen and (max-width: 749px) {
+  .vitalo-trust-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vitalo-trust-badge {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .product__info-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes vitalo-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes vitalo-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.vitalo-animate-in {
+  animation: vitalo-fadeInUp 0.6s ease forwards;
+}
+
+.vitalo-pulse {
+  animation: vitalo-pulse 2s ease-in-out infinite;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.vitalo-bg-cream { background-color: var(--vitalo-cream); }
+.vitalo-bg-green { background-color: var(--vitalo-primary-green); }
+.vitalo-bg-gold { background-color: var(--vitalo-gold); }
+.vitalo-bg-dark { background-color: var(--vitalo-dark); }
+
+.vitalo-text-green { color: var(--vitalo-primary-green); }
+.vitalo-text-gold { color: var(--vitalo-gold); }
+.vitalo-text-dark { color: var(--vitalo-dark); }
+.vitalo-text-muted { color: var(--vitalo-text-muted); }
+
+.vitalo-rounded-sm { border-radius: 8px; }
+.vitalo-rounded-md { border-radius: 12px; }
+.vitalo-rounded-lg { border-radius: 16px; }
+
+.vitalo-shadow-soft { box-shadow: var(--vitalo-shadow-soft); }
+.vitalo-shadow-medium { box-shadow: var(--vitalo-shadow-medium); }
