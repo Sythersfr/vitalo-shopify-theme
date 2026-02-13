@@ -6,21 +6,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Natural Blood Sugar Support",
+            "heading": "Blood sugar support,<br>backed by science",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Clinically studied ingredients to help maintain healthy glucose levels.",
+            "text": "Natural ingredients to help maintain healthy glucose levels.",
             "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Now",
+            "button_label_1": "Get started",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -31,70 +31,79 @@
       },
       "block_order": ["heading", "text", "button"],
       "settings": {
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 30,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "benefits": {
+    "trust": {
       "type": "multicolumn",
       "blocks": {
-        "benefit1": {
+        "col1": {
           "type": "column",
           "settings": {
             "title": "Natural Formula",
-            "text": "<p>Carefully selected botanical extracts and essential minerals.</p>",
+            "text": "<p>Botanical extracts and essential minerals</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "benefit2": {
+        "col2": {
           "type": "column",
           "settings": {
             "title": "Made in USA",
-            "text": "<p>Manufactured in FDA-registered, GMP-certified facilities.</p>",
+            "text": "<p>FDA-registered, GMP-certified facilities</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "benefit3": {
+        "col3": {
           "type": "column",
           "settings": {
-            "title": "Science-Backed",
-            "text": "<p>Formulated with clinically researched ingredients.</p>",
+            "title": "Clinically Studied",
+            "text": "<p>Research-backed ingredients</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "col4": {
+          "type": "column",
+          "settings": {
+            "title": "Free Shipping",
+            "text": "<p>On orders over $50</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": ["benefit1", "benefit2", "benefit3"],
+      "block_order": ["col1", "col2", "col3", "col4"],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "columns_mobile": "2",
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
-    "featured_products": {
+    "products": {
       "type": "featured-collection",
       "settings": {
-        "title": "Our Products",
+        "title": "Shop",
         "heading_size": "h1",
         "collection": "all",
         "products_to_show": 4,
@@ -103,13 +112,13 @@
         "show_view_all": true,
         "view_all_style": "outline",
         "swipe_on_mobile": true,
-        "image_ratio": "portrait",
+        "image_ratio": "square",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "about": {
@@ -118,21 +127,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "The Vitalo Difference",
+            "heading": "What's inside",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our Blood Sugar Support formula combines time-tested botanicals—Bitter Melon, Cinnamon, Gymnema—with essential minerals including Chromium, Zinc, and Magnesium.</p><p>Every ingredient is carefully selected for purity and potency.</p>",
+            "text": "<p>Our Blood Sugar Support combines Bitter Melon, Ceylon Cinnamon, and Gymnema Sylvestre with essential minerals like Chromium and Magnesium.</p><p>Each ingredient is selected for purity, potency, and efficacy.</p>",
             "text_style": "body"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Learn More",
+            "button_label": "View ingredients",
             "button_link": "",
             "button_style_secondary": true
           }
@@ -148,66 +157,57 @@
         "content_layout": "no-overlap",
         "color_scheme": "scheme-1",
         "mobile_content_alignment": "left",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
-    "ingredients": {
+    "how": {
       "type": "multicolumn",
       "blocks": {
-        "ing1": {
+        "step1": {
           "type": "column",
           "settings": {
-            "title": "Bitter Melon",
-            "text": "<p>Traditional herb for blood sugar support.</p>",
+            "title": "01",
+            "text": "<p><strong>Take 2 capsules daily</strong><br>With 6-8 oz of water</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "ing2": {
+        "step2": {
           "type": "column",
           "settings": {
-            "title": "Ceylon Cinnamon",
-            "text": "<p>Supports insulin sensitivity.</p>",
+            "title": "02",
+            "text": "<p><strong>Stay consistent</strong><br>Best results in 60-90 days</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "ing3": {
+        "step3": {
           "type": "column",
           "settings": {
-            "title": "Chromium",
-            "text": "<p>Essential for glucose metabolism.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "ing4": {
-          "type": "column",
-          "settings": {
-            "title": "Gymnema Sylvestre",
-            "text": "<p>Ayurvedic herb for sugar cravings.</p>",
+            "title": "03",
+            "text": "<p><strong>Feel the difference</strong><br>Support your daily wellness</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": ["ing1", "ing2", "ing3", "ing4"],
+      "block_order": ["step1", "step2", "step3"],
       "settings": {
-        "title": "Key Ingredients",
+        "title": "How it works",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "center",
+        "columns_desktop": 3,
+        "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "color_scheme": "scheme-2",
-        "columns_mobile": "2",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "columns_mobile": "1",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "testimonial": {
@@ -216,7 +216,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>\"I've been taking Vitalo for three months and my energy levels have never been better. The natural ingredients give me peace of mind.\"</p><p><strong>— Sarah M., Verified Customer</strong></p>"
+            "text": "<p>\"I've been using Vitalo for 3 months. My energy is better and I feel more balanced throughout the day.\"</p><p><strong>— Sarah M.</strong></p>"
           }
         }
       },
@@ -224,8 +224,8 @@
       "settings": {
         "color_scheme": "scheme-1",
         "full_width": false,
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "faq": {
@@ -252,21 +252,30 @@
         "q3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Are there any side effects?",
+            "heading": "Is this FDA approved?",
             "icon": "none",
-            "row_content": "<p>Vitalo is made with natural ingredients and is generally well-tolerated. Consult your physician if you're pregnant, nursing, or have a medical condition.</p>",
+            "row_content": "<p>Dietary supplements are not evaluated by the FDA. Our products are manufactured in FDA-registered facilities following GMP guidelines.</p>",
+            "page": ""
+          }
+        },
+        "q4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I take this with other medications?",
+            "icon": "none",
+            "row_content": "<p>Consult your healthcare provider before starting any new supplement, especially if you take medications for blood sugar management.</p>",
             "page": ""
           }
         }
       },
-      "block_order": ["q1", "q2", "q3"],
+      "block_order": ["q1", "q2", "q3", "q4"],
       "settings": {
         "caption": "",
-        "heading": "Common Questions",
+        "heading": "Questions",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "container_color_scheme": "scheme-1",
         "open_first_collapsible_row": false,
         "page_content_appearance": "light",
@@ -276,20 +285,20 @@
         "padding_bottom": 60
       }
     },
-    "newsletter": {
+    "cta": {
       "type": "newsletter",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Join the Vitalo Community",
+            "heading": "Ready to start?",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Get wellness tips and exclusive offers.</p>"
+            "text": "<p>Join thousands supporting their health with Vitalo.</p>"
           }
         },
         "email": {
@@ -308,12 +317,12 @@
   },
   "order": [
     "hero",
-    "benefits",
-    "featured_products",
+    "trust",
+    "products",
     "about",
-    "ingredients",
+    "how",
     "testimonial",
     "faq",
-    "newsletter"
+    "cta"
   ]
 }
