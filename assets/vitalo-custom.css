@@ -227,7 +227,12 @@ button[type="submit"] {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(26, 46, 31, 0.45);
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 46, 31, 0.55) 0%,
+    rgba(26, 46, 31, 0.40) 40%,
+    rgba(26, 46, 31, 0.55) 100%
+  );
   pointer-events: none;
 }
 
@@ -242,27 +247,29 @@ button[type="submit"] {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 100px;
   padding: 8px 20px;
   font-family: var(--font-body);
   font-size: 13px;
   font-weight: 600;
-  color: var(--vitalo-gold-light);
+  color: white;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: var(--space-lg);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .vitalo-hero__title {
   font-family: var(--font-heading);
-  font-size: clamp(36px, 5.5vw, 64px);
+  font-size: clamp(36px, 5.5vw, 58px);
   font-weight: 700;
   color: white;
-  line-height: 1.1;
+  line-height: 1.15;
   margin-bottom: var(--space-lg);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
 }
 
 .vitalo-hero__title em {
@@ -272,11 +279,12 @@ button[type="submit"] {
 
 .vitalo-hero__subtitle {
   font-family: var(--font-body);
-  font-size: clamp(16px, 2vw, 20px);
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.6;
-  max-width: 600px;
+  font-size: clamp(15px, 1.8vw, 18px);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  max-width: 560px;
   margin: 0 auto var(--space-xl);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 .vitalo-hero__cta {
