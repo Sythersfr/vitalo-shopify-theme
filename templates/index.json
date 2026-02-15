@@ -14,7 +14,7 @@
       "settings": {
         "badge_text": "Physician-Formulated",
         "heading": "<p>The Supplement Company That Has <em>Nothing to Hide.</em></p>",
-        "subheading": "Premium, transparent supplements with full-dose transparency, third-party testing, and a 90-day guarantee. Because we know our products actually work.",
+        "subheading": "Premium, transparent supplements with full-dose transparency, clinically studied ingredients, and a 90-day guarantee. Because we know our products actually work.",
         "button_label": "Shop Our Products",
         "button_link": "shopify://collections/all"
       }
@@ -25,9 +25,9 @@
         "badge_lab": {
           "type": "badge",
           "settings": {
-            "icon": "lab",
-            "title": "Independent 3rd-Party Lab Tested",
-            "description": "Every batch is tested by a third-party lab for purity, potency, and contaminants. We publish the results."
+            "icon": "check",
+            "title": "Clinically Studied Doses",
+            "description": "Every ingredient is included at the exact dose shown effective in clinical research. No token amounts. No shortcuts."
           }
         },
         "badge_guarantee": {
@@ -58,7 +58,7 @@
       "type": "vitalo-pain-point",
       "settings": {
         "heading": "Sick of Supplements That Promise Everything and Deliver Nothing?",
-        "body": "So were we. That's why we built Vitalo — with full-dose transparency, third-party testing, and a 90-day guarantee. Because we know our products actually work."
+        "body": "So were we. That's why we built Vitalo — with full-dose transparency, clinically studied ingredients, and a 90-day guarantee. Because we know our products actually work."
       }
     },
     "comparison": {
@@ -72,12 +72,12 @@
             "others_value": "Proprietary blends"
           }
         },
-        "row_testing": {
+        "row_dosing": {
           "type": "row",
           "settings": {
-            "label": "Testing",
-            "vitalo_value": "Independent 3rd-party tested",
-            "others_value": "Self-tested or untested"
+            "label": "Dosing",
+            "vitalo_value": "Full clinical doses",
+            "others_value": "Under-dosed or undisclosed"
           }
         },
         "row_guarantee": {
@@ -107,7 +107,7 @@
       },
       "block_order": [
         "row_formula",
-        "row_testing",
+        "row_dosing",
         "row_guarantee",
         "row_transparency",
         "row_manufacturing"
@@ -247,7 +247,7 @@
         "p2": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "That discovery led to a question: What if a supplement company just... told the truth? What if every ingredient and its exact dose was printed right on the label? What if every batch was tested by an independent lab — not by the company selling it? What if you could call a phone number and talk to a real person who actually cared?"
+            "paragraph": "That discovery led to a question: What if a supplement company just... told the truth? What if every ingredient and its exact dose was printed right on the label? What if formulas used the same doses that clinical studies actually tested? What if you could call a phone number and talk to a real person who actually cared?"
           }
         },
         "p3": {
@@ -259,7 +259,7 @@
         "p4": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "Every Vitalo product is manufactured in a GMP-certified, FDA-registered facility right here in the United States. Every formula uses clinically studied doses — not token amounts. Every batch is independently tested for purity, potency, and contaminants. And every customer gets a 90-day money-back guarantee, because if you don't feel the difference, we don't deserve your money."
+            "paragraph": "Every Vitalo product is manufactured in a GMP-certified, FDA-registered facility right here in the United States. Every formula uses clinically studied doses — not token amounts. Every ingredient and its exact amount is listed right on the label. And every customer gets a 90-day money-back guarantee, because if you don't feel the difference, we don't deserve your money."
           }
         }
       },
@@ -298,9 +298,9 @@
         "std_3": {
           "type": "card",
           "settings": {
-            "icon": "test",
-            "title": "Independent Lab Testing",
-            "description": "Every batch is sent to an independent, third-party laboratory to verify purity, potency, and the absence of contaminants."
+            "icon": "formula",
+            "title": "Clinically Studied Ingredients",
+            "description": "Every ingredient in our formulas is backed by published clinical research, and included at the dose shown to be effective — not a token sprinkle."
           }
         },
         "std_4": {
@@ -320,7 +320,7 @@
       ],
       "settings": {
         "heading": "The Vitalo Standard",
-        "description": "Every batch of every Vitalo product is sent to an independent, third-party lab for rigorous testing."
+        "description": "We hold ourselves to higher standards so you can feel confident in every bottle."
       }
     },
     "tricks": {
@@ -343,8 +343,8 @@
         "trick_3": {
           "type": "trick",
           "settings": {
-            "title": "Most Companies Grade Their Own Homework",
-            "description": "Many supplement companies either test their own products (grading their own homework) or skip testing altogether. Without independent verification, you have no way of knowing if what's on the label is actually in the bottle. Every Vitalo batch is tested by an independent third-party lab."
+            "title": "Flashy Marketing Hides Weak Formulas",
+            "description": "Big ad budgets don't mean better products. Many supplement brands spend more on celebrity endorsements and packaging than on the ingredients inside the bottle. At Vitalo, we invest in the formula — physician-formulated with clinically studied doses — and let the results speak for themselves."
           }
         }
       },
@@ -365,15 +365,15 @@
           "settings": {
             "group": "Product & Ingredients",
             "question": "What makes Vitalo different from other supplement brands?",
-            "answer": "Every Vitalo product features full formula transparency (no proprietary blends), clinically studied doses, and independent third-party testing on every batch. We believe if a supplement company hides their formula, they have something to hide."
+            "answer": "Every Vitalo product features full formula transparency (no proprietary blends), clinically studied doses, GMP-certified manufacturing, and a 90-day money-back guarantee. We believe if a supplement company hides their formula, they have something to hide."
           }
         },
         "faq_2": {
           "type": "faq",
           "settings": {
             "group": "Product & Ingredients",
-            "question": "Are your products third-party tested?",
-            "answer": "Yes — every single batch is tested by an independent, accredited laboratory for purity, potency, and the absence of contaminants including heavy metals, pesticides, and microbial impurities."
+            "question": "What does 'clinically studied doses' mean?",
+            "answer": "It means every ingredient in our formulas is included at the same dosage that was used in published clinical research. Many brands use tiny amounts of expensive ingredients just to put them on the label — we use the full effective dose, every time."
           }
         },
         "faq_3": {
@@ -493,7 +493,7 @@
         "b3": {
           "type": "badge",
           "settings": {
-            "text": "3rd Party Tested"
+            "text": "Clinically Studied"
           }
         },
         "b4": {
@@ -510,7 +510,7 @@
         "b4"
       ],
       "settings": {
-        "tagline": "Physician-formulated. Fully transparent. Independently tested. Every product backed by a 90-day guarantee.",
+        "tagline": "Physician-formulated. Fully transparent. Clinically studied doses. Every product backed by a 90-day guarantee.",
         "disclaimer": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before beginning any supplement regimen."
       }
     }

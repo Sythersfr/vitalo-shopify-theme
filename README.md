@@ -33,7 +33,7 @@ A premium Shopify theme designed for **Vitalo** — The Supplement Company That 
 The homepage is built with 14 custom Vitalo sections:
 
 1. **Vitalo Hero** — Full-screen hero with gradient background and gold CTA
-2. **Trust Badges** — 3rd-party tested, 90-day guarantee, no hidden formulas
+2. **Trust Badges** — Clinically studied doses, 90-day guarantee, no hidden formulas
 3. **Pain Point** — "Sick of Supplements That Promise Everything..."
 4. **Comparison Table** — Vitalo vs. Other Brands feature comparison
 5. **Products Grid** — Dynamic product cards from your Shopify collection
