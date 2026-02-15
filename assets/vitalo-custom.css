@@ -217,14 +217,17 @@ button[type="submit"] {
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--vitalo-green-deep) 0%, var(--vitalo-green-dark) 50%, var(--vitalo-green) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--vitalo-green-deep);
 }
 
 .vitalo-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 30% 50%, rgba(201, 168, 74, 0.1) 0%, transparent 60%);
+  background: rgba(26, 46, 31, 0.45);
   pointer-events: none;
 }
 
