@@ -149,18 +149,33 @@ header.header.page-width {
    ANNOUNCEMENT BAR
    ============================================ */
 
+.utility-bar {
+  font-family: var(--font-body);
+}
+
+.utility-bar.color-scheme-3,
+.utility-bar[class*="color-scheme-3"] {
+  background: var(--vitalo-green-deep);
+}
+
 .announcement-bar {
-  background: var(--vitalo-green-dark);
   font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  padding: 10px 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 2px 0;
   font-family: var(--font-body);
 }
 
 .announcement-bar a,
-.announcement-bar__link {
-  color: white;
+.announcement-bar__link,
+.announcement-bar__message {
+  color: white !important;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.announcement-bar__link:hover {
+  opacity: 0.85;
 }
 
 /* ============================================
@@ -262,18 +277,25 @@ button[type="submit"] {
   -webkit-backdrop-filter: blur(12px);
 }
 
-.vitalo-hero__title {
+.vitalo-hero__title,
+.vitalo-hero__title p,
+.vitalo-hero__title h1,
+.vitalo-hero__title h2 {
   font-family: var(--font-heading);
   font-size: clamp(36px, 5.5vw, 58px);
   font-weight: 700;
-  color: white;
+  color: #FFFFFF !important;
   line-height: 1.15;
   margin-bottom: var(--space-lg);
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.vitalo-hero__title p {
+  margin-bottom: 0;
 }
 
 .vitalo-hero__title em {
-  color: var(--vitalo-gold-light);
+  color: var(--vitalo-gold-light) !important;
   font-style: italic;
 }
 
