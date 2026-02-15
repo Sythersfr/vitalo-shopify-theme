@@ -1,0 +1,33 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-pain">
+  <div class="vitalo-pain__inner vitalo-animate">
+    <h2 class="vitalo-pain__title">{{ section.settings.heading }}</h2>
+    <p class="vitalo-pain__text">{{ section.settings.body }}</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vitalo Pain Point",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Sick of Supplements That Promise Everything and Deliver Nothing?"
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Body Text",
+      "default": "So were we. That's why we built Vitalo — with full-dose transparency, third-party testing, and a 90-day guarantee. Because we know our products actually work."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Pain Point"
+    }
+  ]
+}
+{% endschema %}

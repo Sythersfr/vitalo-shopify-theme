@@ -1,0 +1,104 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-story">
+  <div class="vitalo-story__inner">
+    <div class="vitalo-story__header vitalo-animate">
+      <div class="vitalo-story__label">{{ section.settings.label }}</div>
+      <h2 class="vitalo-story__title">{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="vitalo-story__body vitalo-animate">
+      {% for block in section.blocks %}
+        <p {{ block.shopify_attributes }}>{{ block.settings.paragraph }}</p>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.button_label != blank %}
+      <div style="text-align: center; margin-top: var(--space-xl);">
+        <a href="{{ section.settings.button_link }}" class="vitalo-hero__cta" style="display: inline-flex;">
+          {{ section.settings.button_label }}
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vitalo Story",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "Our Story"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "We Started Vitalo Because We Were Tired of Being Lied To"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "CTA Button Label",
+      "default": "Ready to try supplements that actually work?"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "CTA Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "name": "Paragraph",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "paragraph",
+          "label": "Paragraph",
+          "default": "Our story starts here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Story",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "It started the way most frustrations do — with a personal experience. One of our founders spent years trying different supplements to manage his energy levels as he got older. Brand after brand promised miracles, but the formulas were hollow."
+          }
+        },
+        {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "That discovery led to a question: What if a supplement company just... told the truth? What if every ingredient and its exact dose was printed right on the label? What if every batch was tested by an independent lab — not by the company selling it? What if you could call a phone number and talk to a real person who actually cared?"
+          }
+        },
+        {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "That's how Vitalo was born. We assembled a team of physicians, formulators, and people who were just as fed up with the supplement industry's smoke and mirrors. Together, we created a line of supplements that we'd feel confident giving to our own families."
+          }
+        },
+        {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "Every Vitalo product is manufactured in a GMP-certified, FDA-registered facility right here in the United States. Every formula uses clinically studied doses — not token amounts. Every batch is independently tested for purity, potency, and contaminants. And every customer gets a 90-day money-back guarantee, because if you don't feel the difference, we don't deserve your money."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,167 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-faq" id="faq">
+  <div class="vitalo-faq__inner">
+    <div class="vitalo-faq__header vitalo-animate">
+      <h2 class="vitalo-faq__title">{{ section.settings.heading }}</h2>
+    </div>
+
+    {% assign current_group = '' %}
+    {% for block in section.blocks %}
+      {% if block.settings.group != current_group %}
+        {% if current_group != '' %}
+          </div>
+        {% endif %}
+        {% assign current_group = block.settings.group %}
+        <div class="vitalo-faq__group vitalo-animate">
+          <h3 class="vitalo-faq__group-title">{{ current_group }}</h3>
+      {% endif %}
+
+      <div class="vitalo-faq-item" {{ block.shopify_attributes }}>
+        <button class="vitalo-faq-item__question" aria-expanded="false">
+          <span>{{ block.settings.question }}</span>
+          <span class="vitalo-faq-item__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </span>
+        </button>
+        <div class="vitalo-faq-item__answer">
+          <p>{{ block.settings.answer }}</p>
+        </div>
+      </div>
+    {% endfor %}
+
+    {% if current_group != '' %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vitalo FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently Asked Questions"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "group",
+          "label": "Group Name",
+          "default": "General"
+        },
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Question goes here?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "Answer goes here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo FAQ",
+      "blocks": [
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Product & Ingredients",
+            "question": "What makes Vitalo different from other supplement brands?",
+            "answer": "Every Vitalo product features full formula transparency (no proprietary blends), clinically studied doses, and independent third-party testing on every batch. We believe if a supplement company hides their formula, they have something to hide."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Product & Ingredients",
+            "question": "Are your products third-party tested?",
+            "answer": "Yes — every single batch is tested by an independent, accredited laboratory for purity, potency, and the absence of contaminants including heavy metals, pesticides, and microbial impurities."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Product & Ingredients",
+            "question": "What are proprietary blends, and why don't you use them?",
+            "answer": "Proprietary blends allow companies to list ingredients without disclosing amounts. This means they can use tiny, ineffective amounts of expensive ingredients while hiding behind the 'proprietary' label. We never use them because we have nothing to hide."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Product & Ingredients",
+            "question": "Where are your products manufactured?",
+            "answer": "All Vitalo products are manufactured in GMP-certified, FDA-registered facilities in the United States."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Returns & Guarantee",
+            "question": "What is your guarantee policy?",
+            "answer": "We offer a 90-day money-back guarantee on all products. If you're not satisfied for any reason, contact us for a full refund."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Returns & Guarantee",
+            "question": "Do I need to return the product?",
+            "answer": "No. We don't require you to send the product back. We trust our customers, and we want the process to be as easy as possible."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Returns & Guarantee",
+            "question": "How do I request a refund?",
+            "answer": "Simply call us at (800) 555-0199 or email support@vitalo.io with your order number. We typically process refunds within 2-3 business days."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Health & Usage",
+            "question": "How long until I see results?",
+            "answer": "Results vary by individual and product. Some products, like our Deep Sleep Formula, may show results within the first week. Consistency is key — supplements work best when taken daily over time."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Health & Usage",
+            "question": "Can I take multiple Vitalo products together?",
+            "answer": "Yes — our products are formulated to complement each other. However, we always recommend consulting with your healthcare provider before starting any new supplement regimen, especially if you take medications."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "group": "Health & Usage",
+            "question": "Should I talk to my doctor before taking supplements?",
+            "answer": "We recommend consulting your healthcare provider if you are pregnant, nursing, take prescription medications, have a diagnosed health condition, or are scheduled for surgery. Your healthcare provider can help determine if a supplement is appropriate for your individual needs."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

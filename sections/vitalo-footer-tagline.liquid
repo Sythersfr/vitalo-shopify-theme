@@ -1,0 +1,78 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-footer-tagline">
+  <p class="vitalo-footer-tagline__text">
+    {{ section.settings.tagline }}
+  </p>
+  <div class="vitalo-footer-tagline__badges">
+    {% for block in section.blocks %}
+      <span class="vitalo-footer-tagline__badge-item" {{ block.shopify_attributes }}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+        </svg>
+        {{ block.settings.text }}
+      </span>
+    {% endfor %}
+  </div>
+
+  <p class="vitalo-disclaimer" style="margin-top: var(--space-xl);">
+    {{ section.settings.disclaimer }}
+  </p>
+</section>
+
+{% schema %}
+{
+  "name": "Vitalo Footer Tagline",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "Physician-formulated. Fully transparent. Independently tested. Every product backed by a 90-day guarantee."
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer",
+      "label": "FDA Disclaimer",
+      "default": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before beginning any supplement regimen."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Badge Text",
+          "default": "GMP Certified"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Footer Tagline",
+      "blocks": [
+        {
+          "type": "badge",
+          "settings": { "text": "GMP Certified" }
+        },
+        {
+          "type": "badge",
+          "settings": { "text": "Made in USA" }
+        },
+        {
+          "type": "badge",
+          "settings": { "text": "3rd Party Tested" }
+        },
+        {
+          "type": "badge",
+          "settings": { "text": "90-Day Guarantee" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

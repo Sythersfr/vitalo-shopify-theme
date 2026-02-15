@@ -1,0 +1,132 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-standard">
+  <div class="vitalo-standard__inner">
+    <div class="vitalo-standard__header vitalo-animate">
+      <h2 class="vitalo-standard__title">{{ section.settings.heading }}</h2>
+      <p class="vitalo-standard__desc">{{ section.settings.description }}</p>
+    </div>
+
+    <div class="vitalo-standard__grid">
+      {% for block in section.blocks %}
+        <div class="vitalo-standard-card vitalo-animate vitalo-animate-delay-{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="vitalo-standard-card__icon">
+            {% if block.settings.icon == 'factory' %}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 20h20"/>
+                <path d="M5 20V8l5 4V8l5 4V4h3v16"/>
+              </svg>
+            {% elsif block.settings.icon == 'formula' %}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 3h6v7l5 8.5a1.5 1.5 0 01-1.3 2.5H5.3a1.5 1.5 0 01-1.3-2.5L9 10V3z"/>
+                <line x1="9" y1="3" x2="15" y2="3"/>
+              </svg>
+            {% elsif block.settings.icon == 'test' %}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            {% else %}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            {% endif %}
+          </div>
+          <h3 class="vitalo-standard-card__title">{{ block.settings.title }}</h3>
+          <p class="vitalo-standard-card__text">{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vitalo Standard",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Vitalo Standard"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Every batch of every Vitalo product is sent to an independent, third-party lab for rigorous testing."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Standard Card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "factory", "label": "Factory/Manufacturing" },
+            { "value": "formula", "label": "Formula/Lab" },
+            { "value": "test", "label": "Testing/Verified" },
+            { "value": "shield", "label": "Shield/Protection" }
+          ],
+          "default": "shield"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Quality Standard"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Description of this quality standard."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Standard",
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "icon": "factory",
+            "title": "GMP-Certified Manufacturing",
+            "description": "All Vitalo products are manufactured in GMP-certified, FDA-registered facilities in the United States under strict quality controls."
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "icon": "formula",
+            "title": "Full Formula Transparency",
+            "description": "Every Vitalo product lists every ingredient with its exact dose. No proprietary blends, no hidden ingredients, no guesswork."
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "icon": "test",
+            "title": "Independent Lab Testing",
+            "description": "Every batch is sent to an independent, third-party laboratory to verify purity, potency, and the absence of contaminants."
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "icon": "shield",
+            "title": "90-Day Money-Back Guarantee",
+            "description": "We're so confident in our products that we offer a full 90-day money-back guarantee. No questions asked, no product return required."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

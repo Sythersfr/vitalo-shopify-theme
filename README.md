@@ -1,115 +1,117 @@
 # Vitalo Shopify Theme
 
-A premium Shopify theme designed specifically for **Vitalo Blood Sugar Support** supplements. Features a clean, natural aesthetic with botanical design elements perfect for health and wellness products.
+A premium Shopify theme designed for **Vitalo** — The Supplement Company That Has Nothing to Hide. Features an editorial design with trust-building content sections, full-dose transparency messaging, and a physician-formulated supplement brand identity.
 
 ## Theme Features
 
-- **Natural Color Palette**: Forest greens, gold accents, and warm cream tones
-- **Botanical Design Elements**: Subtle nature-inspired patterns and decorations
-- **Health Product Focused**: Designed for supplement and wellness stores
-- **Modern UI/UX**: Clean, professional layout with smooth animations
+- **Editorial Design**: Playfair Display headings + Source Sans 3 body text for a premium, trustworthy feel
+- **Trust-First Architecture**: 14 custom sections designed to build customer confidence
+- **Full E-Commerce**: Built on Shopify's Dawn theme with complete cart, product, and collection support
 - **Mobile Responsive**: Fully optimized for all device sizes
-- **Fast Performance**: Built on Shopify's Dawn theme architecture
+- **Scroll Animations**: Smooth reveal-on-scroll effects for engaging user experience
+- **Customizable**: Every section is editable through Shopify's theme editor
 
 ## Brand Colors
 
 | Color | Hex | Usage |
 |-------|-----|-------|
 | Primary Green | `#4A7C59` | Buttons, links, accents |
-| Gold | `#C9A84A` | Highlights, sale badges |
-| Cream | `#F8F5F0` | Backgrounds |
-| Dark Green | `#2D3A2E` | Text, headings |
+| Dark Green | `#2D5A3D` | Hover states, emphasis |
+| Deep Green | `#1A2E1F` | Hero background, footer |
+| Gold | `#C9A84A` | CTA buttons, highlights |
+| Cream | `#FAF8F5` | Section backgrounds |
 | Off White | `#FDFCFA` | Page backgrounds |
+| Dark Text | `#2D3A2E` | Headings |
+
+## Typography
+
+- **Headings**: Playfair Display (700 weight) — elegant serif for trust and authority
+- **Body**: Source Sans 3 (400/600 weight) — clean, readable sans-serif
+
+## Homepage Sections
+
+The homepage is built with 14 custom Vitalo sections:
+
+1. **Vitalo Hero** — Full-screen hero with gradient background and gold CTA
+2. **Trust Badges** — 3rd-party tested, 90-day guarantee, no hidden formulas
+3. **Pain Point** — "Sick of Supplements That Promise Everything..."
+4. **Comparison Table** — Vitalo vs. Other Brands feature comparison
+5. **Products Grid** — Dynamic product cards from your Shopify collection
+6. **Testimonials** — Customer stories with product attribution
+7. **Stats Bar** — 50,000+ customers, 6 formulas, 90-day guarantee
+8. **Our Story** — Brand origin narrative
+9. **The Vitalo Standard** — GMP, transparency, testing, guarantee cards
+10. **Industry Tricks** — Educational content about supplement industry
+11. **FAQ** — Grouped collapsible FAQ (Products, Returns, Health)
+12. **Newsletter** — Email signup with dark background
+13. **CTA** — Final call-to-action
+14. **Footer Tagline** — Trust badges + FDA disclaimer
+
+## Products
+
+- Blood Sugar Support — $45 (Best Seller)
+- Joint Support — $29.90
+- Memory & Focus — $49 (New)
+- Men's Vitality — $44
+- Heart & Circulation — $42
+- Deep Sleep Formula — $34
 
 ## Installation
 
 ### Via GitHub Integration
-
-1. Go to your Shopify Admin → Online Store → Themes
+1. Go to Shopify Admin → Online Store → Themes
 2. Click "Add theme" → "Connect from GitHub"
-3. Select this repository
-4. Choose the branch to connect
+3. Select this repository and the `main` branch
 
-### Via Theme Upload
-
+### Via ZIP Upload
 1. Download this repository as a ZIP file
 2. Go to Shopify Admin → Online Store → Themes
 3. Click "Add theme" → "Upload zip file"
-4. Upload the ZIP file
-
-## Customization
-
-### Theme Settings
-
-Access theme settings in your Shopify admin:
-- **Colors**: 5 pre-configured color schemes
-- **Typography**: Lato font family (header weight: 700, body weight: 400)
-- **Layout**: 1400px max page width with generous spacing
-- **Cards**: Rounded corners (12px) with subtle shadows
-- **Buttons**: Rounded (8px) with gradient hover effects
-
-### Custom CSS
-
-Additional styling is available in `assets/vitalo-custom.css`. Key classes:
-
-```css
-.vitalo-bg-cream     /* Cream background */
-.vitalo-bg-green     /* Green background */
-.vitalo-text-green   /* Green text */
-.vitalo-text-gold    /* Gold text */
-.vitalo-rounded-md   /* 12px border radius */
-.vitalo-shadow-soft  /* Soft shadow */
-```
 
 ## File Structure
 
 ```
-vitalo-theme/
 ├── assets/
-│   ├── vitalo-custom.css    # Custom Vitalo styles
-│   └── ...                  # Other assets
+│   ├── vitalo-custom.css    # Complete Vitalo design system
+│   ├── vitalo.js            # Scroll animations + FAQ accordion
+│   └── ...                  # Dawn base assets
 ├── config/
 │   ├── settings_schema.json # Theme settings definition
-│   └── settings_data.json   # Default theme values
+│   └── settings_data.json   # Vitalo brand defaults
 ├── layout/
-│   └── theme.liquid         # Main layout template
-├── locales/                 # Translation files
-├── sections/                # Theme sections
-├── snippets/                # Reusable code snippets
-└── templates/               # Page templates
+│   └── theme.liquid          # Main layout (Google Fonts loaded here)
+├── sections/
+│   ├── vitalo-hero.liquid
+│   ├── vitalo-trust-badges.liquid
+│   ├── vitalo-pain-point.liquid
+│   ├── vitalo-comparison.liquid
+│   ├── vitalo-products.liquid
+│   ├── vitalo-testimonials.liquid
+│   ├── vitalo-stats.liquid
+│   ├── vitalo-story.liquid
+│   ├── vitalo-standard.liquid
+│   ├── vitalo-tricks.liquid
+│   ├── vitalo-faq.liquid
+│   ├── vitalo-newsletter.liquid
+│   ├── vitalo-cta.liquid
+│   ├── vitalo-footer-tagline.liquid
+│   └── ...                    # Dawn base sections
+├── snippets/                  # Reusable components
+├── templates/
+│   ├── index.json            # Homepage (14 Vitalo sections)
+│   └── ...                   # Dawn base templates
+└── locales/                  # Translation files
 ```
 
-## Sections Included
+## Contact
 
-- Header with navigation
-- Announcement bar
-- Hero/Slideshow
-- Featured collection
-- Image with text
-- Rich text
-- Testimonials
-- Newsletter signup
-- Footer with multiple columns
-
-## Recommended Apps
-
-For a complete supplement store experience, consider:
-- **Reviews**: Judge.me, Loox, or Stamped.io
-- **Subscriptions**: Recharge or Bold Subscriptions
-- **Upsells**: ReConvert or Bold Upsell
-- **Trust Badges**: Trust Badge Master
-
-## Support
-
-For theme customization or support:
-- Email: support@vitalo.com
-- Documentation: Shopify Theme Docs
+- Email: support@vitalo.io
+- Phone: (800) 555-0199
 
 ## License
 
-This theme is based on Shopify's Dawn theme and is subject to Shopify's theme license terms.
+Based on Shopify's Dawn theme. Subject to Shopify's theme license terms.
 
 ---
 
-**Vitalo LLC** - Natural Blood Sugar Support  
-*Supporting healthy glucose metabolism and insulin sensitivity*
+**Vitalo** — The Supplement Company That Has Nothing to Hide.

@@ -1,0 +1,139 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-why">
+  <div class="vitalo-why__inner">
+    <div class="vitalo-why__header vitalo-animate">
+      <h2 class="vitalo-why__title">{{ section.settings.heading }}</h2>
+      {% if section.settings.subheading != blank %}
+        <p class="vitalo-why__subtitle">{{ section.settings.subheading }}</p>
+      {% endif %}
+    </div>
+
+    <div class="vitalo-comparison vitalo-animate">
+      <div class="vitalo-comparison__header">
+        <span>{{ section.settings.col_label }}</span>
+        <span>{{ section.settings.col_vitalo }}</span>
+        <span>{{ section.settings.col_others }}</span>
+      </div>
+
+      {% for block in section.blocks %}
+        <div class="vitalo-comparison__row" {{ block.shopify_attributes }}>
+          <span class="vitalo-comparison__label">{{ block.settings.label }}</span>
+          <span class="vitalo-comparison__good">{{ block.settings.vitalo_value }}</span>
+          <span class="vitalo-comparison__bad">{{ block.settings.others_value }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vitalo Comparison",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Supplement Industry Has a Trust Problem. We're Fixing It."
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "See how Vitalo compares to typical supplement brands."
+    },
+    {
+      "type": "text",
+      "id": "col_label",
+      "label": "Label Column Header",
+      "default": "Feature"
+    },
+    {
+      "type": "text",
+      "id": "col_vitalo",
+      "label": "Vitalo Column Header",
+      "default": "Vitalo"
+    },
+    {
+      "type": "text",
+      "id": "col_others",
+      "label": "Others Column Header",
+      "default": "Other Brands"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Comparison Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Feature Label",
+          "default": "Formula"
+        },
+        {
+          "type": "text",
+          "id": "vitalo_value",
+          "label": "Vitalo Value",
+          "default": "Full transparency"
+        },
+        {
+          "type": "text",
+          "id": "others_value",
+          "label": "Others Value",
+          "default": "Proprietary blends"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Comparison",
+      "blocks": [
+        {
+          "type": "row",
+          "settings": {
+            "label": "Formula",
+            "vitalo_value": "Full dose transparency",
+            "others_value": "Proprietary blends"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Testing",
+            "vitalo_value": "Independent 3rd-party tested",
+            "others_value": "Self-tested or untested"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Guarantee",
+            "vitalo_value": "90-day money-back",
+            "others_value": "30 days or none"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Transparency",
+            "vitalo_value": "Every ingredient & dose listed",
+            "others_value": "Hidden behind labels"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Manufacturing",
+            "vitalo_value": "GMP-certified, FDA-registered (USA)",
+            "others_value": "Unknown or overseas"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

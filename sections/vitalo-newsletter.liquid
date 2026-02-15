@@ -1,0 +1,60 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-newsletter">
+  <div class="vitalo-newsletter__inner vitalo-animate">
+    <h2 class="vitalo-newsletter__title">{{ section.settings.heading }}</h2>
+    <p class="vitalo-newsletter__text">{{ section.settings.body }}</p>
+
+    {% form 'customer', class: 'vitalo-newsletter__form' %}
+      <input
+        type="email"
+        name="contact[email]"
+        class="vitalo-newsletter__input"
+        placeholder="{{ section.settings.placeholder }}"
+        required
+        autocomplete="email"
+        aria-label="Email address"
+      >
+      <button type="submit" class="vitalo-newsletter__btn">
+        {{ section.settings.button_label }}
+      </button>
+    {% endform %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vitalo Newsletter",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Join the Vitalo Family"
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Body Text",
+      "default": "Get 10% off your first order, plus weekly health tips and exclusive deals."
+    },
+    {
+      "type": "text",
+      "id": "placeholder",
+      "label": "Input Placeholder",
+      "default": "Enter your email"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Subscribe"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Newsletter"
+    }
+  ]
+}
+{% endschema %}

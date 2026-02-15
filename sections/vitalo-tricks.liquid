@@ -1,0 +1,79 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-tricks">
+  <div class="vitalo-tricks__inner">
+    <div class="vitalo-tricks__header vitalo-animate">
+      <h2 class="vitalo-tricks__title">{{ section.settings.heading }}</h2>
+    </div>
+
+    {% for block in section.blocks %}
+      <div class="vitalo-trick vitalo-animate" {{ block.shopify_attributes }}>
+        <div class="vitalo-trick__number">Trick #{{ forloop.index }}</div>
+        <h3 class="vitalo-trick__title">{{ block.settings.title }}</h3>
+        <p class="vitalo-trick__desc">{{ block.settings.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vitalo Tricks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Three Tricks the Supplement Industry Doesn't Want You to Know About"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "trick",
+      "name": "Trick",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "The Trick"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Description of this industry trick."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Tricks",
+      "blocks": [
+        {
+          "type": "trick",
+          "settings": {
+            "title": "\"Proprietary Blends\" Hide Ineffective Doses",
+            "description": "Companies list ingredients but hide the amounts behind a 'proprietary blend' label. This lets them use tiny, ineffective amounts while hiding behind the 'proprietary' label. If the formula is so good, why keep it secret? At Vitalo, every ingredient and its exact dose is right on the label."
+          }
+        },
+        {
+          "type": "trick",
+          "settings": {
+            "title": "\"Pixie Dusting\" — The Label Lists It, But You're Getting Almost None",
+            "description": "A supplement might list an expensive ingredient like CoQ10 or Lion's Mane, but you don't get enough to actually benefit. It's the supplement industry's favorite trick — include just enough to put it on the label, but far less than what clinical studies actually used."
+          }
+        },
+        {
+          "type": "trick",
+          "settings": {
+            "title": "Most Companies Grade Their Own Homework",
+            "description": "Many supplement companies either test their own products (grading their own homework) or skip testing altogether. Without independent verification, you have no way of knowing if what's on the label is actually in the bottle. Every Vitalo batch is tested by an independent third-party lab."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

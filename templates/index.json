@@ -1,328 +1,463 @@
 {
   "sections": {
-    "hero": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Blood sugar support,<br>backed by science",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Natural ingredients to help maintain healthy glucose levels.",
-            "text_style": "subtitle"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Get started",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": ["heading", "text", "button"],
+    "vitalo_hero": {
+      "type": "vitalo-hero",
       "settings": {
-        "image_overlay_opacity": 30,
-        "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "badge_text": "Physician-Formulated",
+        "heading": "<p>The Supplement Company That Has <em>Nothing to Hide.<\/em><\/p>",
+        "subheading": "Premium, transparent supplements with full-dose transparency, third-party testing, and a 90-day guarantee. Because we know our products actually work.",
+        "button_label": "Shop Our Products",
+        "button_link": "shopify:\/\/collections\/all"
       }
     },
-    "trust": {
-      "type": "multicolumn",
+    "trust_badges": {
+      "type": "vitalo-trust-badges",
       "blocks": {
-        "col1": {
-          "type": "column",
+        "badge_lab": {
+          "type": "badge",
           "settings": {
-            "title": "Natural Formula",
-            "text": "<p>Botanical extracts and essential minerals</p>",
-            "link_label": "",
-            "link": ""
+            "icon": "lab",
+            "title": "Independent 3rd-Party Lab Tested",
+            "description": "Every batch is tested by a third-party lab for purity, potency, and contaminants. We publish the results."
           }
         },
-        "col2": {
-          "type": "column",
+        "badge_guarantee": {
+          "type": "badge",
           "settings": {
-            "title": "Made in USA",
-            "text": "<p>FDA-registered, GMP-certified facilities</p>",
-            "link_label": "",
-            "link": ""
+            "icon": "shield",
+            "title": "90-Day Money-Back Guarantee",
+            "description": "Try any Vitalo product risk-free. If you're not satisfied, we'll refund every penny. No questions asked."
           }
         },
-        "col3": {
-          "type": "column",
+        "badge_transparency": {
+          "type": "badge",
           "settings": {
-            "title": "Clinically Studied",
-            "text": "<p>Research-backed ingredients</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "col4": {
-          "type": "column",
-          "settings": {
-            "title": "Free Shipping",
-            "text": "<p>On orders over $50</p>",
-            "link_label": "",
-            "link": ""
+            "icon": "eye",
+            "title": "No Hidden Formulas",
+            "description": "Every single ingredient and its exact dose is printed on the label. No proprietary blends. No secrets."
           }
         }
       },
-      "block_order": ["col1", "col2", "col3", "col4"],
+      "block_order": ["badge_lab", "badge_guarantee", "badge_transparency"]
+    },
+    "pain_point": {
+      "type": "vitalo-pain-point",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "2",
-        "padding_top": 52,
-        "padding_bottom": 52
+        "heading": "Sick of Supplements That Promise Everything and Deliver Nothing?",
+        "body": "So were we. That's why we built Vitalo — with full-dose transparency, third-party testing, and a 90-day guarantee. Because we know our products actually work."
       }
+    },
+    "comparison": {
+      "type": "vitalo-comparison",
+      "settings": {
+        "heading": "The Supplement Industry Has a Trust Problem. We're Fixing It.",
+        "subheading": "See how Vitalo compares to typical supplement brands.",
+        "col_label": "Feature",
+        "col_vitalo": "Vitalo",
+        "col_others": "Other Brands"
+      },
+      "blocks": {
+        "row_formula": {
+          "type": "row",
+          "settings": {
+            "label": "Formula",
+            "vitalo_value": "Full dose transparency",
+            "others_value": "Proprietary blends"
+          }
+        },
+        "row_testing": {
+          "type": "row",
+          "settings": {
+            "label": "Testing",
+            "vitalo_value": "Independent 3rd-party tested",
+            "others_value": "Self-tested or untested"
+          }
+        },
+        "row_guarantee": {
+          "type": "row",
+          "settings": {
+            "label": "Guarantee",
+            "vitalo_value": "90-day money-back",
+            "others_value": "30 days or none"
+          }
+        },
+        "row_transparency": {
+          "type": "row",
+          "settings": {
+            "label": "Transparency",
+            "vitalo_value": "Every ingredient & dose listed",
+            "others_value": "Hidden behind labels"
+          }
+        },
+        "row_manufacturing": {
+          "type": "row",
+          "settings": {
+            "label": "Manufacturing",
+            "vitalo_value": "GMP-certified, FDA-registered (USA)",
+            "others_value": "Unknown or overseas"
+          }
+        }
+      },
+      "block_order": ["row_formula", "row_testing", "row_guarantee", "row_transparency", "row_manufacturing"]
     },
     "products": {
-      "type": "featured-collection",
+      "type": "vitalo-products",
       "settings": {
-        "title": "Shop",
-        "heading_size": "h1",
+        "heading": "Our Products",
+        "subheading": "Physician-formulated supplements designed for adults who want to maintain their health, not just react to problems.",
         "collection": "all",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-2",
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "products_to_show": 6,
+        "button_label": "View All Products",
+        "button_link": "shopify:\/\/collections\/all"
       }
     },
-    "about": {
-      "type": "image-with-text",
+    "testimonials": {
+      "type": "vitalo-testimonials",
+      "settings": {
+        "heading": "What Our Customers Say"
+      },
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "test_1": {
+          "type": "testimonial",
           "settings": {
-            "heading": "What's inside",
-            "heading_size": "h1"
+            "quote": "I'll be honest — I almost didn't order. I've wasted hundreds on supplements that did nothing. But the 90-day guarantee made me think, why not? Three months later, my joints feel completely different. I can garden again without dreading the next morning.",
+            "name": "Margaret T.",
+            "product_name": "Joint Support"
           }
         },
-        "text": {
-          "type": "text",
+        "test_2": {
+          "type": "testimonial",
           "settings": {
-            "text": "<p>Our Blood Sugar Support combines Bitter Melon, Ceylon Cinnamon, and Gymnema Sylvestre with essential minerals like Chromium and Magnesium.</p><p>Each ingredient is selected for purity, potency, and efficacy.</p>",
-            "text_style": "body"
+            "quote": "What sold me was seeing every ingredient and dose on the label. No 'proprietary blend' nonsense. I've been taking Memory & Focus for four months and my wife says I'm noticeably sharper.",
+            "name": "Robert K.",
+            "product_name": "Memory & Focus"
           }
         },
-        "button": {
-          "type": "button",
+        "test_3": {
+          "type": "testimonial",
           "settings": {
-            "button_label": "View ingredients",
-            "button_link": "",
-            "button_style_secondary": true
+            "quote": "I was skeptical about another sleep supplement. But within the first week, I noticed I was falling asleep faster and waking up feeling more refreshed. The magnesium glycinate really makes a difference.",
+            "name": "Linda S.",
+            "product_name": "Deep Sleep Formula"
+          }
+        },
+        "test_4": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "My doctor was impressed with my latest checkup results. I can't say it's all Vitalo, but I feel more confident about my heart health. The CoQ10 dose is what convinced me — most brands use a fraction of this amount.",
+            "name": "James W.",
+            "product_name": "Heart & Circulation"
+          }
+        },
+        "test_5": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I was spending over $80 a month on a fancy joint supplement from TV. Switched to Vitalo at half the price and honestly, the results are better. Wish I'd found them sooner.",
+            "name": "Dorothy H.",
+            "product_name": "Joint Support"
+          }
+        },
+        "test_6": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "After reading about how supplement companies cut corners, I was suspicious of every brand. Vitalo's transparency won me over. I can actually verify what I'm putting in my body.",
+            "name": "Richard P.",
+            "product_name": "Blood Sugar Support"
           }
         }
       },
-      "block_order": ["heading", "text", "button"],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "scheme-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
+      "block_order": ["test_1", "test_2", "test_3", "test_4", "test_5", "test_6"]
     },
-    "how": {
-      "type": "multicolumn",
+    "stats": {
+      "type": "vitalo-stats",
       "blocks": {
-        "step1": {
-          "type": "column",
+        "stat_1": {
+          "type": "stat",
           "settings": {
-            "title": "01",
-            "text": "<p><strong>Take 2 capsules daily</strong><br>With 6-8 oz of water</p>",
-            "link_label": "",
-            "link": ""
+            "number": "50,000+",
+            "label": "Happy Customers"
           }
         },
-        "step2": {
-          "type": "column",
+        "stat_2": {
+          "type": "stat",
           "settings": {
-            "title": "02",
-            "text": "<p><strong>Stay consistent</strong><br>Best results in 60-90 days</p>",
-            "link_label": "",
-            "link": ""
+            "number": "6",
+            "label": "Unique Formulas"
           }
         },
-        "step3": {
-          "type": "column",
+        "stat_3": {
+          "type": "stat",
           "settings": {
-            "title": "03",
-            "text": "<p><strong>Feel the difference</strong><br>Support your daily wellness</p>",
-            "link_label": "",
-            "link": ""
+            "number": "90-Day",
+            "label": "Money-Back Guarantee"
+          }
+        },
+        "stat_4": {
+          "type": "stat",
+          "settings": {
+            "number": "100%",
+            "label": "Transparent Labels"
           }
         }
       },
-      "block_order": ["step1", "step2", "step3"],
-      "settings": {
-        "title": "How it works",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
+      "block_order": ["stat_1", "stat_2", "stat_3", "stat_4"]
     },
-    "testimonial": {
-      "type": "rich-text",
+    "story": {
+      "type": "vitalo-story",
+      "settings": {
+        "label": "Our Story",
+        "heading": "We Started Vitalo Because We Were Tired of Being Lied To",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all"
+      },
       "blocks": {
-        "text": {
-          "type": "text",
+        "p1": {
+          "type": "paragraph",
           "settings": {
-            "text": "<p>\"I've been using Vitalo for 3 months. My energy is better and I feel more balanced throughout the day.\"</p><p><strong>— Sarah M.</strong></p>"
+            "paragraph": "It started the way most frustrations do — with a personal experience. One of our founders spent years trying different supplements to manage his energy levels as he got older. Brand after brand promised miracles, but the formulas were hollow."
+          }
+        },
+        "p2": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "That discovery led to a question: What if a supplement company just... told the truth? What if every ingredient and its exact dose was printed right on the label? What if every batch was tested by an independent lab — not by the company selling it? What if you could call a phone number and talk to a real person who actually cared?"
+          }
+        },
+        "p3": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "That's how Vitalo was born. We assembled a team of physicians, formulators, and people who were just as fed up with the supplement industry's smoke and mirrors. Together, we created a line of supplements that we'd feel confident giving to our own families."
+          }
+        },
+        "p4": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "Every Vitalo product is manufactured in a GMP-certified, FDA-registered facility right here in the United States. Every formula uses clinically studied doses — not token amounts. Every batch is independently tested for purity, potency, and contaminants. And every customer gets a 90-day money-back guarantee, because if you don't feel the difference, we don't deserve your money."
           }
         }
       },
-      "block_order": ["text"],
+      "block_order": ["p1", "p2", "p3", "p4"]
+    },
+    "standard": {
+      "type": "vitalo-standard",
       "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
+        "heading": "The Vitalo Standard",
+        "description": "Every batch of every Vitalo product is sent to an independent, third-party lab for rigorous testing."
+      },
+      "blocks": {
+        "std_1": {
+          "type": "card",
+          "settings": {
+            "icon": "factory",
+            "title": "GMP-Certified Manufacturing",
+            "description": "All Vitalo products are manufactured in GMP-certified, FDA-registered facilities in the United States under strict quality controls."
+          }
+        },
+        "std_2": {
+          "type": "card",
+          "settings": {
+            "icon": "formula",
+            "title": "Full Formula Transparency",
+            "description": "Every Vitalo product lists every ingredient with its exact dose. No proprietary blends, no hidden ingredients, no guesswork."
+          }
+        },
+        "std_3": {
+          "type": "card",
+          "settings": {
+            "icon": "test",
+            "title": "Independent Lab Testing",
+            "description": "Every batch is sent to an independent, third-party laboratory to verify purity, potency, and the absence of contaminants."
+          }
+        },
+        "std_4": {
+          "type": "card",
+          "settings": {
+            "icon": "shield",
+            "title": "90-Day Money-Back Guarantee",
+            "description": "We're so confident in our products that we offer a full 90-day money-back guarantee. No questions asked, no product return required."
+          }
+        }
+      },
+      "block_order": ["std_1", "std_2", "std_3", "std_4"]
+    },
+    "tricks": {
+      "type": "vitalo-tricks",
+      "settings": {
+        "heading": "Three Tricks the Supplement Industry Doesn't Want You to Know About"
+      },
+      "blocks": {
+        "trick_1": {
+          "type": "trick",
+          "settings": {
+            "title": "\"Proprietary Blends\" Hide Ineffective Doses",
+            "description": "Companies list ingredients but hide the amounts behind a 'proprietary blend' label. This lets them use tiny, ineffective amounts while hiding behind the 'proprietary' label. If the formula is so good, why keep it secret? At Vitalo, every ingredient and its exact dose is right on the label."
+          }
+        },
+        "trick_2": {
+          "type": "trick",
+          "settings": {
+            "title": "\"Pixie Dusting\" — The Label Lists It, But You're Getting Almost None",
+            "description": "A supplement might list an expensive ingredient like CoQ10 or Lion's Mane, but you don't get enough to actually benefit. It's the supplement industry's favorite trick — include just enough to put it on the label, but far less than what clinical studies actually used."
+          }
+        },
+        "trick_3": {
+          "type": "trick",
+          "settings": {
+            "title": "Most Companies Grade Their Own Homework",
+            "description": "Many supplement companies either test their own products (grading their own homework) or skip testing altogether. Without independent verification, you have no way of knowing if what's on the label is actually in the bottle. Every Vitalo batch is tested by an independent third-party lab."
+          }
+        }
+      },
+      "block_order": ["trick_1", "trick_2", "trick_3"]
     },
     "faq": {
-      "type": "collapsible-content",
+      "type": "vitalo-faq",
+      "settings": {
+        "heading": "Frequently Asked Questions"
+      },
       "blocks": {
-        "q1": {
-          "type": "collapsible_row",
+        "faq_1": {
+          "type": "faq",
           "settings": {
-            "heading": "How long until I see results?",
-            "icon": "none",
-            "row_content": "<p>Most customers notice benefits within 2-4 weeks of consistent daily use. For optimal results, we recommend taking Vitalo for at least 60-90 days.</p>",
-            "page": ""
+            "group": "Product & Ingredients",
+            "question": "What makes Vitalo different from other supplement brands?",
+            "answer": "Every Vitalo product features full formula transparency (no proprietary blends), clinically studied doses, and independent third-party testing on every batch. We believe if a supplement company hides their formula, they have something to hide."
           }
         },
-        "q2": {
-          "type": "collapsible_row",
+        "faq_2": {
+          "type": "faq",
           "settings": {
-            "heading": "What's the recommended dosage?",
-            "icon": "none",
-            "row_content": "<p>Take two capsules daily with 6-8 oz of water. Each bottle contains a 30-day supply.</p>",
-            "page": ""
+            "group": "Product & Ingredients",
+            "question": "Are your products third-party tested?",
+            "answer": "Yes — every single batch is tested by an independent, accredited laboratory for purity, potency, and the absence of contaminants including heavy metals, pesticides, and microbial impurities."
           }
         },
-        "q3": {
-          "type": "collapsible_row",
+        "faq_3": {
+          "type": "faq",
           "settings": {
-            "heading": "Is this FDA approved?",
-            "icon": "none",
-            "row_content": "<p>Dietary supplements are not evaluated by the FDA. Our products are manufactured in FDA-registered facilities following GMP guidelines.</p>",
-            "page": ""
+            "group": "Product & Ingredients",
+            "question": "What are proprietary blends, and why don't you use them?",
+            "answer": "Proprietary blends allow companies to list ingredients without disclosing amounts. This means they can use tiny, ineffective amounts of expensive ingredients while hiding behind the 'proprietary' label. We never use them because we have nothing to hide."
           }
         },
-        "q4": {
-          "type": "collapsible_row",
+        "faq_4": {
+          "type": "faq",
           "settings": {
-            "heading": "Can I take this with other medications?",
-            "icon": "none",
-            "row_content": "<p>Consult your healthcare provider before starting any new supplement, especially if you take medications for blood sugar management.</p>",
-            "page": ""
+            "group": "Product & Ingredients",
+            "question": "Where are your products manufactured?",
+            "answer": "All Vitalo products are manufactured in GMP-certified, FDA-registered facilities in the United States."
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "group": "Returns & Guarantee",
+            "question": "What is your guarantee policy?",
+            "answer": "We offer a 90-day money-back guarantee on all products. If you're not satisfied for any reason, contact us for a full refund."
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "group": "Returns & Guarantee",
+            "question": "Do I need to return the product?",
+            "answer": "No. We don't require you to send the product back. We trust our customers, and we want the process to be as easy as possible."
+          }
+        },
+        "faq_7": {
+          "type": "faq",
+          "settings": {
+            "group": "Returns & Guarantee",
+            "question": "How do I request a refund?",
+            "answer": "Simply call us at (800) 555-0199 or email support@vitalo.io with your order number. We typically process refunds within 2-3 business days."
+          }
+        },
+        "faq_8": {
+          "type": "faq",
+          "settings": {
+            "group": "Health & Usage",
+            "question": "How long until I see results?",
+            "answer": "Results vary by individual and product. Some products, like our Deep Sleep Formula, may show results within the first week. Consistency is key — supplements work best when taken daily over time."
+          }
+        },
+        "faq_9": {
+          "type": "faq",
+          "settings": {
+            "group": "Health & Usage",
+            "question": "Can I take multiple Vitalo products together?",
+            "answer": "Yes — our products are formulated to complement each other. However, we always recommend consulting with your healthcare provider before starting any new supplement regimen, especially if you take medications."
+          }
+        },
+        "faq_10": {
+          "type": "faq",
+          "settings": {
+            "group": "Health & Usage",
+            "question": "Should I talk to my doctor before taking supplements?",
+            "answer": "We recommend consulting your healthcare provider if you are pregnant, nursing, take prescription medications, have a diagnosed health condition, or are scheduled for surgery."
           }
         }
       },
-      "block_order": ["q1", "q2", "q3", "q4"],
+      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5", "faq_6", "faq_7", "faq_8", "faq_9", "faq_10"]
+    },
+    "newsletter": {
+      "type": "vitalo-newsletter",
       "settings": {
-        "caption": "",
-        "heading": "Questions",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "section",
-        "color_scheme": "scheme-1",
-        "container_color_scheme": "scheme-1",
-        "open_first_collapsible_row": false,
-        "page_content_appearance": "light",
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "heading": "Join the Vitalo Family",
+        "body": "Get 10% off your first order, plus weekly health tips and exclusive deals.",
+        "placeholder": "Enter your email",
+        "button_label": "Subscribe"
       }
     },
     "cta": {
-      "type": "newsletter",
+      "type": "vitalo-cta",
+      "settings": {
+        "heading": "Ready to Try Supplements That Actually Work?",
+        "body": "Join thousands of adults 40+ who trust Vitalo for physician-formulated, transparent supplements backed by a 90-day guarantee.",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "footer_tagline": {
+      "type": "vitalo-footer-tagline",
+      "settings": {
+        "tagline": "Physician-formulated. Fully transparent. Independently tested. Every product backed by a 90-day guarantee.",
+        "disclaimer": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before beginning any supplement regimen."
+      },
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ready to start?",
-            "heading_size": "h1"
-          }
+        "b1": {
+          "type": "badge",
+          "settings": { "text": "GMP Certified" }
         },
-        "text": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Join thousands supporting their health with Vitalo.</p>"
-          }
+        "b2": {
+          "type": "badge",
+          "settings": { "text": "Made in USA" }
         },
-        "email": {
-          "type": "email_form",
-          "settings": {}
+        "b3": {
+          "type": "badge",
+          "settings": { "text": "3rd Party Tested" }
+        },
+        "b4": {
+          "type": "badge",
+          "settings": { "text": "90-Day Guarantee" }
         }
       },
-      "block_order": ["heading", "text", "email"],
-      "settings": {
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
+      "block_order": ["b1", "b2", "b3", "b4"]
     }
   },
   "order": [
-    "hero",
-    "trust",
+    "vitalo_hero",
+    "trust_badges",
+    "pain_point",
+    "comparison",
     "products",
-    "about",
-    "how",
-    "testimonial",
+    "testimonials",
+    "stats",
+    "story",
+    "standard",
+    "tricks",
     "faq",
-    "cta"
+    "newsletter",
+    "cta",
+    "footer_tagline"
   ]
 }

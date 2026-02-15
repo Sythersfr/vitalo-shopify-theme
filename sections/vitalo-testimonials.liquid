@@ -1,0 +1,124 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-testimonials">
+  <div class="vitalo-testimonials__inner">
+    <div class="vitalo-testimonials__header vitalo-animate">
+      <h2 class="vitalo-testimonials__title">{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="vitalo-testimonials__grid">
+      {% for block in section.blocks %}
+        <div class="vitalo-testimonial-card vitalo-animate vitalo-animate-delay-{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="vitalo-testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="vitalo-testimonial-card__text">"{{ block.settings.quote }}"</p>
+          <div class="vitalo-testimonial-card__author">
+            <div class="vitalo-testimonial-card__avatar">
+              {{ block.settings.name | slice: 0, 1 | upcase }}
+            </div>
+            <div>
+              <div class="vitalo-testimonial-card__name">{{ block.settings.name }}</div>
+              {% if block.settings.product_name != blank %}
+                <div class="vitalo-testimonial-card__product">{{ block.settings.product_name }}</div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Vitalo Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What Our Customers Say"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote",
+          "default": "This product changed my daily routine."
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Customer Name",
+          "default": "Sarah M."
+        },
+        {
+          "type": "text",
+          "id": "product_name",
+          "label": "Product Name",
+          "default": "Joint Support"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Testimonials",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I'll be honest — I almost didn't order. I've wasted hundreds on supplements that did nothing. But the 90-day guarantee made me think, why not? Three months later, my joints feel completely different. I can garden again without dreading the next morning.",
+            "name": "Margaret T.",
+            "product_name": "Joint Support"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote": "What sold me was seeing every ingredient and dose on the label. No 'proprietary blend' nonsense. I've been taking Memory & Focus for four months and my wife says I'm noticeably sharper.",
+            "name": "Robert K.",
+            "product_name": "Memory & Focus"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I was skeptical about another sleep supplement. But within the first week, I noticed I was falling asleep faster and waking up feeling more refreshed. The magnesium glycinate really makes a difference.",
+            "name": "Linda S.",
+            "product_name": "Deep Sleep Formula"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote": "My doctor was impressed with my latest checkup results. I can't say it's all Vitalo, but I feel more confident about my heart health. The CoQ10 dose is what convinced me — most brands use a fraction of this amount.",
+            "name": "James W.",
+            "product_name": "Heart & Circulation"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I was spending over $80 a month on a fancy joint supplement from TV. Switched to Vitalo at half the price and honestly, the results are better. Wish I'd found them sooner.",
+            "name": "Dorothy H.",
+            "product_name": "Joint Support"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "quote": "After reading about how supplement companies cut corners, I was suspicious of every brand. Vitalo's transparency won me over. I can actually verify what I'm putting in my body.",
+            "name": "Richard P.",
+            "product_name": "Blood Sugar Support"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
