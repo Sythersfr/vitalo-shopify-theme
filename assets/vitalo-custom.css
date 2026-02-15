@@ -97,12 +97,23 @@ a {
    HEADER
    ============================================ */
 
-.header {
+.header-wrapper {
   background: var(--vitalo-white);
   border-bottom: 1px solid var(--vitalo-border);
+}
+
+.header {
+  background: var(--vitalo-white);
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+/* Make header span full width */
+header.header.page-width {
+  max-width: 100%;
+  padding-left: var(--space-xl);
+  padding-right: var(--space-xl);
 }
 
 .header__heading-link {
@@ -199,7 +210,7 @@ button[type="submit"] {
    ============================================ */
 
 .vitalo-hero {
-  min-height: 90vh;
+  min-height: 65vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,7 +232,7 @@ button[type="submit"] {
   position: relative;
   z-index: 2;
   max-width: 800px;
-  padding: var(--space-2xl);
+  padding: var(--space-xl) var(--space-2xl);
 }
 
 .vitalo-hero__badge {
