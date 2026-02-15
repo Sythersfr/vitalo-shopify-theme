@@ -1,13 +1,22 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "vitalo_hero": {
       "type": "vitalo-hero",
       "settings": {
         "badge_text": "Physician-Formulated",
-        "heading": "<p>The Supplement Company That Has <em>Nothing to Hide.<\/em><\/p>",
+        "heading": "<p>The Supplement Company That Has <em>Nothing to Hide.</em></p>",
         "subheading": "Premium, transparent supplements with full-dose transparency, third-party testing, and a 90-day guarantee. Because we know our products actually work.",
         "button_label": "Shop Our Products",
-        "button_link": "shopify:\/\/collections\/all"
+        "button_link": "shopify://collections/all"
       }
     },
     "trust_badges": {
@@ -38,7 +47,12 @@
           }
         }
       },
-      "block_order": ["badge_lab", "badge_guarantee", "badge_transparency"]
+      "block_order": [
+        "badge_lab",
+        "badge_guarantee",
+        "badge_transparency"
+      ],
+      "settings": {}
     },
     "pain_point": {
       "type": "vitalo-pain-point",
@@ -49,13 +63,6 @@
     },
     "comparison": {
       "type": "vitalo-comparison",
-      "settings": {
-        "heading": "The Supplement Industry Has a Trust Problem. We're Fixing It.",
-        "subheading": "See how Vitalo compares to typical supplement brands.",
-        "col_label": "Feature",
-        "col_vitalo": "Vitalo",
-        "col_others": "Other Brands"
-      },
       "blocks": {
         "row_formula": {
           "type": "row",
@@ -98,7 +105,20 @@
           }
         }
       },
-      "block_order": ["row_formula", "row_testing", "row_guarantee", "row_transparency", "row_manufacturing"]
+      "block_order": [
+        "row_formula",
+        "row_testing",
+        "row_guarantee",
+        "row_transparency",
+        "row_manufacturing"
+      ],
+      "settings": {
+        "heading": "The Supplement Industry Has a Trust Problem. We're Fixing It.",
+        "subheading": "See how Vitalo compares to typical supplement brands.",
+        "col_label": "Feature",
+        "col_vitalo": "Vitalo",
+        "col_others": "Other Brands"
+      }
     },
     "products": {
       "type": "vitalo-products",
@@ -108,14 +128,11 @@
         "collection": "all",
         "products_to_show": 6,
         "button_label": "View All Products",
-        "button_link": "shopify:\/\/collections\/all"
+        "button_link": "shopify://collections/all"
       }
     },
     "testimonials": {
       "type": "vitalo-testimonials",
-      "settings": {
-        "heading": "What Our Customers Say"
-      },
       "blocks": {
         "test_1": {
           "type": "testimonial",
@@ -166,7 +183,17 @@
           }
         }
       },
-      "block_order": ["test_1", "test_2", "test_3", "test_4", "test_5", "test_6"]
+      "block_order": [
+        "test_1",
+        "test_2",
+        "test_3",
+        "test_4",
+        "test_5",
+        "test_6"
+      ],
+      "settings": {
+        "heading": "What Our Customers Say"
+      }
     },
     "stats": {
       "type": "vitalo-stats",
@@ -200,16 +227,16 @@
           }
         }
       },
-      "block_order": ["stat_1", "stat_2", "stat_3", "stat_4"]
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3",
+        "stat_4"
+      ],
+      "settings": {}
     },
     "story": {
       "type": "vitalo-story",
-      "settings": {
-        "label": "Our Story",
-        "heading": "We Started Vitalo Because We Were Tired of Being Lied To",
-        "button_label": "Shop Now",
-        "button_link": "shopify:\/\/collections\/all"
-      },
       "blocks": {
         "p1": {
           "type": "paragraph",
@@ -236,14 +263,21 @@
           }
         }
       },
-      "block_order": ["p1", "p2", "p3", "p4"]
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "label": "Our Story",
+        "heading": "We Started Vitalo Because We Were Tired of Being Lied To",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections/all"
+      }
     },
     "standard": {
       "type": "vitalo-standard",
-      "settings": {
-        "heading": "The Vitalo Standard",
-        "description": "Every batch of every Vitalo product is sent to an independent, third-party lab for rigorous testing."
-      },
       "blocks": {
         "std_1": {
           "type": "card",
@@ -278,13 +312,19 @@
           }
         }
       },
-      "block_order": ["std_1", "std_2", "std_3", "std_4"]
+      "block_order": [
+        "std_1",
+        "std_2",
+        "std_3",
+        "std_4"
+      ],
+      "settings": {
+        "heading": "The Vitalo Standard",
+        "description": "Every batch of every Vitalo product is sent to an independent, third-party lab for rigorous testing."
+      }
     },
     "tricks": {
       "type": "vitalo-tricks",
-      "settings": {
-        "heading": "Three Tricks the Supplement Industry Doesn't Want You to Know About"
-      },
       "blocks": {
         "trick_1": {
           "type": "trick",
@@ -308,13 +348,17 @@
           }
         }
       },
-      "block_order": ["trick_1", "trick_2", "trick_3"]
+      "block_order": [
+        "trick_1",
+        "trick_2",
+        "trick_3"
+      ],
+      "settings": {
+        "heading": "Three Tricks the Supplement Industry Doesn't Want You to Know About"
+      }
     },
     "faq": {
       "type": "vitalo-faq",
-      "settings": {
-        "heading": "Frequently Asked Questions"
-      },
       "blocks": {
         "faq_1": {
           "type": "faq",
@@ -397,7 +441,21 @@
           }
         }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5", "faq_6", "faq_7", "faq_8", "faq_9", "faq_10"]
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6",
+        "faq_7",
+        "faq_8",
+        "faq_9",
+        "faq_10"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions"
+      }
     },
     "newsletter": {
       "type": "vitalo-newsletter",
@@ -414,34 +472,47 @@
         "heading": "Ready to Try Supplements That Actually Work?",
         "body": "Join thousands of adults 40+ who trust Vitalo for physician-formulated, transparent supplements backed by a 90-day guarantee.",
         "button_label": "Shop Now",
-        "button_link": "shopify:\/\/collections\/all"
+        "button_link": "shopify://collections/all"
       }
     },
     "footer_tagline": {
       "type": "vitalo-footer-tagline",
-      "settings": {
-        "tagline": "Physician-formulated. Fully transparent. Independently tested. Every product backed by a 90-day guarantee.",
-        "disclaimer": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before beginning any supplement regimen."
-      },
       "blocks": {
         "b1": {
           "type": "badge",
-          "settings": { "text": "GMP Certified" }
+          "settings": {
+            "text": "GMP Certified"
+          }
         },
         "b2": {
           "type": "badge",
-          "settings": { "text": "Made in USA" }
+          "settings": {
+            "text": "Made in USA"
+          }
         },
         "b3": {
           "type": "badge",
-          "settings": { "text": "3rd Party Tested" }
+          "settings": {
+            "text": "3rd Party Tested"
+          }
         },
         "b4": {
           "type": "badge",
-          "settings": { "text": "90-Day Guarantee" }
+          "settings": {
+            "text": "90-Day Guarantee"
+          }
         }
       },
-      "block_order": ["b1", "b2", "b3", "b4"]
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "tagline": "Physician-formulated. Fully transparent. Independently tested. Every product backed by a 90-day guarantee.",
+        "disclaimer": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before beginning any supplement regimen."
+      }
     }
   },
   "order": [
