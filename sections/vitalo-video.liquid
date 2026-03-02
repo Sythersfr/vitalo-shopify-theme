@@ -1,0 +1,205 @@
+<section class="vitalo-video" style="padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;">
+  <div class="vitalo-video__container">
+    {% if section.settings.heading != blank %}
+      <h2 class="vitalo-video__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="vitalo-video__wrapper">
+      <video
+        class="vitalo-video__player"
+        {% if section.settings.autoplay %}autoplay{% endif %}
+        {% if section.settings.muted %}muted{% endif %}
+        {% if section.settings.loop %}loop{% endif %}
+        {% if section.settings.controls %}controls{% endif %}
+        playsinline
+        preload="metadata"
+        poster="{{ section.settings.poster | image_url: width: 1920 }}"
+      >
+        <source src="{{ 'vitalo-promo.mp4' | asset_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      {% unless section.settings.autoplay %}
+        <button class="vitalo-video__play-btn" aria-label="Play video">
+          <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+            <circle cx="36" cy="36" r="36" fill="rgba(26, 46, 31, 0.75)"/>
+            <polygon points="28,20 54,36 28,52" fill="white"/>
+          </svg>
+        </button>
+      {% endunless %}
+    </div>
+
+    {% if section.settings.subtext != blank %}
+      <p class="vitalo-video__subtext">{{ section.settings.subtext }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .vitalo-video {
+    background: var(--vitalo-cream, #FAF8F5);
+  }
+
+  .vitalo-video__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .vitalo-video__heading {
+    font-family: var(--font-heading, 'Playfair Display', Georgia, serif);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 700;
+    color: var(--vitalo-dark, #2D3A2E);
+    margin-bottom: 32px;
+    line-height: 1.2;
+  }
+
+  .vitalo-video__wrapper {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+    background: #000;
+  }
+
+  .vitalo-video__player {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .vitalo-video__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 2;
+    opacity: 1;
+  }
+
+  .vitalo-video__play-btn:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  .vitalo-video__play-btn.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .vitalo-video__subtext {
+    font-family: var(--font-body, 'Source Sans 3', sans-serif);
+    font-size: 18px;
+    color: var(--vitalo-text-light, #6B7B6C);
+    margin-top: 24px;
+    line-height: 1.6;
+  }
+</style>
+
+{% unless section.settings.autoplay %}
+<script>
+  (function() {
+    var section = document.querySelector('.vitalo-video');
+    if (!section) return;
+    var video = section.querySelector('.vitalo-video__player');
+    var btn = section.querySelector('.vitalo-video__play-btn');
+    if (!video || !btn) return;
+
+    btn.addEventListener('click', function() {
+      video.play();
+      btn.classList.add('is-hidden');
+    });
+
+    video.addEventListener('pause', function() {
+      btn.classList.remove('is-hidden');
+    });
+
+    video.addEventListener('play', function() {
+      btn.classList.add('is-hidden');
+    });
+  })();
+</script>
+{% endunless %}
+
+{% schema %}
+{
+  "name": "Vitalo Video",
+  "tag": "section",
+  "class": "vitalo-video-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "See What Makes Us Different"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Text below video",
+      "default": "Watch how Vitalo is raising the bar for supplement quality."
+    },
+    {
+      "type": "image_picker",
+      "id": "poster",
+      "label": "Video poster image"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay (muted)",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "muted",
+      "label": "Muted",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "controls",
+      "label": "Show controls",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Video"
+    }
+  ]
+}
+{% endschema %}

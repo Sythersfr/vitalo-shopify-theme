@@ -19,6 +19,19 @@
         "button_link": "shopify://collections/all"
       }
     },
+    "vitalo_video": {
+      "type": "vitalo-video",
+      "settings": {
+        "heading": "See What Makes Us Different",
+        "subtext": "Watch how Vitalo is raising the bar for supplement quality.",
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "controls": true,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "trust_badges": {
       "type": "vitalo-trust-badges",
       "blocks": {
@@ -517,6 +530,7 @@
   },
   "order": [
     "vitalo_hero",
+    "vitalo_video",
     "trust_badges",
     "pain_point",
     "comparison",
