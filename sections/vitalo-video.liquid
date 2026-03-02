@@ -7,7 +7,6 @@
     <div class="vitalo-video__wrapper">
       <video
         class="vitalo-video__player"
-        {% if section.settings.muted %}muted{% endif %}
         {% if section.settings.loop %}loop{% endif %}
         playsinline
         preload="metadata"
@@ -30,9 +29,6 @@
       </button>
     </div>
 
-    {% if section.settings.subtext != blank %}
-      <p class="vitalo-video__subtext">{{ section.settings.subtext }}</p>
-    {% endif %}
   </div>
 </section>
 
@@ -116,14 +112,6 @@
     opacity: 1;
   }
 
-  .vitalo-video__subtext {
-    font-family: var(--font-body, 'Source Sans 3', sans-serif);
-    font-size: 18px;
-    color: var(--vitalo-text-light, #6B7B6C);
-    margin-top: 24px;
-    line-height: 1.6;
-  }
-
   @media (max-width: 749px) {
     .vitalo-video__icon--play,
     .vitalo-video__icon--pause {
@@ -184,21 +172,9 @@
       "default": "See What Makes Us Different"
     },
     {
-      "type": "text",
-      "id": "subtext",
-      "label": "Text below video",
-      "default": "Watch how Vitalo is raising the bar for supplement quality."
-    },
-    {
       "type": "image_picker",
       "id": "poster",
       "label": "Video poster image"
-    },
-    {
-      "type": "checkbox",
-      "id": "muted",
-      "label": "Muted",
-      "default": true
     },
     {
       "type": "checkbox",

@@ -23,8 +23,6 @@
       "type": "vitalo-video",
       "settings": {
         "heading": "See What Makes Us Different",
-        "subtext": "Watch how Vitalo is raising the bar for supplement quality.",
-        "muted": true,
         "loop": true,
         "padding_top": 48,
         "padding_bottom": 48
