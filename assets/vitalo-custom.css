@@ -55,8 +55,9 @@ body {
   font-family: var(--font-body);
   background: var(--vitalo-white);
   color: var(--vitalo-text);
-  line-height: 1.6;
+  line-height: 1.75;
   font-weight: 400;
+  font-size: 18px;
 }
 
 ::selection {
@@ -73,19 +74,19 @@ h1, h2, h3, h4, h5, h6,
   font-family: var(--font-heading);
   font-weight: 700;
   letter-spacing: -0.01em;
-  line-height: 1.15;
+  line-height: 1.2;
   color: var(--vitalo-dark);
 }
 
-.h0 { font-size: clamp(36px, 5.5vw, 64px); }
-.h1 { font-size: clamp(30px, 4vw, 48px); }
-.h2 { font-size: clamp(24px, 3vw, 36px); }
-.h3 { font-size: clamp(20px, 2.5vw, 28px); }
+.h0 { font-size: clamp(38px, 5.5vw, 66px); }
+.h1 { font-size: clamp(32px, 4vw, 52px); }
+.h2 { font-size: clamp(26px, 3vw, 40px); }
+.h3 { font-size: clamp(22px, 2.5vw, 30px); }
 
 p {
   color: var(--vitalo-text-light);
-  line-height: 1.7;
-  font-size: 16px;
+  line-height: 1.8;
+  font-size: 18px;
 }
 
 a {
@@ -130,7 +131,7 @@ header.header.page-width {
 
 .header__menu-item {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--vitalo-text);
   transition: color var(--transition-fast);
@@ -159,10 +160,10 @@ header.header.page-width {
 }
 
 .announcement-bar {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  padding: 2px 0;
+  padding: 4px 0;
   font-family: var(--font-body);
 }
 
@@ -170,7 +171,7 @@ header.header.page-width {
 .announcement-bar__link,
 .announcement-bar__message {
   color: white !important;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -186,10 +187,10 @@ header.header.page-width {
 .shopify-payment-button__button,
 button[type="submit"] {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   letter-spacing: 0.02em;
-  padding: 16px 36px;
+  padding: 18px 40px;
   border-radius: 6px;
   transition: all var(--transition-base);
   cursor: pointer;
@@ -265,9 +266,9 @@ button[type="submit"] {
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 100px;
-  padding: 8px 20px;
+  padding: 10px 22px;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: white;
   letter-spacing: 0.05em;
@@ -301,10 +302,10 @@ button[type="submit"] {
 
 .vitalo-hero__subtitle {
   font-family: var(--font-body);
-  font-size: clamp(15px, 1.8vw, 18px);
+  font-size: clamp(17px, 2vw, 20px);
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.7;
-  max-width: 560px;
+  line-height: 1.75;
+  max-width: 600px;
   margin: 0 auto var(--space-xl);
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
@@ -315,10 +316,10 @@ button[type="submit"] {
   gap: 10px;
   background: var(--vitalo-gold);
   color: var(--vitalo-green-deep);
-  padding: 18px 40px;
+  padding: 20px 44px;
   border-radius: 6px;
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -382,16 +383,16 @@ button[type="submit"] {
 
 .vitalo-trust-badge__title {
   font-family: var(--font-heading);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--vitalo-dark);
   margin-bottom: var(--space-sm);
 }
 
 .vitalo-trust-badge__desc {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--vitalo-text-light);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 @media (max-width: 749px) {
@@ -427,10 +428,10 @@ button[type="submit"] {
 }
 
 .vitalo-pain__text {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--vitalo-text-light);
-  line-height: 1.7;
-  max-width: 640px;
+  line-height: 1.8;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -485,7 +486,7 @@ button[type="submit"] {
   color: white;
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -506,13 +507,13 @@ button[type="submit"] {
 .vitalo-comparison__label {
   font-weight: 600;
   color: var(--vitalo-dark);
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .vitalo-comparison__good {
   color: var(--vitalo-green);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -535,7 +536,7 @@ button[type="submit"] {
 .vitalo-comparison__bad {
   color: var(--vitalo-red);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -664,11 +665,11 @@ button[type="submit"] {
   background: var(--vitalo-gold);
   color: var(--vitalo-green-deep);
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 4px 12px;
+  padding: 5px 14px;
   border-radius: 4px;
 }
 
@@ -678,7 +679,7 @@ button[type="submit"] {
 
 .vitalo-product-card__category {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -688,7 +689,7 @@ button[type="submit"] {
 
 .vitalo-product-card__name {
   font-family: var(--font-heading);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--vitalo-dark);
   margin-bottom: var(--space-sm);
@@ -696,9 +697,9 @@ button[type="submit"] {
 }
 
 .vitalo-product-card__desc {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--vitalo-text-light);
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: var(--space-md);
 }
 
@@ -710,7 +711,7 @@ button[type="submit"] {
 
 .vitalo-product-card__price {
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--vitalo-dark);
 }
@@ -720,7 +721,7 @@ button[type="submit"] {
   align-items: center;
   gap: 6px;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--vitalo-green);
   transition: gap var(--transition-fast);
@@ -787,9 +788,9 @@ button[type="submit"] {
 }
 
 .vitalo-testimonial-card__text {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--vitalo-text);
-  line-height: 1.7;
+  line-height: 1.8;
   margin-bottom: var(--space-lg);
   font-style: italic;
 }
@@ -816,12 +817,12 @@ button[type="submit"] {
 
 .vitalo-testimonial-card__name {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--vitalo-dark);
 }
 
 .vitalo-testimonial-card__product {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--vitalo-green);
   font-weight: 500;
 }
@@ -857,7 +858,7 @@ button[type="submit"] {
 
 .vitalo-stat__label {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
 }
@@ -891,7 +892,7 @@ button[type="submit"] {
 
 .vitalo-story__label {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -908,9 +909,9 @@ button[type="submit"] {
 }
 
 .vitalo-story__body p {
-  font-size: 17px;
+  font-size: 19px;
   color: var(--vitalo-text);
-  line-height: 1.8;
+  line-height: 1.85;
   margin-bottom: var(--space-lg);
 }
 
@@ -986,16 +987,16 @@ button[type="submit"] {
 
 .vitalo-standard-card__title {
   font-family: var(--font-heading);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--vitalo-dark);
   margin-bottom: var(--space-sm);
 }
 
 .vitalo-standard-card__text {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--vitalo-text-light);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 /* ============================================
@@ -1050,16 +1051,16 @@ button[type="submit"] {
 
 .vitalo-trick__title {
   font-family: var(--font-heading);
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--vitalo-dark);
   margin-bottom: var(--space-md);
 }
 
 .vitalo-trick__desc {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--vitalo-text-light);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 /* ============================================
@@ -1114,7 +1115,7 @@ button[type="submit"] {
   border: none;
   padding: var(--space-lg) 0;
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--vitalo-dark);
   text-align: left;
@@ -1154,9 +1155,9 @@ button[type="submit"] {
 }
 
 .vitalo-faq-item__answer p {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--vitalo-text-light);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 /* ============================================
@@ -1185,9 +1186,10 @@ button[type="submit"] {
 }
 
 .vitalo-newsletter__text {
-  font-size: 17px;
+  font-size: 19px;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: var(--space-xl);
+  line-height: 1.7;
 }
 
 .vitalo-newsletter__form {
@@ -1199,13 +1201,13 @@ button[type="submit"] {
 
 .vitalo-newsletter__input {
   flex: 1;
-  padding: 16px 20px;
+  padding: 18px 22px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.1);
   color: white;
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 17px;
   backdrop-filter: blur(10px);
   outline: none;
   transition: border-color var(--transition-fast);
@@ -1213,6 +1215,7 @@ button[type="submit"] {
 
 .vitalo-newsletter__input::placeholder {
   color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
 }
 
 .vitalo-newsletter__input:focus {
@@ -1220,13 +1223,13 @@ button[type="submit"] {
 }
 
 .vitalo-newsletter__btn {
-  padding: 16px 28px;
+  padding: 18px 32px;
   background: var(--vitalo-gold);
   color: var(--vitalo-green-deep);
   border: none;
   border-radius: 6px;
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   cursor: pointer;
   transition: all var(--transition-base);
@@ -1269,9 +1272,10 @@ button[type="submit"] {
 }
 
 .vitalo-cta__text {
-  font-size: 17px;
+  font-size: 19px;
   color: var(--vitalo-text-light);
   margin-bottom: var(--space-xl);
+  line-height: 1.7;
 }
 
 /* ============================================
@@ -1287,7 +1291,7 @@ button[type="submit"] {
 
 .vitalo-footer-tagline__text {
   font-family: var(--font-heading);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--vitalo-text-light);
   font-style: italic;
@@ -1306,7 +1310,7 @@ button[type="submit"] {
 
 .vitalo-footer-tagline__badge-item {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--vitalo-green);
   display: flex;
@@ -1339,7 +1343,7 @@ footer.footer {
 .footer__title,
 .footer .footer-block__heading {
   font-family: var(--font-body) !important;
-  font-size: 13px !important;
+  font-size: 15px !important;
   font-weight: 700 !important;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1354,7 +1358,7 @@ footer.footer {
 .footer__list-item a,
 .footer a {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.75) !important;
   transition: color var(--transition-fast);
 }
@@ -1366,7 +1370,7 @@ footer.footer {
 
 .footer__copyright,
 .footer .copyright {
-  font-size: 13px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.4) !important;
   margin-top: var(--space-3xl);
   padding-top: var(--space-xl);
@@ -1417,7 +1421,7 @@ footer.footer {
 
 .product__title {
   font-family: var(--font-heading);
-  font-size: clamp(28px, 4vw, 38px);
+  font-size: clamp(30px, 4vw, 42px);
   font-weight: 700;
   color: var(--vitalo-dark);
   letter-spacing: -0.01em;
@@ -1425,17 +1429,17 @@ footer.footer {
 
 .product__text {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   color: var(--vitalo-text-light);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .product-form__submit {
   background: var(--vitalo-green);
   color: white;
   width: 100%;
-  padding: 18px;
-  font-size: 16px;
+  padding: 20px;
+  font-size: 18px;
   font-weight: 700;
   border-radius: 6px;
   border: none;
@@ -1461,7 +1465,7 @@ footer.footer {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--vitalo-text);
 }
@@ -1497,7 +1501,7 @@ footer.footer {
 
 .card__heading {
   font-family: var(--font-heading);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--vitalo-dark);
   margin-top: var(--space-md);
@@ -1509,7 +1513,7 @@ footer.footer {
 
 .price {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--vitalo-text-light);
   margin-top: var(--space-xs);
@@ -1517,11 +1521,11 @@ footer.footer {
 
 .badge {
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 6px 12px;
+  padding: 7px 14px;
   border-radius: 4px;
 }
 
@@ -1544,8 +1548,8 @@ footer.footer {
 
 .rich-text__text {
   font-family: var(--font-body);
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 20px;
+  line-height: 1.8;
   color: var(--vitalo-text-light);
 }
 
@@ -1593,7 +1597,7 @@ footer.footer {
 /* FAQ/Collapsible overrides */
 .accordion__title {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--vitalo-dark);
 }
@@ -1616,9 +1620,9 @@ footer.footer {
 .select__select,
 textarea {
   border: 1px solid var(--vitalo-border);
-  padding: 14px 16px;
+  padding: 16px 18px;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 6px;
   background: white;
   transition: border-color var(--transition-fast);
@@ -1634,7 +1638,7 @@ textarea:focus {
 
 .field__label {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--vitalo-text-light);
 }
@@ -1807,7 +1811,7 @@ cart-notification .button--secondary,
 
 /* FDA Disclaimer */
 .vitalo-disclaimer {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--vitalo-text-light);
   text-align: center;
   padding: var(--space-lg);
