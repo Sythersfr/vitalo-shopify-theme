@@ -479,7 +479,7 @@ button[type="submit"] {
 
 .vitalo-comparison__header {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1.2fr 1.4fr 1fr;
   gap: 0;
   padding: var(--space-lg) var(--space-xl);
   background: var(--vitalo-green-deep);
@@ -493,7 +493,7 @@ button[type="submit"] {
 
 .vitalo-comparison__row {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1.2fr 1.4fr 1fr;
   gap: 0;
   padding: var(--space-lg) var(--space-xl);
   border-bottom: 1px solid var(--vitalo-border);
