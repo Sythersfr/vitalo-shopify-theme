@@ -24,10 +24,8 @@
       "settings": {
         "heading": "See What Makes Us Different",
         "subtext": "Watch how Vitalo is raising the bar for supplement quality.",
-        "autoplay": true,
         "muted": true,
         "loop": true,
-        "controls": true,
         "padding_top": 48,
         "padding_bottom": 48
       }

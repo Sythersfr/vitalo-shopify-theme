@@ -7,10 +7,8 @@
     <div class="vitalo-video__wrapper">
       <video
         class="vitalo-video__player"
-        {% if section.settings.autoplay %}autoplay{% endif %}
         {% if section.settings.muted %}muted{% endif %}
         {% if section.settings.loop %}loop{% endif %}
-        {% if section.settings.controls %}controls{% endif %}
         playsinline
         preload="metadata"
         poster="{{ section.settings.poster | image_url: width: 1920 }}"
@@ -19,14 +17,17 @@
         Your browser does not support the video tag.
       </video>
 
-      {% unless section.settings.autoplay %}
-        <button class="vitalo-video__play-btn" aria-label="Play video">
-          <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-            <circle cx="36" cy="36" r="36" fill="rgba(26, 46, 31, 0.75)"/>
-            <polygon points="28,20 54,36 28,52" fill="white"/>
-          </svg>
-        </button>
-      {% endunless %}
+      <button class="vitalo-video__toggle" aria-label="Play video">
+        <svg class="vitalo-video__icon vitalo-video__icon--play" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="50" fill="rgba(26, 46, 31, 0.7)"/>
+          <polygon points="38,25 78,50 38,75" fill="white"/>
+        </svg>
+        <svg class="vitalo-video__icon vitalo-video__icon--pause" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="50" fill="rgba(26, 46, 31, 0.7)"/>
+          <rect x="33" y="28" width="12" height="44" rx="3" fill="white"/>
+          <rect x="55" y="28" width="12" height="44" rx="3" fill="white"/>
+        </svg>
+      </button>
     </div>
 
     {% if section.settings.subtext != blank %}
@@ -62,6 +63,7 @@
     overflow: hidden;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
     background: #000;
+    cursor: pointer;
   }
 
   .vitalo-video__player {
@@ -72,7 +74,7 @@
     object-fit: cover;
   }
 
-  .vitalo-video__play-btn {
+  .vitalo-video__toggle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -80,18 +82,38 @@
     background: none;
     border: none;
     cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
     z-index: 2;
-    opacity: 1;
+    padding: 0;
+    line-height: 0;
+    transition: opacity 0.35s ease, transform 0.35s ease;
   }
 
-  .vitalo-video__play-btn:hover {
-    transform: translate(-50%, -50%) scale(1.1);
+  .vitalo-video__toggle:hover {
+    transform: translate(-50%, -50%) scale(1.08);
   }
 
-  .vitalo-video__play-btn.is-hidden {
+  .vitalo-video__icon {
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+  }
+
+  .vitalo-video__icon--pause {
+    display: none;
+  }
+
+  .vitalo-video__wrapper.is-playing .vitalo-video__icon--play {
+    display: none;
+  }
+
+  .vitalo-video__wrapper.is-playing .vitalo-video__icon--pause {
+    display: block;
+  }
+
+  .vitalo-video__wrapper.is-playing .vitalo-video__toggle {
     opacity: 0;
-    pointer-events: none;
+  }
+
+  .vitalo-video__wrapper.is-playing:hover .vitalo-video__toggle {
+    opacity: 1;
   }
 
   .vitalo-video__subtext {
@@ -101,32 +123,53 @@
     margin-top: 24px;
     line-height: 1.6;
   }
+
+  @media (max-width: 749px) {
+    .vitalo-video__icon--play,
+    .vitalo-video__icon--pause {
+      width: 72px;
+      height: 72px;
+    }
+  }
 </style>
 
-{% unless section.settings.autoplay %}
 <script>
   (function() {
-    var section = document.querySelector('.vitalo-video');
-    if (!section) return;
-    var video = section.querySelector('.vitalo-video__player');
-    var btn = section.querySelector('.vitalo-video__play-btn');
+    var wrapper = document.querySelector('.vitalo-video__wrapper');
+    if (!wrapper) return;
+    var video = wrapper.querySelector('.vitalo-video__player');
+    var btn = wrapper.querySelector('.vitalo-video__toggle');
     if (!video || !btn) return;
 
-    btn.addEventListener('click', function() {
-      video.play();
-      btn.classList.add('is-hidden');
+    function togglePlay() {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      togglePlay();
     });
 
-    video.addEventListener('pause', function() {
-      btn.classList.remove('is-hidden');
+    wrapper.addEventListener('click', function(e) {
+      if (e.target === btn || btn.contains(e.target)) return;
+      togglePlay();
     });
 
     video.addEventListener('play', function() {
-      btn.classList.add('is-hidden');
+      wrapper.classList.add('is-playing');
+      btn.setAttribute('aria-label', 'Pause video');
+    });
+
+    video.addEventListener('pause', function() {
+      wrapper.classList.remove('is-playing');
+      btn.setAttribute('aria-label', 'Play video');
     });
   })();
 </script>
-{% endunless %}
 
 {% schema %}
 {
@@ -153,12 +196,6 @@
     },
     {
       "type": "checkbox",
-      "id": "autoplay",
-      "label": "Autoplay (muted)",
-      "default": true
-    },
-    {
-      "type": "checkbox",
       "id": "muted",
       "label": "Muted",
       "default": true
@@ -167,12 +204,6 @@
       "type": "checkbox",
       "id": "loop",
       "label": "Loop",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "controls",
-      "label": "Show controls",
       "default": true
     },
     {
