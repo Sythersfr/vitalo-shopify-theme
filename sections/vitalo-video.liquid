@@ -9,8 +9,7 @@
         class="vitalo-video__player"
         {% if section.settings.loop %}loop{% endif %}
         playsinline
-        preload="metadata"
-        poster="{{ section.settings.poster | image_url: width: 1920 }}"
+        preload="auto"
       >
         <source src="{{ 'vitalo-promo.mp4' | asset_url }}" type="video/mp4">
         Your browser does not support the video tag.
@@ -58,7 +57,7 @@
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
-    background: #000;
+    background: var(--vitalo-green-deep, #1A2E1F);
     cursor: pointer;
   }
 
@@ -129,6 +128,8 @@
     var btn = wrapper.querySelector('.vitalo-video__toggle');
     if (!video || !btn) return;
 
+    video.currentTime = 0.001;
+
     function togglePlay() {
       if (video.paused) {
         video.play();
@@ -170,11 +171,6 @@
       "id": "heading",
       "label": "Heading",
       "default": "See What Makes Us Different"
-    },
-    {
-      "type": "image_picker",
-      "id": "poster",
-      "label": "Video poster image"
     },
     {
       "type": "checkbox",
