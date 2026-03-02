@@ -1668,9 +1668,246 @@ cart-notification .cart-notification-product,
 
 .cart-item__name {
   font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   color: var(--vitalo-dark);
+}
+
+/* ============================================
+   CART PAGE — FULL STYLING
+   ============================================ */
+
+.cart .title {
+  font-family: var(--font-heading) !important;
+  font-size: clamp(30px, 4vw, 42px) !important;
+  font-weight: 700 !important;
+  color: var(--vitalo-dark) !important;
+  margin-bottom: var(--space-lg);
+}
+
+.cart-items thead th,
+.cart-items th {
+  font-family: var(--font-body) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--vitalo-text-light) !important;
+  padding-bottom: var(--space-md) !important;
+  border-bottom: 2px solid var(--vitalo-border) !important;
+}
+
+.cart-item {
+  padding: var(--space-xl) 0 !important;
+  border-bottom: 1px solid var(--vitalo-border) !important;
+}
+
+.cart-item__image-container {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  border: 1px solid var(--vitalo-border) !important;
+}
+
+.cart-item__image {
+  border-radius: 10px !important;
+}
+
+.cart-item__details {
+  gap: var(--space-sm);
+}
+
+.cart-item__name a {
+  font-family: var(--font-body) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: var(--vitalo-dark) !important;
+  text-decoration: none !important;
+  transition: color var(--transition-fast);
+}
+
+.cart-item__name a:hover {
+  color: var(--vitalo-green) !important;
+}
+
+.cart-item .price,
+.cart-item__price,
+.cart-item .cart-item__price {
+  font-family: var(--font-body) !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: var(--vitalo-dark) !important;
+}
+
+.cart-item__discounted-prices .price,
+.cart-item .price--end {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+.cart-item__old-price {
+  font-size: 16px !important;
+}
+
+.cart-item .product-option,
+.cart-item__variant-title {
+  font-size: 15px !important;
+  color: var(--vitalo-text-light) !important;
+  font-weight: 500 !important;
+}
+
+.cart-item .price .money,
+.cart-item__totals .price {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: var(--vitalo-dark) !important;
+}
+
+.cart__footer {
+  padding-top: var(--space-xl) !important;
+  margin-top: var(--space-lg) !important;
+}
+
+.totals,
+.cart__footer .totals {
+  padding: var(--space-lg) 0 !important;
+}
+
+.totals__subtotal,
+.totals__subtotal-value {
+  font-family: var(--font-body) !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: var(--vitalo-dark) !important;
+}
+
+.cart__footer .tax-note,
+.tax-note {
+  font-size: 15px !important;
+  color: var(--vitalo-text-light) !important;
+  margin-top: var(--space-sm) !important;
+}
+
+.cart__ctas,
+.cart__blocks {
+  margin-top: var(--space-lg) !important;
+}
+
+.cart__checkout-button,
+.cart__ctas button[name="checkout"],
+.cart__ctas .cart__checkout-button,
+button[name="checkout"],
+#checkout,
+.shopify-payment-button .shopify-payment-button__button--unbranded,
+.cart .button--primary {
+  display: block !important;
+  width: 100% !important;
+  background: var(--vitalo-green) !important;
+  color: white !important;
+  font-family: var(--font-body) !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  padding: 22px 40px !important;
+  border: none !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  box-shadow: 0 4px 15px rgba(74, 124, 89, 0.3) !important;
+}
+
+.cart__checkout-button:hover,
+.cart__ctas button[name="checkout"]:hover,
+button[name="checkout"]:hover,
+#checkout:hover,
+.cart .button--primary:hover {
+  background: var(--vitalo-green-dark) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(74, 124, 89, 0.45) !important;
+}
+
+.cart__checkout-button:active,
+.cart__ctas button[name="checkout"]:active,
+button[name="checkout"]:active,
+#checkout:active,
+.cart .button--primary:active {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(74, 124, 89, 0.35) !important;
+}
+
+.cart__dynamic-checkout-buttons,
+.cart .dynamic-checkout__content {
+  margin-top: var(--space-md) !important;
+}
+
+.cart__dynamic-checkout-buttons .dynamic-checkout__content > * {
+  border-radius: 10px !important;
+  min-height: 52px !important;
+}
+
+.cart-item a.button--tertiary,
+.cart-item .cart-item__quantity-delete {
+  font-size: 14px;
+  color: var(--vitalo-text-light);
+  transition: color var(--transition-fast);
+}
+
+.cart-item a.button--tertiary:hover,
+.cart-item .cart-item__quantity-delete:hover {
+  color: var(--vitalo-red);
+}
+
+a[href="/collections/all"],
+.cart .button--secondary,
+a.underlined-link[href*="continue"] {
+  font-family: var(--font-body) !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: var(--vitalo-green) !important;
+  transition: color var(--transition-fast);
+}
+
+a[href="/collections/all"]:hover,
+.cart .button--secondary:hover,
+a.underlined-link[href*="continue"]:hover {
+  color: var(--vitalo-green-dark) !important;
+}
+
+.cart .quantity {
+  border: 2px solid var(--vitalo-border) !important;
+  border-radius: 8px !important;
+}
+
+.cart .quantity__button {
+  width: 48px !important;
+  height: 48px !important;
+  font-size: 18px !important;
+}
+
+.cart .quantity__input {
+  width: 64px !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+}
+
+.cart-item__error-text {
+  font-size: 14px !important;
+  color: var(--vitalo-red) !important;
+}
+
+.cart__note label,
+.cart__note textarea {
+  font-family: var(--font-body) !important;
+  font-size: 16px !important;
+}
+
+.cart__note textarea {
+  border: 2px solid var(--vitalo-border) !important;
+  border-radius: 8px !important;
+  padding: var(--space-md) !important;
 }
 
 /* ============================================
