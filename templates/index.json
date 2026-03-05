@@ -12,10 +12,10 @@
     "vitalo_hero": {
       "type": "vitalo-hero",
       "settings": {
-        "badge_text": "Physician-Formulated",
-        "heading": "<p>The Supplement Company That Has <em>Nothing to Hide.</em></p>",
-        "subheading": "Premium, transparent supplements with full-dose transparency, clinically studied ingredients, and a 90-day guarantee. Because we know our products actually work.",
-        "button_label": "Shop Our Products",
+        "badge_text": "Built for Adults 60+",
+        "heading": "<p>The Supplement Industry Has Been <em>Lying to You</em> for Years</p>",
+        "subheading": "They sold you marginal products, used fear to push them, made guarantees they couldn't deliver — and when you wanted your money back, they disappeared.",
+        "button_label": "Start Your Performance Plan",
         "button_link": "shopify://collections/all"
       }
     },
@@ -31,113 +31,93 @@
     "trust_badges": {
       "type": "vitalo-trust-badges",
       "blocks": {
-        "badge_lab": {
+        "badge_strength": {
           "type": "badge",
           "settings": {
             "icon": "check",
-            "title": "Clinically Studied Doses",
-            "description": "Every ingredient is included at the exact dose shown effective in clinical research. No token amounts. No shortcuts."
+            "title": "Strength You Can Feel",
+            "description": "Real strength that shows up in everyday life — carrying groceries, climbing stairs, playing with grandkids."
           }
         },
-        "badge_guarantee": {
+        "badge_energy": {
           "type": "badge",
           "settings": {
             "icon": "shield",
-            "title": "90-Day Money-Back Guarantee",
-            "description": "Try any Vitalo product risk-free. If you're not satisfied, we'll refund every penny. No questions asked."
+            "title": "Energy That Lasts All Day",
+            "description": "No crashes, no gimmicks. Sustained energy from real nutrition, smart recovery, and a plan that fits your life."
           }
         },
-        "badge_transparency": {
+        "badge_joints": {
           "type": "badge",
           "settings": {
             "icon": "eye",
-            "title": "No Hidden Formulas",
-            "description": "Every single ingredient and its exact dose is printed on the label. No proprietary blends. No secrets."
+            "title": "Joints That Move Better",
+            "description": "Joint-friendly movements and proper recovery that reduce stiffness and keep you active — not sidelined."
           }
         }
       },
       "block_order": [
-        "badge_lab",
-        "badge_guarantee",
-        "badge_transparency"
+        "badge_strength",
+        "badge_energy",
+        "badge_joints"
       ],
       "settings": {}
     },
     "pain_point": {
       "type": "vitalo-pain-point",
       "settings": {
-        "heading": "Sick of Supplements That Promise Everything and Deliver Nothing?",
-        "body": "So were we. That's why we built Vitalo — with full-dose transparency, clinically studied ingredients, and a 90-day guarantee. Because we know our products actually work."
+        "heading": "What You Get Instead of Empty Promises",
+        "body": "A system built on actions, not capsules. Strength you can feel in everyday life. Energy that lasts all day. Joints that move better. Recovery that keeps you active. Nutrition that fuels your body. Weekly adjustments that fit your real life."
       }
     },
     "comparison": {
       "type": "vitalo-comparison",
       "blocks": {
-        "row_formula": {
+        "row_1": {
           "type": "row",
           "settings": {
-            "label": "Formula",
-            "vitalo_value": "Full dose transparency",
-            "others_value": "Proprietary blends"
+            "label": "Strength",
+            "vitalo_value": "Joint-friendly movements that rebuild muscle and confidence",
+            "others_value": "Generic exercises that cause pain"
           }
         },
-        "row_dosing": {
+        "row_2": {
           "type": "row",
           "settings": {
-            "label": "Dosing",
-            "vitalo_value": "Full clinical doses",
-            "others_value": "Under-dosed or undisclosed"
+            "label": "Recovery",
+            "vitalo_value": "Better sleep, smarter pacing, hydration, and progression",
+            "others_value": "No recovery plan at all"
           }
         },
-        "row_guarantee": {
+        "row_3": {
           "type": "row",
           "settings": {
-            "label": "Guarantee",
-            "vitalo_value": "90-day money-back",
-            "others_value": "30 days or none"
+            "label": "Nutrition",
+            "vitalo_value": "Real food, real protein, no powders or gimmicks",
+            "others_value": "Supplement pills and shakes"
           }
         },
-        "row_transparency": {
+        "row_4": {
           "type": "row",
           "settings": {
-            "label": "Transparency",
-            "vitalo_value": "Every ingredient & dose listed",
-            "others_value": "Hidden behind labels"
-          }
-        },
-        "row_manufacturing": {
-          "type": "row",
-          "settings": {
-            "label": "Manufacturing",
-            "vitalo_value": "GMP-certified, FDA-registered (USA)",
-            "others_value": "Unknown or overseas"
+            "label": "Adaptability",
+            "vitalo_value": "Travel, work, grandkids — the routine adjusts to you",
+            "others_value": "Rigid plans that don't fit real life"
           }
         }
       },
       "block_order": [
-        "row_formula",
-        "row_dosing",
-        "row_guarantee",
-        "row_transparency",
-        "row_manufacturing"
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4"
       ],
       "settings": {
-        "heading": "The Supplement Industry Has a Trust Problem. We're Fixing It.",
-        "subheading": "See how Vitalo compares to typical supplement brands.",
-        "col_label": "Feature",
-        "col_vitalo": "Vitalo",
-        "col_others": "Other Brands"
-      }
-    },
-    "products": {
-      "type": "vitalo-products",
-      "settings": {
-        "heading": "Our Products",
-        "subheading": "Physician-formulated supplements designed for adults who want to maintain their health, not just react to problems.",
-        "collection": "all",
-        "products_to_show": 6,
-        "button_label": "View All Products",
-        "button_link": "shopify://collections/all"
+        "heading": "The Framework That Actually Works at 60+",
+        "subheading": "A plan built around what your body actually responds to — not what sells the most bottles.",
+        "col_label": "Pillar",
+        "col_vitalo": "Vitalo System",
+        "col_others": "Typical Approaches"
       }
     },
     "testimonials": {
@@ -146,62 +126,35 @@
         "test_1": {
           "type": "testimonial",
           "settings": {
-            "quote": "I'll be honest — I almost didn't order. I've wasted hundreds on supplements that did nothing. But the 90-day guarantee made me think, why not? Three months later, my joints feel completely different. I can garden again without dreading the next morning.",
+            "quote": "In the first 30 days I had more energy, better sleep, and my joints felt noticeably stronger. By day 60, stairs felt easier, my morning stiffness dropped, and energy lasted into the evening.",
             "name": "Margaret T.",
-            "product_name": "Joint Support"
+            "product_name": "Performance Plan Member"
           }
         },
         "test_2": {
           "type": "testimonial",
           "settings": {
-            "quote": "What sold me was seeing every ingredient and dose on the label. No 'proprietary blend' nonsense. I've been taking Memory & Focus for four months and my wife says I'm noticeably sharper.",
+            "quote": "I was skeptical — I've tried everything. But within the first month, I noticed real strength gains and my balance improved. By 90 days, clothes fit better and my confidence returned.",
             "name": "Robert K.",
-            "product_name": "Memory & Focus"
+            "product_name": "Performance Plan Member"
           }
         },
         "test_3": {
           "type": "testimonial",
           "settings": {
-            "quote": "I was skeptical about another sleep supplement. But within the first week, I noticed I was falling asleep faster and waking up feeling more refreshed. The magnesium glycinate really makes a difference.",
+            "quote": "No supplements, no gimmicks — just a system that actually works with my body. Walking feels easier, I sleep better, and I have energy to keep up with my grandkids again.",
             "name": "Linda S.",
-            "product_name": "Deep Sleep Formula"
-          }
-        },
-        "test_4": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "My doctor was impressed with my latest checkup results. I can't say it's all Vitalo, but I feel more confident about my heart health. The CoQ10 dose is what convinced me — most brands use a fraction of this amount.",
-            "name": "James W.",
-            "product_name": "Heart & Circulation"
-          }
-        },
-        "test_5": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "I was spending over $80 a month on a fancy joint supplement from TV. Switched to Vitalo at half the price and honestly, the results are better. Wish I'd found them sooner.",
-            "name": "Dorothy H.",
-            "product_name": "Joint Support"
-          }
-        },
-        "test_6": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "After reading about how supplement companies cut corners, I was suspicious of every brand. Vitalo's transparency won me over. I can actually verify what I'm putting in my body.",
-            "name": "Richard P.",
-            "product_name": "Blood Sugar Support"
+            "product_name": "Performance Plan Member"
           }
         }
       },
       "block_order": [
         "test_1",
         "test_2",
-        "test_3",
-        "test_4",
-        "test_5",
-        "test_6"
+        "test_3"
       ],
       "settings": {
-        "heading": "What Our Customers Say"
+        "heading": "Proof This Works"
       }
     },
     "stats": {
@@ -210,80 +163,31 @@
         "stat_1": {
           "type": "stat",
           "settings": {
-            "number": "50,000+",
-            "label": "Happy Customers"
+            "number": "30 Days",
+            "label": "More energy, better sleep, stronger joints"
           }
         },
         "stat_2": {
           "type": "stat",
           "settings": {
-            "number": "6",
-            "label": "Unique Formulas"
+            "number": "60 Days",
+            "label": "Clothes fit better, stairs feel easier"
           }
         },
         "stat_3": {
           "type": "stat",
           "settings": {
-            "number": "90-Day",
-            "label": "Money-Back Guarantee"
-          }
-        },
-        "stat_4": {
-          "type": "stat",
-          "settings": {
-            "number": "100%",
-            "label": "Transparent Labels"
+            "number": "90 Days",
+            "label": "Morning stiffness drops, confidence returns"
           }
         }
       },
       "block_order": [
         "stat_1",
         "stat_2",
-        "stat_3",
-        "stat_4"
+        "stat_3"
       ],
       "settings": {}
-    },
-    "story": {
-      "type": "vitalo-story",
-      "blocks": {
-        "p1": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "It started the way most frustrations do — with a personal experience. One of our founders spent years trying different supplements to manage his energy levels as he got older. Brand after brand promised miracles, but the formulas were hollow."
-          }
-        },
-        "p2": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "That discovery led to a question: What if a supplement company just... told the truth? What if every ingredient and its exact dose was printed right on the label? What if formulas used the same doses that clinical studies actually tested? What if you could call a phone number and talk to a real person who actually cared?"
-          }
-        },
-        "p3": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "That's how Vitalo was born. We assembled a team of physicians, formulators, and people who were just as fed up with the supplement industry's smoke and mirrors. Together, we created a line of supplements that we'd feel confident giving to our own families."
-          }
-        },
-        "p4": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "Every Vitalo product is manufactured in a GMP-certified, FDA-registered facility right here in the United States. Every formula uses clinically studied doses — not token amounts. Every ingredient and its exact amount is listed right on the label. And every customer gets a 90-day money-back guarantee, because if you don't feel the difference, we don't deserve your money."
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4"
-      ],
-      "settings": {
-        "label": "Our Story",
-        "heading": "We Started Vitalo Because We Were Tired of Being Lied To",
-        "button_label": "Shop Now",
-        "button_link": "shopify://collections/all"
-      }
     },
     "standard": {
       "type": "vitalo-standard",
@@ -291,33 +195,33 @@
         "std_1": {
           "type": "card",
           "settings": {
-            "icon": "factory",
-            "title": "GMP-Certified Manufacturing",
-            "description": "All Vitalo products are manufactured in GMP-certified, FDA-registered facilities in the United States under strict quality controls."
+            "icon": "test",
+            "title": "Clear Steps",
+            "description": "No guesswork. You get a structured plan with specific actions that build real results week after week."
           }
         },
         "std_2": {
           "type": "card",
           "settings": {
-            "icon": "formula",
-            "title": "Full Formula Transparency",
-            "description": "Every Vitalo product lists every ingredient with its exact dose. No proprietary blends, no hidden ingredients, no guesswork."
+            "icon": "shield",
+            "title": "Real Outcomes",
+            "description": "Measurable improvements in strength, energy, mobility, and recovery — not vague promises."
           }
         },
         "std_3": {
           "type": "card",
           "settings": {
-            "icon": "formula",
-            "title": "Clinically Studied Ingredients",
-            "description": "Every ingredient in our formulas is backed by published clinical research, and included at the dose shown to be effective — not a token sprinkle."
+            "icon": "factory",
+            "title": "Respect for Your Intelligence",
+            "description": "No fear tactics, no miracle claims. Honest information about what works and why."
           }
         },
         "std_4": {
           "type": "card",
           "settings": {
-            "icon": "shield",
-            "title": "90-Day Money-Back Guarantee",
-            "description": "We're so confident in our products that we offer a full 90-day money-back guarantee. No questions asked, no product return required."
+            "icon": "formula",
+            "title": "Works With Your Body",
+            "description": "A plan designed for how your body actually responds at 60+ — not a one-size-fits-all approach."
           }
         }
       },
@@ -328,42 +232,53 @@
         "std_4"
       ],
       "settings": {
-        "heading": "The Vitalo Standard",
-        "description": "We hold ourselves to higher standards so you can feel confident in every bottle."
+        "heading": "Your Guarantee",
+        "description": "Honesty, clarity, and results — or you walk away. No fine print. No hoops. No disappearing customer service."
       }
     },
-    "tricks": {
-      "type": "vitalo-tricks",
+    "story": {
+      "type": "vitalo-story",
       "blocks": {
-        "trick_1": {
-          "type": "trick",
+        "p1": {
+          "type": "paragraph",
           "settings": {
-            "title": "\"Proprietary Blends\" Hide Ineffective Doses",
-            "description": "Companies list ingredients but hide the amounts behind a 'proprietary blend' label. This lets them use tiny, ineffective amounts while hiding behind the 'proprietary' label. If the formula is so good, why keep it secret? At Vitalo, every ingredient and its exact dose is right on the label."
+            "paragraph": "It's built on what your body actually responds to at 60+. Muscle rebuilds with the right movements. Joints improve with the right mobility. Energy returns with the right recovery. Confidence grows with the right structure."
           }
         },
-        "trick_2": {
-          "type": "trick",
+        "p2": {
+          "type": "paragraph",
           "settings": {
-            "title": "\"Pixie Dusting\" — The Label Lists It, But You're Getting Almost None",
-            "description": "A supplement might list an expensive ingredient like CoQ10 or Lion's Mane, but you don't get enough to actually benefit. It's the supplement industry's favorite trick — include just enough to put it on the label, but far less than what clinical studies actually used."
+            "paragraph": "This isn't another bottle of pills or a generic workout plan. It's a complete system designed specifically for how your body works right now — adapting to your schedule, your limitations, and your goals."
           }
         },
-        "trick_3": {
-          "type": "trick",
+        "p3": {
+          "type": "paragraph",
           "settings": {
-            "title": "Flashy Marketing Hides Weak Formulas",
-            "description": "Big ad budgets don't mean better products. Many supplement brands spend more on celebrity endorsements and packaging than on the ingredients inside the bottle. At Vitalo, we invest in the formula — physician-formulated with clinically studied doses — and let the results speak for themselves."
+            "paragraph": "Every element is backed by what actually works: progressive strength training that protects your joints, recovery protocols that improve your sleep, and nutrition guidance based on real food — not powders and gimmicks."
           }
         }
       },
       "block_order": [
-        "trick_1",
-        "trick_2",
-        "trick_3"
+        "p1",
+        "p2",
+        "p3"
       ],
       "settings": {
-        "heading": "Three Tricks the Supplement Industry Doesn't Want You to Know About"
+        "label": "The Science",
+        "heading": "Why You Can Trust This System",
+        "button_label": "See What's Inside",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "products": {
+      "type": "vitalo-products",
+      "settings": {
+        "heading": "Our Products",
+        "subheading": "Supplements designed to support your performance plan — not replace it.",
+        "collection": "all",
+        "products_to_show": 6,
+        "button_label": "View All Products",
+        "button_link": "shopify://collections/all"
       }
     },
     "faq": {
@@ -372,81 +287,49 @@
         "faq_1": {
           "type": "faq",
           "settings": {
-            "group": "Product & Ingredients",
-            "question": "What makes Vitalo different from other supplement brands?",
-            "answer": "Every Vitalo product features full formula transparency (no proprietary blends), clinically studied doses, GMP-certified manufacturing, and a 90-day money-back guarantee. We believe if a supplement company hides their formula, they have something to hide."
+            "group": "The System",
+            "question": "What exactly is the Vitalo Performance Plan?",
+            "answer": "It's a complete system designed for adults 60+ that combines joint-friendly strength training, smart recovery protocols, real-food nutrition guidance, and weekly adjustments that fit your actual life — not a rigid program that ignores reality."
           }
         },
         "faq_2": {
           "type": "faq",
           "settings": {
-            "group": "Product & Ingredients",
-            "question": "What does 'clinically studied doses' mean?",
-            "answer": "It means every ingredient in our formulas is included at the same dosage that was used in published clinical research. Many brands use tiny amounts of expensive ingredients just to put them on the label — we use the full effective dose, every time."
+            "group": "The System",
+            "question": "How is this different from other fitness programs?",
+            "answer": "Most programs are designed for younger bodies and don't account for how your body responds at 60+. Our framework is built specifically around progressive, joint-friendly movements, proper recovery pacing, and real nutrition — not supplements and shakes."
           }
         },
         "faq_3": {
           "type": "faq",
           "settings": {
-            "group": "Product & Ingredients",
-            "question": "What are proprietary blends, and why don't you use them?",
-            "answer": "Proprietary blends allow companies to list ingredients without disclosing amounts. This means they can use tiny, ineffective amounts of expensive ingredients while hiding behind the 'proprietary' label. We never use them because we have nothing to hide."
+            "group": "The System",
+            "question": "Do I need to take supplements?",
+            "answer": "No. The system works on its own. Our supplements are available to support your plan if you choose, but they're not required. The results come from the movements, recovery, and nutrition framework."
           }
         },
         "faq_4": {
           "type": "faq",
           "settings": {
-            "group": "Product & Ingredients",
-            "question": "Where are your products manufactured?",
-            "answer": "All Vitalo products are manufactured in GMP-certified, FDA-registered facilities in the United States."
+            "group": "Results",
+            "question": "How long until I see results?",
+            "answer": "Most people notice more energy and better sleep within the first 30 days. By 60-90 days, expect noticeable strength gains, improved balance, reduced morning stiffness, and clothes fitting better."
           }
         },
         "faq_5": {
           "type": "faq",
           "settings": {
-            "group": "Returns & Guarantee",
-            "question": "What is your guarantee policy?",
-            "answer": "We offer a 90-day money-back guarantee on all products. If you're not satisfied for any reason, contact us for a full refund."
+            "group": "Results",
+            "question": "What if I have joint problems or limited mobility?",
+            "answer": "The plan is specifically designed for joint-friendly movements. Every exercise can be adapted to your current ability level, and the plan progresses at your pace — not someone else's."
           }
         },
         "faq_6": {
           "type": "faq",
           "settings": {
-            "group": "Returns & Guarantee",
-            "question": "Do I need to return the product?",
-            "answer": "No. We don't require you to send the product back. We trust our customers, and we want the process to be as easy as possible."
-          }
-        },
-        "faq_7": {
-          "type": "faq",
-          "settings": {
-            "group": "Returns & Guarantee",
-            "question": "How do I request a refund?",
-            "answer": "Simply call us at (800) 555-0199 or email support@vitalo.io with your order number. We typically process refunds within 2-3 business days."
-          }
-        },
-        "faq_8": {
-          "type": "faq",
-          "settings": {
-            "group": "Health & Usage",
-            "question": "How long until I see results?",
-            "answer": "Results vary by individual and product. Some products, like our Deep Sleep Formula, may show results within the first week. Consistency is key — supplements work best when taken daily over time."
-          }
-        },
-        "faq_9": {
-          "type": "faq",
-          "settings": {
-            "group": "Health & Usage",
-            "question": "Can I take multiple Vitalo products together?",
-            "answer": "Yes — our products are formulated to complement each other. However, we always recommend consulting with your healthcare provider before starting any new supplement regimen, especially if you take medications."
-          }
-        },
-        "faq_10": {
-          "type": "faq",
-          "settings": {
-            "group": "Health & Usage",
-            "question": "Should I talk to my doctor before taking supplements?",
-            "answer": "We recommend consulting your healthcare provider if you are pregnant, nursing, take prescription medications, have a diagnosed health condition, or are scheduled for surgery."
+            "group": "Guarantee",
+            "question": "What is your guarantee?",
+            "answer": "Honesty, clarity, and results — or you walk away. No fine print, no hoops, no disappearing customer service. Contact us at (800) 555-0199 or support@vitalo.io."
           }
         }
       },
@@ -456,11 +339,7 @@
         "faq_3",
         "faq_4",
         "faq_5",
-        "faq_6",
-        "faq_7",
-        "faq_8",
-        "faq_9",
-        "faq_10"
+        "faq_6"
       ],
       "settings": {
         "heading": "Frequently Asked Questions"
@@ -469,8 +348,8 @@
     "newsletter": {
       "type": "vitalo-newsletter",
       "settings": {
-        "heading": "Join the Vitalo Family",
-        "body": "Get 10% off your first order, plus weekly health tips and exclusive deals.",
+        "heading": "Join the Vitalo Community",
+        "body": "Get weekly tips on strength, energy, and mobility for adults 60+ — plus exclusive access to new programs.",
         "placeholder": "Enter your email",
         "button_label": "Subscribe"
       }
@@ -478,9 +357,9 @@
     "cta": {
       "type": "vitalo-cta",
       "settings": {
-        "heading": "Ready to Try Supplements That Actually Work?",
-        "body": "Join thousands of adults 40+ who trust Vitalo for physician-formulated, transparent supplements backed by a 90-day guarantee.",
-        "button_label": "Shop Now",
+        "heading": "Take Control of Your Strength, Energy, and Mobility",
+        "body": "This is where the next decade starts. A system built for your body, your schedule, and your goals.",
+        "button_label": "Start Your Performance Plan",
         "button_link": "shopify://collections/all"
       }
     },
@@ -490,25 +369,25 @@
         "b1": {
           "type": "badge",
           "settings": {
-            "text": "GMP Certified"
+            "text": "Built for 60+"
           }
         },
         "b2": {
           "type": "badge",
           "settings": {
-            "text": "Made in USA"
+            "text": "Joint-Friendly"
           }
         },
         "b3": {
           "type": "badge",
           "settings": {
-            "text": "Clinically Studied"
+            "text": "Real Results"
           }
         },
         "b4": {
           "type": "badge",
           "settings": {
-            "text": "90-Day Guarantee"
+            "text": "No Gimmicks"
           }
         }
       },
@@ -519,8 +398,8 @@
         "b4"
       ],
       "settings": {
-        "tagline": "Physician-formulated. Fully transparent. Clinically studied doses. Every product backed by a 90-day guarantee.",
-        "disclaimer": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before beginning any supplement regimen."
+        "tagline": "Strength, energy, and mobility — built on actions, not capsules. A system designed for how your body works at 60+.",
+        "disclaimer": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before beginning any new fitness or supplement regimen."
       }
     }
   },
@@ -530,12 +409,11 @@
     "trust_badges",
     "pain_point",
     "comparison",
-    "products",
     "testimonials",
     "stats",
-    "story",
     "standard",
-    "tricks",
+    "story",
+    "products",
     "faq",
     "newsletter",
     "cta",
