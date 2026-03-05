@@ -146,6 +146,17 @@ header.header.page-width {
   color: var(--vitalo-dark);
 }
 
+.cart-count-bubble {
+  bottom: auto;
+  top: -0.2rem;
+  left: auto;
+  right: -0.4rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /* ============================================
    ANNOUNCEMENT BAR
    ============================================ */
@@ -842,9 +853,10 @@ button[type="submit"] {
   margin: 0 auto;
   padding: 0 var(--space-lg);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
   text-align: center;
+  justify-items: center;
 }
 
 .vitalo-stat__number {
