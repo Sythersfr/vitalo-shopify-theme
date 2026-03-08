@@ -80,6 +80,7 @@
         "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
+        "image_zoom": "none",
         "padding_top": 36,
         "padding_bottom": 12
       }

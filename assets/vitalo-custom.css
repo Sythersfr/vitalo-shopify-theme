@@ -456,7 +456,7 @@ button[type="submit"] {
 }
 
 .vitalo-why__inner {
-  max-width: 1000px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 var(--space-lg);
 }
@@ -2068,4 +2068,94 @@ cart-notification .button--secondary,
   margin: 0 auto;
   line-height: 1.6;
   opacity: 0.7;
+}
+
+/* ============================================
+   PRODUCT GALLERY — Carousel Arrows
+   ============================================ */
+
+.product--thumbnail_slider .product__media-wrapper > media-gallery > slider-component#[id^="GalleryViewer"] {
+  position: relative;
+}
+
+.product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type {
+  position: relative;
+}
+
+.product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type > .slider-buttons {
+  display: flex !important;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 3;
+  padding: 0 1rem;
+}
+
+.product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type > .slider-buttons .slider-counter {
+  display: none;
+}
+
+.product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type > .slider-buttons .slider-button {
+  display: flex !important;
+  pointer-events: auto;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.92);
+  border: none;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  color: var(--vitalo-dark, #2D3A2E);
+}
+
+.product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type > .slider-buttons .slider-button:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type > .slider-buttons .slider-button .svg-wrapper {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type > .slider-buttons .slider-button--prev .svg-wrapper {
+  transform: rotate(90deg);
+}
+
+.product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type > .slider-buttons .slider-button--next .svg-wrapper {
+  transform: rotate(-90deg);
+}
+
+.product--thumbnail_slider .product__modal-opener--image .product__media-toggle {
+  cursor: default !important;
+}
+
+.product--thumbnail_slider .product__modal-opener--image .product__media-toggle::after {
+  cursor: default !important;
+}
+
+.product--thumbnail_slider .product__media-icon {
+  display: none !important;
+}
+
+@media screen and (max-width: 749px) {
+  .product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type > .slider-buttons.small-hide {
+    display: flex !important;
+  }
+
+  .product--thumbnail_slider .product__media-wrapper media-gallery > slider-component:first-of-type > .slider-buttons .slider-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
 }
