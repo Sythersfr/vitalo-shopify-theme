@@ -52,6 +52,14 @@
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
+  {%- unless single_media_visible or media_count <= 1 -%}
+    <button type="button" class="vitalo-gallery-nav vitalo-gallery-nav--prev" aria-label="Previous image" data-gallery-prev>
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button type="button" class="vitalo-gallery-nav vitalo-gallery-nav--next" aria-label="Next image" data-gallery-next>
+      <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    </button>
+  {%- endunless -%}
   <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
     <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
       {{ 'accessibility.skip_to_product_info' | t }}
@@ -329,4 +337,36 @@
       </button>
     </slider-component>
   {%- endif -%}
+  {%- unless single_media_visible or media_count <= 1 -%}
+    <script>
+      (function() {
+        const gallery = document.getElementById('MediaGallery-{{ section.id }}');
+        if (!gallery) return;
+
+        const prevBtn = gallery.querySelector('[data-gallery-prev]');
+        const nextBtn = gallery.querySelector('[data-gallery-next]');
+        if (!prevBtn || !nextBtn) return;
+
+        function getSlides() {
+          return Array.from(gallery.querySelectorAll('[id^="GalleryViewer"] [data-media-id]'));
+        }
+
+        function getCurrentIndex() {
+          const slides = getSlides();
+          return slides.findIndex(s => s.classList.contains('is-active'));
+        }
+
+        function goTo(index) {
+          const slides = getSlides();
+          if (!slides.length) return;
+          const idx = (index + slides.length) % slides.length;
+          const targetId = slides[idx].dataset.mediaId;
+          gallery.setActiveMedia(targetId, false);
+        }
+
+        prevBtn.addEventListener('click', function() { goTo(getCurrentIndex() - 1); });
+        nextBtn.addEventListener('click', function() { goTo(getCurrentIndex() + 1); });
+      })();
+    </script>
+  {%- endunless -%}
 </media-gallery>
