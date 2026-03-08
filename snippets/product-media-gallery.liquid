@@ -52,15 +52,15 @@
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
-  {%- unless single_media_visible or media_count <= 1 -%}
-    <button type="button" class="vitalo-gallery-nav vitalo-gallery-nav--prev" aria-label="Previous image" data-gallery-prev>
-      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
-    </button>
-    <button type="button" class="vitalo-gallery-nav vitalo-gallery-nav--next" aria-label="Next image" data-gallery-next>
-      <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"></polyline></svg>
-    </button>
-  {%- endunless -%}
   <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
+    {%- unless single_media_visible or media_count <= 1 -%}
+      <button type="button" class="vitalo-gallery-nav vitalo-gallery-nav--prev" aria-label="Previous image" data-gallery-prev>
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button type="button" class="vitalo-gallery-nav vitalo-gallery-nav--next" aria-label="Next image" data-gallery-next>
+        <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"></polyline></svg>
+      </button>
+    {%- endunless -%}
     <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
       {{ 'accessibility.skip_to_product_info' | t }}
     </a>
@@ -339,34 +339,49 @@
   {%- endif -%}
   {%- unless single_media_visible or media_count <= 1 -%}
     <script>
-      (function() {
-        const gallery = document.getElementById('MediaGallery-{{ section.id }}');
+      document.addEventListener('DOMContentLoaded', function() {
+        var gallery = document.getElementById('MediaGallery-{{ section.id }}');
         if (!gallery) return;
 
-        const prevBtn = gallery.querySelector('[data-gallery-prev]');
-        const nextBtn = gallery.querySelector('[data-gallery-next]');
+        var prevBtn = gallery.querySelector('[data-gallery-prev]');
+        var nextBtn = gallery.querySelector('[data-gallery-next]');
         if (!prevBtn || !nextBtn) return;
 
-        function getSlides() {
-          return Array.from(gallery.querySelectorAll('[id^="GalleryViewer"] [data-media-id]'));
+        function getThumbnails() {
+          var container = gallery.querySelector('[id^="GalleryThumbnails"]');
+          if (!container) return [];
+          return Array.from(container.querySelectorAll('[data-target]'));
         }
 
         function getCurrentIndex() {
-          const slides = getSlides();
-          return slides.findIndex(s => s.classList.contains('is-active'));
+          var thumbs = getThumbnails();
+          for (var i = 0; i < thumbs.length; i++) {
+            var btn = thumbs[i].querySelector('button');
+            if (btn && btn.getAttribute('aria-current') === 'true') return i;
+          }
+          return 0;
         }
 
-        function goTo(index) {
-          const slides = getSlides();
-          if (!slides.length) return;
-          const idx = (index + slides.length) % slides.length;
-          const targetId = slides[idx].dataset.mediaId;
-          gallery.setActiveMedia(targetId, false);
+        function navigate(direction) {
+          var thumbs = getThumbnails();
+          if (thumbs.length < 2) return;
+          var current = getCurrentIndex();
+          var next = (current + direction + thumbs.length) % thumbs.length;
+          var btn = thumbs[next].querySelector('button');
+          if (btn) btn.click();
         }
 
-        prevBtn.addEventListener('click', function() { goTo(getCurrentIndex() - 1); });
-        nextBtn.addEventListener('click', function() { goTo(getCurrentIndex() + 1); });
-      })();
+        prevBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          navigate(-1);
+        });
+        nextBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          navigate(1);
+        });
+      });
     </script>
   {%- endunless -%}
 </media-gallery>

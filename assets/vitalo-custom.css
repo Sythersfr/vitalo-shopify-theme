@@ -2129,13 +2129,9 @@ cart-notification .button--secondary,
   stroke-linejoin: round;
 }
 
-media-gallery {
-  position: relative;
-  display: block;
-}
-
 media-gallery > slider-component:first-of-type {
   position: relative;
+  display: block;
 }
 
 @media screen and (max-width: 749px) {
