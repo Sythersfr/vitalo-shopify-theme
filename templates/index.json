@@ -12,7 +12,7 @@
     "vitalo_hero": {
       "type": "vitalo-hero",
       "settings": {
-        "badge_text": "Built for Adults 40+",
+        "badge_text": "Built for Adults 50+",
         "heading": "<p>The Supplement Industry Has Been <em>Lying to You</em> for Years</p>",
         "subheading": "They sold you underdosed formulas, hid behind proprietary blends, made claims they couldn't back up — and when you asked for proof, they went quiet.",
         "button_label": "Shop Our Supplements",
@@ -52,7 +52,7 @@
           "settings": {
             "icon": "eye",
             "title": "Health You Can Feel",
-            "description": "Targeted formulas for the real health needs of adults 40+ — from energy and focus to joint comfort and beyond."
+            "description": "Targeted formulas for the real health needs of adults 50+ — from energy and focus to joint comfort and beyond."
           }
         }
       },
@@ -67,7 +67,7 @@
       "type": "vitalo-pain-point",
       "settings": {
         "heading": "What You Get Instead of Empty Promises",
-        "body": "Supplements built on science, not marketing. Clinically dosed ingredients you can verify. Formulas targeting the real health needs of adults 40+ — energy, focus, joint comfort, heart health, blood sugar support, and more. Plus a 90-day guarantee that actually means something."
+        "body": "Supplements built on science, not marketing. Clinically dosed ingredients you can verify. Formulas targeting the real health needs of adults 50+ — energy, focus, joint comfort, heart health, blood sugar support, and more. Plus a 90-day guarantee that actually means something."
       }
     },
     "comparison": {
@@ -220,7 +220,7 @@
           "type": "card",
           "settings": {
             "icon": "formula",
-            "title": "Designed for Adults 40+",
+            "title": "Designed for Adults 50+",
             "description": "Targeted formulas that address the real health needs that emerge as your body changes — not a one-size-fits-all approach."
           }
         }
@@ -248,7 +248,7 @@
         "p2": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "We don't hide behind proprietary blends or use trendy ingredients just because they're popular. Every formula is designed for the specific health needs of adults 40+ — from blood sugar support and joint comfort to energy, focus, and heart health."
+            "paragraph": "We don't hide behind proprietary blends or use trendy ingredients just because they're popular. Every formula is designed for the specific health needs of adults 50+ — from blood sugar support and joint comfort to energy, focus, and heart health."
           }
         },
         "p3": {
@@ -274,7 +274,7 @@
       "type": "vitalo-products",
       "settings": {
         "heading": "Our Products",
-        "subheading": "Targeted formulas for the health needs that matter most to adults 40+.",
+        "subheading": "Targeted formulas for the health needs that matter most to adults 50+.",
         "collection": "all",
         "products_to_show": 6,
         "button_label": "View All Products",
@@ -297,7 +297,7 @@
           "settings": {
             "group": "Products",
             "question": "Who are Vitalo products designed for?",
-            "answer": "Our formulas are specifically designed for adults 40+ who want targeted support for the health needs that matter most — energy, focus, joint comfort, heart health, blood sugar support, sleep quality, and more."
+            "answer": "Our formulas are specifically designed for adults 50+ who want targeted support for the health needs that matter most — energy, focus, joint comfort, heart health, blood sugar support, sleep quality, and more."
           }
         },
         "faq_3": {
@@ -349,7 +349,7 @@
       "type": "vitalo-newsletter",
       "settings": {
         "heading": "Join the Vitalo Community",
-        "body": "Get health tips, product updates, and exclusive offers for adults 40+ — delivered straight to your inbox.",
+        "body": "Get health tips, product updates, and exclusive offers for adults 50+ — delivered straight to your inbox.",
         "placeholder": "Enter your email",
         "button_label": "Subscribe"
       }
@@ -358,7 +358,7 @@
       "type": "vitalo-cta",
       "settings": {
         "heading": "Take Control of Your Health",
-        "body": "Quality supplements designed for adults 40+. Science-backed formulas, full transparency, and a guarantee that means something.",
+        "body": "Quality supplements designed for adults 50+. Science-backed formulas, full transparency, and a guarantee that means something.",
         "button_label": "Shop Our Supplements",
         "button_link": "shopify://collections/all"
       }
@@ -369,7 +369,7 @@
         "b1": {
           "type": "badge",
           "settings": {
-            "text": "Built for 40+"
+            "text": "Built for 50+"
           }
         },
         "b2": {
@@ -398,7 +398,7 @@
         "b4"
       ],
       "settings": {
-        "tagline": "Quality supplements for adults 40+ — clinically dosed, fully transparent, and backed by a 90-day guarantee.",
+        "tagline": "Quality supplements for adults 50+ — clinically dosed, fully transparent, and backed by a 90-day guarantee.",
         "disclaimer": "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before beginning any new supplement regimen."
       }
     }
