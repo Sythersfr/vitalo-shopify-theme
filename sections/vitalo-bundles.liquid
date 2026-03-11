@@ -9,12 +9,16 @@
 
     <div class="vitalo-bundles__grid">
       {% for block in section.blocks %}
-        {% assign original_cents = block.settings.original_price | times: 100 %}
-        {% assign bundle_cents = block.settings.bundle_price | times: 100 %}
-        {% assign savings_cents = original_cents | minus: bundle_cents %}
-        {% assign savings_dollars = savings_cents | divided_by: 100.0 %}
+        {% assign original_raw = block.settings.original_price | times: 1.0 %}
+        {% assign bundle_raw = block.settings.bundle_price | times: 1.0 %}
+        {% assign savings_raw = original_raw | minus: bundle_raw %}
 
-        <div class="vitalo-bundle-card vitalo-animate vitalo-animate-delay-{{ forloop.index }}" {{ block.shopify_attributes }}>
+        {% assign card_class = 'vitalo-bundle-card' %}
+        {% if block.settings.featured %}
+          {% assign card_class = card_class | append: ' vitalo-bundle-card--featured' %}
+        {% endif %}
+
+        <div class="{{ card_class }} vitalo-animate vitalo-animate-delay-{{ forloop.index }}" {{ block.shopify_attributes }}>
           {% if block.settings.badge != blank %}
             <span class="vitalo-bundle-card__badge">{{ block.settings.badge }}</span>
           {% endif %}
@@ -52,12 +56,12 @@
             </div>
 
             <div class="vitalo-bundle-card__pricing">
-              {% if savings_cents > 0 %}
-                <span class="vitalo-bundle-card__price-original">${{ block.settings.original_price | money_without_currency }}</span>
+              {% if savings_raw > 0 %}
+                <span class="vitalo-bundle-card__price-original">${{ original_raw | round: 2 }}</span>
               {% endif %}
-              <span class="vitalo-bundle-card__price-bundle">${{ block.settings.bundle_price | money_without_currency }}</span>
-              {% if savings_cents > 0 %}
-                <span class="vitalo-bundle-card__savings">Save ${{ savings_dollars | money_without_currency }}</span>
+              <span class="vitalo-bundle-card__price-bundle">${{ bundle_raw | round: 2 }}</span>
+              {% if savings_raw > 0 %}
+                <span class="vitalo-bundle-card__savings">Save ${{ savings_raw | round: 2 }}</span>
               {% endif %}
             </div>
 
@@ -136,6 +140,13 @@
           "id": "badge",
           "label": "Badge Label",
           "info": "e.g. Best Value, Most Popular. Leave blank for no badge."
+        },
+        {
+          "type": "checkbox",
+          "id": "featured",
+          "label": "Featured Bundle",
+          "info": "Makes this card larger to stand out as the top pick.",
+          "default": false
         },
         {
           "type": "product",

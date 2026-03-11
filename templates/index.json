@@ -357,6 +357,7 @@
             "title": "Full Body Wellness Stack",
             "description": "Complete daily coverage for adults 50+ — blood sugar, gut health, joints, heart, and more.",
             "badge": "Best Value",
+            "featured": true,
             "product_1": "brain-focus-formula",
             "product_2": "complete-multivitamin",
             "product_3": "fat-burner-with-mct",
@@ -404,8 +405,8 @@
         }
       },
       "block_order": [
-        "bundle_wellness",
         "bundle_energy",
+        "bundle_wellness",
         "bundle_heart_joint"
       ],
       "settings": {

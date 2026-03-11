@@ -2376,3 +2376,54 @@ media-gallery > slider-component:first-of-type {
   stroke: white;
   flex-shrink: 0;
 }
+
+/* Featured Bundle Card */
+.vitalo-bundle-card--featured {
+  border: 2px solid var(--vitalo-green);
+  box-shadow: 0 8px 32px rgba(74, 124, 89, 0.14);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.vitalo-bundle-card--featured:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 12px 40px rgba(74, 124, 89, 0.2);
+}
+
+.vitalo-bundle-card--featured .vitalo-bundle-card__badge {
+  background: var(--vitalo-green);
+  color: white;
+}
+
+.vitalo-bundle-card--featured .vitalo-bundle-card__name {
+  font-size: 25px;
+}
+
+.vitalo-bundle-card--featured .vitalo-bundle-card__price-bundle {
+  font-size: 30px;
+}
+
+.vitalo-bundle-card--featured .vitalo-bundle-card__cta {
+  background: var(--vitalo-gold);
+  color: var(--vitalo-green-deep);
+  font-size: 17px;
+  padding: 16px 28px;
+}
+
+.vitalo-bundle-card--featured .vitalo-bundle-card__cta:hover {
+  background: var(--vitalo-gold-light);
+}
+
+.vitalo-bundle-card--featured .vitalo-bundle-card__cta svg {
+  stroke: var(--vitalo-green-deep);
+}
+
+@media (max-width: 999px) {
+  .vitalo-bundle-card--featured {
+    transform: none;
+  }
+
+  .vitalo-bundle-card--featured:hover {
+    transform: translateY(-4px);
+  }
+}
