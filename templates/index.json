@@ -307,7 +307,7 @@
             "product_5": "mens-vitality",
             "original_price": "224.96",
             "bundle_price": "180.00",
-            "bundle_link": "",
+            "bundle_link": "shopify://products/complete-multivitamin",
             "cta_label": "Shop This Bundle"
           }
         },
@@ -340,6 +340,15 @@
         "subheading": "Save more when you stack. Curated bundles designed to work together for complete daily support.",
         "button_label": "",
         "button_link": ""
+      }
+    },
+    "cta": {
+      "type": "vitalo-cta",
+      "settings": {
+        "heading": "Take Control of Your Health",
+        "body": "Quality supplements designed for adults 50+. Science-backed formulas, full transparency, and a guarantee that means something.",
+        "button_label": "Shop Our Supplements",
+        "button_link": "shopify://collections/all"
       }
     },
     "faq": {
@@ -404,15 +413,6 @@
       ],
       "settings": {
         "heading": "Frequently Asked Questions"
-      }
-    },
-    "cta": {
-      "type": "vitalo-cta",
-      "settings": {
-        "heading": "Take Control of Your Health",
-        "body": "Quality supplements designed for adults 50+. Science-backed formulas, full transparency, and a guarantee that means something.",
-        "button_label": "Shop Our Supplements",
-        "button_link": "shopify://collections/all"
       }
     },
     "newsletter": {
