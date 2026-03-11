@@ -2390,11 +2390,6 @@ media-gallery > slider-component:first-of-type {
   box-shadow: 0 12px 40px rgba(74, 124, 89, 0.2);
 }
 
-.vitalo-bundle-card--featured .vitalo-bundle-card__badge {
-  background: var(--vitalo-green);
-  color: white;
-}
-
 .vitalo-bundle-card--featured .vitalo-bundle-card__name {
   font-size: 25px;
 }
@@ -2404,18 +2399,8 @@ media-gallery > slider-component:first-of-type {
 }
 
 .vitalo-bundle-card--featured .vitalo-bundle-card__cta {
-  background: var(--vitalo-gold);
-  color: var(--vitalo-green-deep);
   font-size: 17px;
   padding: 16px 28px;
-}
-
-.vitalo-bundle-card--featured .vitalo-bundle-card__cta:hover {
-  background: var(--vitalo-gold-light);
-}
-
-.vitalo-bundle-card--featured .vitalo-bundle-card__cta svg {
-  stroke: var(--vitalo-green-deep);
 }
 
 @media (max-width: 999px) {
