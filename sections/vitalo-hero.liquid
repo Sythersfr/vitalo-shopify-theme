@@ -17,15 +17,23 @@
       {{ section.settings.subheading }}
     </p>
 
-    {% if section.settings.button_label != blank %}
-      <a href="{{ section.settings.button_link }}" class="vitalo-hero__cta">
-        {{ section.settings.button_label }}
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
-    {% endif %}
+    <div class="vitalo-hero__buttons">
+      {% if section.settings.button_label != blank %}
+        <a href="{{ section.settings.button_link }}" class="vitalo-hero__cta">
+          {{ section.settings.button_label }}
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      {% endif %}
+
+      {% if section.settings.secondary_button_label != blank %}
+        <a href="{{ section.settings.secondary_button_link }}" class="vitalo-hero__cta-secondary">
+          {{ section.settings.secondary_button_label }}
+        </a>
+      {% endif %}
+    </div>
   </div>
 </section>
 
@@ -61,6 +69,16 @@
       "type": "url",
       "id": "button_link",
       "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "secondary_button_label",
+      "label": "Secondary Button Label"
+    },
+    {
+      "type": "url",
+      "id": "secondary_button_link",
+      "label": "Secondary Button Link"
     }
   ],
   "presets": [

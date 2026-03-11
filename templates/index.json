@@ -16,7 +16,9 @@
         "heading": "<p>The Supplement Industry Has Been <em>Lying to You</em> for Years</p>",
         "subheading": "They sold you underdosed formulas, hid behind proprietary blends, made claims they couldn't back up — and when you asked for proof, they went quiet.",
         "button_label": "Shop our performance plans",
-        "button_link": "shopify://collections/all"
+        "button_link": "#vitalo-bundles",
+        "secondary_button_label": "Just take me to the product catalogue",
+        "secondary_button_link": "shopify://collections/all"
       }
     },
     "vitalo_video": {
