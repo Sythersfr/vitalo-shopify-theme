@@ -279,8 +279,14 @@
             "title": "Full Body Wellness Stack",
             "description": "Complete daily coverage for adults 50+ — blood sugar, gut health, joints, heart, and more.",
             "badge": "Best Value",
+            "product_1": "brain-focus-formula",
+            "product_2": "complete-multivitamin",
+            "product_3": "fat-burner-with-mct",
+            "product_4": "gut-health",
+            "product_5": "mens-vitality",
             "original_price": "224.96",
             "bundle_price": "180.00",
+            "bundle_link": "",
             "cta_label": "Shop This Bundle"
           }
         },
@@ -290,8 +296,14 @@
             "title": "Energy & Focus Stack",
             "description": "Sustained energy and mental clarity without the crash. Built for your daily routine.",
             "badge": "Most Popular",
+            "product_1": "",
+            "product_2": "",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
             "original_price": "134.97",
             "bundle_price": "108.00",
+            "bundle_link": "",
             "cta_label": "Shop This Bundle"
           }
         },
@@ -301,8 +313,14 @@
             "title": "Heart & Joint Support",
             "description": "Targeted support for cardiovascular health and joint comfort in one daily stack.",
             "badge": "",
+            "product_1": "",
+            "product_2": "",
+            "product_3": "",
+            "product_4": "",
+            "product_5": "",
             "original_price": "89.98",
             "bundle_price": "72.00",
+            "bundle_link": "",
             "cta_label": "Shop This Bundle"
           }
         }
@@ -314,7 +332,9 @@
       ],
       "settings": {
         "heading": "Performance Bundles",
-        "subheading": "Save more when you stack. Curated bundles designed to work together for complete daily support."
+        "subheading": "Save more when you stack. Curated bundles designed to work together for complete daily support.",
+        "button_label": "",
+        "button_link": ""
       }
     },
     "faq": {
