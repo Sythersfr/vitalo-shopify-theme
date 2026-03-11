@@ -270,15 +270,51 @@
         "button_link": "shopify://collections/all"
       }
     },
-    "products": {
-      "type": "vitalo-products",
+    "bundles": {
+      "type": "vitalo-bundles",
+      "blocks": {
+        "bundle_wellness": {
+          "type": "bundle",
+          "settings": {
+            "title": "Full Body Wellness Stack",
+            "description": "Complete daily coverage for adults 50+ — blood sugar, gut health, joints, heart, and more.",
+            "badge": "Best Value",
+            "original_price": "224.96",
+            "bundle_price": "180.00",
+            "cta_label": "Shop This Bundle"
+          }
+        },
+        "bundle_energy": {
+          "type": "bundle",
+          "settings": {
+            "title": "Energy & Focus Stack",
+            "description": "Sustained energy and mental clarity without the crash. Built for your daily routine.",
+            "badge": "Most Popular",
+            "original_price": "134.97",
+            "bundle_price": "108.00",
+            "cta_label": "Shop This Bundle"
+          }
+        },
+        "bundle_heart_joint": {
+          "type": "bundle",
+          "settings": {
+            "title": "Heart & Joint Support",
+            "description": "Targeted support for cardiovascular health and joint comfort in one daily stack.",
+            "badge": "",
+            "original_price": "89.98",
+            "bundle_price": "72.00",
+            "cta_label": "Shop This Bundle"
+          }
+        }
+      },
+      "block_order": [
+        "bundle_wellness",
+        "bundle_energy",
+        "bundle_heart_joint"
+      ],
       "settings": {
-        "heading": "Our Products",
-        "subheading": "Targeted formulas for the health needs that matter most to adults 50+.",
-        "collection": "all",
-        "products_to_show": 6,
-        "button_label": "View All Products",
-        "button_link": "shopify://collections/all"
+        "heading": "Performance Bundles",
+        "subheading": "Save more when you stack. Curated bundles designed to work together for complete daily support."
       }
     },
     "faq": {
@@ -413,7 +449,7 @@
     "stats",
     "standard",
     "story",
-    "products",
+    "bundles",
     "faq",
     "newsletter",
     "cta",

@@ -2149,3 +2149,230 @@ media-gallery > slider-component:first-of-type {
     right: 0.5rem;
   }
 }
+
+/* ============================================
+   PERFORMANCE BUNDLES SECTION
+   ============================================ */
+
+.vitalo-bundles {
+  padding: var(--space-4xl) 0;
+  background: var(--vitalo-cream);
+}
+
+.vitalo-bundles__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.vitalo-bundles__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.vitalo-bundles__title {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  color: var(--vitalo-dark);
+  margin-bottom: var(--space-md);
+}
+
+.vitalo-bundles__subtitle {
+  font-size: 18px;
+  color: var(--vitalo-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.vitalo-bundles__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+@media (max-width: 999px) {
+  .vitalo-bundles__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .vitalo-bundles__grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+
+/* Bundle Card */
+.vitalo-bundle-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--vitalo-border);
+  transition: all var(--transition-base);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.vitalo-bundle-card:hover {
+  border-color: var(--vitalo-green);
+  box-shadow: 0 8px 32px rgba(74, 124, 89, 0.12);
+  transform: translateY(-4px);
+}
+
+.vitalo-bundle-card__badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--vitalo-gold);
+  color: var(--vitalo-green-deep);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.vitalo-bundle-card__body {
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.vitalo-bundle-card__name {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--vitalo-dark);
+  margin-bottom: var(--space-xs);
+  line-height: 1.3;
+  padding-top: var(--space-sm);
+}
+
+.vitalo-bundle-card__desc {
+  font-size: 15px;
+  color: var(--vitalo-text-light);
+  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+}
+
+/* Product thumbnail row */
+.vitalo-bundle-card__products {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--vitalo-border);
+  border-bottom: 1px solid var(--vitalo-border);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vitalo-bundle-card__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  max-width: 72px;
+}
+
+.vitalo-bundle-card__product-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--vitalo-cream);
+  border: 2px solid var(--vitalo-border);
+  transition: border-color var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.vitalo-bundle-card:hover .vitalo-bundle-card__product-img {
+  border-color: var(--vitalo-green);
+}
+
+.vitalo-bundle-card__product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vitalo-bundle-card__product-name {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--vitalo-text-light);
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Pricing */
+.vitalo-bundle-card__pricing {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.vitalo-bundle-card__price-original {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--vitalo-text-light);
+  text-decoration: line-through;
+}
+
+.vitalo-bundle-card__price-bundle {
+  font-family: var(--font-body);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--vitalo-dark);
+}
+
+.vitalo-bundle-card__savings {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--vitalo-green-deep);
+  background: var(--vitalo-gold);
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+/* CTA button */
+.vitalo-bundle-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: var(--vitalo-green);
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  margin-top: auto;
+}
+
+.vitalo-bundle-card__cta:hover {
+  background: var(--vitalo-green-dark);
+  gap: 12px;
+}
+
+.vitalo-bundle-card__cta svg {
+  stroke: white;
+  flex-shrink: 0;
+}
