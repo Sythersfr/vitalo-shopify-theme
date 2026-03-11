@@ -17,8 +17,8 @@
         "subheading": "They sold you underdosed formulas, hid behind proprietary blends, made claims they couldn't back up — and when you asked for proof, they went quiet.",
         "button_label": "Shop our performance plans",
         "button_link": "#vitalo-bundles",
-        "secondary_button_label": "Just take me to the product catalogue",
-        "secondary_button_link": "shopify://collections/all"
+        "secondary_button_label": "",
+        "secondary_button_link": ""
       }
     },
     "vitalo_video": {
@@ -406,15 +406,6 @@
         "heading": "Frequently Asked Questions"
       }
     },
-    "newsletter": {
-      "type": "vitalo-newsletter",
-      "settings": {
-        "heading": "Join the Vitalo Community",
-        "body": "Get health tips, product updates, and exclusive offers for adults 50+ — delivered straight to your inbox.",
-        "placeholder": "Enter your email",
-        "button_label": "Subscribe"
-      }
-    },
     "cta": {
       "type": "vitalo-cta",
       "settings": {
@@ -422,6 +413,15 @@
         "body": "Quality supplements designed for adults 50+. Science-backed formulas, full transparency, and a guarantee that means something.",
         "button_label": "Shop Our Supplements",
         "button_link": "shopify://collections/all"
+      }
+    },
+    "newsletter": {
+      "type": "vitalo-newsletter",
+      "settings": {
+        "heading": "Join the Vitalo Community",
+        "body": "Get health tips, product updates, and exclusive offers for adults 50+ — delivered straight to your inbox.",
+        "placeholder": "Enter your email",
+        "button_label": "Subscribe"
       }
     },
     "footer_tagline": {
@@ -475,9 +475,9 @@
     "standard",
     "story",
     "bundles",
+    "cta",
     "faq",
     "newsletter",
-    "cta",
     "footer_tagline"
   ]
 }
