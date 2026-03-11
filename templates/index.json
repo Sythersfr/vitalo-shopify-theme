@@ -270,6 +270,84 @@
         "button_link": "shopify://collections/all"
       }
     },
+    "featured_product_7EctgJ": {
+      "type": "featured-product",
+      "blocks": {
+        "kaching_bundles_app_block_iCkdXb": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "{{section.settings.product}}",
+            "manual_deal_block_id": ""
+          }
+        },
+        "text_DXQLzX": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_BFwfz6": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_6pw7pr": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_CgjFMD": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_TFwe7f": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_hzJATk": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_EKj9ry": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "kaching_bundles_app_block_iCkdXb",
+        "text_DXQLzX",
+        "title_BFwfz6",
+        "price_6pw7pr",
+        "variant_picker_CgjFMD",
+        "quantity_selector_TFwe7f",
+        "buy_buttons_hzJATk",
+        "share_EKj9ry"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "vitalo-blood-sugar-support",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "bundles": {
       "type": "vitalo-bundles",
       "blocks": {
@@ -469,6 +547,7 @@
     "stats",
     "standard",
     "story",
+    "featured_product_7EctgJ",
     "bundles",
     "faq",
     "newsletter",
