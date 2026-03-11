@@ -270,87 +270,27 @@
         "button_link": "shopify://collections/all"
       }
     },
-    "featured_product_7EctgJ": {
-      "type": "featured-product",
-      "blocks": {
-        "kaching_bundles_app_block_iCkdXb": {
-          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
-          "settings": {
-            "product": "{{section.settings.product}}",
-            "manual_deal_block_id": ""
-          }
-        },
-        "text_DXQLzX": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_BFwfz6": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_6pw7pr": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_CgjFMD": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_TFwe7f": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_hzJATk": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_EKj9ry": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "kaching_bundles_app_block_iCkdXb",
-        "text_DXQLzX",
-        "title_BFwfz6",
-        "price_6pw7pr",
-        "variant_picker_CgjFMD",
-        "quantity_selector_TFwe7f",
-        "buy_buttons_hzJATk",
-        "share_EKj9ry"
-      ],
-      "name": "t:sections.featured-product.presets.name",
-      "settings": {
-        "product": "vitalo-blood-sugar-support",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "bundles": {
       "type": "vitalo-bundles",
       "blocks": {
+        "bundle_energy": {
+          "type": "bundle",
+          "settings": {
+            "title": "Energy & Focus Stack",
+            "description": "Sustained energy and mental clarity without the crash. Built for your daily routine.",
+            "badge": "Most Popular",
+            "featured": false,
+            "product_1": "ashwagandha-plus",
+            "product_2": "brain-focus-formula",
+            "product_3": "vision-support",
+            "product_4": "mens-vitality",
+            "product_5": "",
+            "original_price": "134.97",
+            "bundle_price": "108.00",
+            "bundle_link": "",
+            "cta_label": "Shop This Bundle"
+          }
+        },
         "bundle_wellness": {
           "type": "bundle",
           "settings": {
@@ -369,29 +309,13 @@
             "cta_label": "Shop This Bundle"
           }
         },
-        "bundle_energy": {
-          "type": "bundle",
-          "settings": {
-            "title": "Energy & Focus Stack",
-            "description": "Sustained energy and mental clarity without the crash. Built for your daily routine.",
-            "badge": "Most Popular",
-            "product_1": "ashwagandha-plus",
-            "product_2": "brain-focus-formula",
-            "product_3": "vision-support",
-            "product_4": "mens-vitality",
-            "product_5": "",
-            "original_price": "134.97",
-            "bundle_price": "108.00",
-            "bundle_link": "",
-            "cta_label": "Shop This Bundle"
-          }
-        },
         "bundle_heart_joint": {
           "type": "bundle",
           "settings": {
             "title": "Heart & Joint Support",
             "description": "Targeted support for cardiovascular health and joint comfort in one daily stack.",
             "badge": "",
+            "featured": false,
             "product_1": "vitalo-blood-sugar-support",
             "product_2": "omega-3-epa-180mg-dha-120mg",
             "product_3": "prostate-support",
@@ -548,7 +472,6 @@
     "stats",
     "standard",
     "story",
-    "featured_product_7EctgJ",
     "bundles",
     "faq",
     "newsletter",
