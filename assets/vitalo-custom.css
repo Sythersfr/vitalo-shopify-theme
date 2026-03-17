@@ -1684,11 +1684,40 @@ textarea:focus {
 }
 
 /* ============================================
+   MOBILE MENU DRAWER
+   ============================================ */
+
+.menu-drawer {
+  background-color: var(--vitalo-white) !important;
+}
+
+.menu-drawer__inner-container {
+  background-color: var(--vitalo-white);
+}
+
+.menu-drawer__menu-item {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--vitalo-dark);
+}
+
+.menu-drawer__menu-item:hover,
+.menu-drawer__menu-item:focus {
+  color: var(--vitalo-green);
+  background-color: var(--vitalo-cream);
+}
+
+.menu-drawer__utility-links {
+  background-color: var(--vitalo-cream) !important;
+}
+
+/* ============================================
    CART DRAWER & NOTIFICATIONS
    ============================================ */
 
 .drawer {
-  background: white !important;
+  background: transparent !important;
 }
 
 .drawer__header {
@@ -2882,23 +2911,26 @@ cart-drawer .cart__empty-text {
   margin-bottom: var(--space-md);
 }
 
-cart-drawer .cart-drawer__warnings .button {
-  background: var(--vitalo-green);
-  color: white;
+cart-drawer .cart-drawer__warnings .button,
+cart-drawer .cart__empty-text + .button,
+cart-drawer .cart-drawer__empty-content .button {
+  background: var(--vitalo-green) !important;
+  color: white !important;
   font-family: var(--font-body);
   font-weight: 600;
   border-radius: 8px;
   padding: 14px 28px;
 }
 
-cart-drawer .cart-drawer__warnings .button:hover {
-  background: var(--vitalo-green-dark);
+cart-drawer .cart-drawer__warnings .button:hover,
+cart-drawer .cart__empty-text + .button:hover,
+cart-drawer .cart-drawer__empty-content .button:hover {
+  background: var(--vitalo-green-dark) !important;
+  color: white !important;
 }
 
 cart-drawer .cart-drawer__overlay {
-  background-color: rgba(26, 46, 31, 0.4);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background-color: rgba(26, 46, 31, 0.15);
 }
 
 cart-drawer .discounts__discount {
