@@ -2440,3 +2440,486 @@ media-gallery > slider-component:first-of-type {
     transform: translateY(-4px);
   }
 }
+
+/* ============================================
+   MOBILE RESPONSIVENESS — GLOBAL
+   ============================================ */
+
+@media (max-width: 749px) {
+  body {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  header.header.page-width {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .header__heading-link img {
+    max-height: 32px;
+  }
+
+  .vitalo-hero {
+    min-height: 55vh;
+  }
+
+  .vitalo-hero__content {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .vitalo-hero__badge {
+    font-size: 12px;
+    padding: 8px 16px;
+    margin-bottom: var(--space-md);
+  }
+
+  .vitalo-hero__subtitle {
+    font-size: 16px;
+    margin: 0 auto var(--space-lg);
+    line-height: 1.65;
+  }
+
+  .vitalo-hero__cta {
+    padding: 16px 32px;
+    font-size: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .vitalo-pain {
+    padding: var(--space-3xl) 0;
+  }
+
+  .vitalo-pain__text {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .vitalo-why {
+    padding: var(--space-3xl) 0;
+  }
+
+  .vitalo-why__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .vitalo-comparison__header {
+    display: none;
+  }
+
+  .vitalo-comparison__row {
+    padding: var(--space-lg) var(--space-md);
+    gap: var(--space-md);
+  }
+
+  .vitalo-comparison__label {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--vitalo-text-light);
+    margin-bottom: 2px;
+  }
+
+  .vitalo-comparison__good,
+  .vitalo-comparison__bad {
+    font-size: 15px;
+  }
+
+  .vitalo-testimonials {
+    padding: var(--space-3xl) 0;
+  }
+
+  .vitalo-testimonials__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .vitalo-testimonial-card {
+    padding: var(--space-lg);
+  }
+
+  .vitalo-testimonial-card__text {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .vitalo-stats {
+    padding: var(--space-2xl) 0;
+  }
+
+  .vitalo-standard {
+    padding: var(--space-3xl) 0;
+  }
+
+  .vitalo-standard__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .vitalo-standard__desc {
+    font-size: 16px;
+  }
+
+  .vitalo-standard-card {
+    padding: var(--space-lg);
+  }
+
+  .vitalo-story {
+    padding: var(--space-3xl) 0;
+  }
+
+  .vitalo-story__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .vitalo-story__body p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .vitalo-bundles {
+    padding: var(--space-3xl) 0;
+  }
+
+  .vitalo-bundles__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .vitalo-bundles__subtitle {
+    font-size: 16px;
+  }
+
+  .vitalo-bundle-card__body {
+    padding: var(--space-lg) var(--space-md) var(--space-md);
+  }
+
+  .vitalo-bundle-card__name {
+    font-size: 20px;
+  }
+
+  .vitalo-bundle-card__product-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .vitalo-bundle-card__product-name {
+    font-size: 10px;
+  }
+
+  .vitalo-bundle-card__price-bundle {
+    font-size: 24px;
+  }
+
+  .vitalo-bundle-card__cta {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+  }
+
+  .vitalo-bundle-card--featured .vitalo-bundle-card__name {
+    font-size: 22px;
+  }
+
+  .vitalo-bundle-card--featured .vitalo-bundle-card__price-bundle {
+    font-size: 26px;
+  }
+
+  .vitalo-bundle-card--featured .vitalo-bundle-card__cta {
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+
+  .vitalo-cta {
+    padding: var(--space-3xl) 0;
+  }
+
+  .vitalo-cta__text {
+    font-size: 17px;
+  }
+
+  .vitalo-faq {
+    padding: var(--space-3xl) 0;
+  }
+
+  .vitalo-faq__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .vitalo-faq-item__question {
+    font-size: 16px;
+    padding: var(--space-md) 0;
+  }
+
+  .vitalo-faq-item__answer p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .vitalo-newsletter {
+    padding: var(--space-3xl) 0;
+  }
+
+  .vitalo-newsletter__text {
+    font-size: 16px;
+  }
+
+  .vitalo-newsletter__btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .vitalo-footer-tagline__badges {
+    gap: var(--space-md);
+  }
+
+  .vitalo-footer-tagline__badge-item {
+    font-size: 13px;
+  }
+
+  .vitalo-footer-tagline__text {
+    font-size: 16px;
+  }
+
+  .product-form__submit {
+    padding: 18px;
+    font-size: 17px;
+  }
+
+  .button,
+  .shopify-payment-button__button,
+  button[type="submit"] {
+    padding: 16px 28px;
+    font-size: 16px;
+  }
+
+  .cart .quantity__button {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .cart .quantity__input {
+    width: 48px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .vitalo-stats__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .vitalo-hero {
+    min-height: 50vh;
+  }
+
+  .vitalo-footer-tagline__badges {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+}
+
+/* ============================================
+   CART DRAWER — VITALO BRANDING
+   ============================================ */
+
+cart-drawer .drawer__inner {
+  background: var(--vitalo-white) !important;
+  border-left: 1px solid var(--vitalo-border);
+}
+
+cart-drawer .drawer__header {
+  border-bottom: 1px solid var(--vitalo-border);
+  padding: var(--space-lg) 0;
+}
+
+cart-drawer .drawer__heading {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--vitalo-dark);
+  margin: 0;
+}
+
+cart-drawer .drawer__close {
+  color: var(--vitalo-text-light);
+  transition: color var(--transition-fast);
+}
+
+cart-drawer .drawer__close:hover {
+  color: var(--vitalo-dark);
+}
+
+cart-drawer .cart-item__image {
+  border-radius: 8px;
+}
+
+cart-drawer .cart-item__name {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--vitalo-dark);
+  text-decoration: none;
+}
+
+cart-drawer .cart-item__name:hover {
+  color: var(--vitalo-green);
+}
+
+cart-drawer .product-option {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--vitalo-text-light);
+}
+
+cart-drawer .cart-item__totals .price {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--vitalo-dark);
+}
+
+cart-drawer .cart-items th {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--vitalo-text-light);
+}
+
+cart-drawer .quantity {
+  border: 1px solid var(--vitalo-border);
+  border-radius: 6px;
+}
+
+cart-drawer .quantity__button {
+  color: var(--vitalo-dark);
+  width: 36px;
+  height: 36px;
+}
+
+cart-drawer .quantity__button:hover {
+  background: var(--vitalo-cream);
+}
+
+cart-drawer .quantity__input {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--vitalo-dark);
+  width: 40px;
+}
+
+cart-drawer .cart-remove-button {
+  color: var(--vitalo-text-light);
+  font-size: 13px;
+}
+
+cart-drawer .cart-remove-button:hover {
+  color: var(--vitalo-red);
+}
+
+cart-drawer .drawer__footer {
+  border-top: 1px solid var(--vitalo-border);
+  padding: var(--space-md) 0;
+  background: var(--vitalo-white);
+}
+
+cart-drawer .totals {
+  padding: var(--space-sm) 0;
+}
+
+cart-drawer .totals__total {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--vitalo-text);
+}
+
+cart-drawer .totals__total-value {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--vitalo-dark);
+}
+
+cart-drawer .tax-note {
+  font-size: 13px;
+  color: var(--vitalo-text-light);
+}
+
+cart-drawer .cart__checkout-button {
+  background: var(--vitalo-green) !important;
+  color: white !important;
+  font-family: var(--font-body) !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.03em;
+  padding: 18px 32px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  text-transform: uppercase;
+  transition: all var(--transition-base) !important;
+  box-shadow: 0 4px 12px rgba(74, 124, 89, 0.25);
+}
+
+cart-drawer .cart__checkout-button:hover {
+  background: var(--vitalo-green-dark) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(74, 124, 89, 0.35);
+}
+
+cart-drawer .cart__empty-text {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--vitalo-dark);
+  margin-bottom: var(--space-md);
+}
+
+cart-drawer .cart-drawer__warnings .button {
+  background: var(--vitalo-green);
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 28px;
+}
+
+cart-drawer .cart-drawer__warnings .button:hover {
+  background: var(--vitalo-green-dark);
+}
+
+cart-drawer .cart-drawer__overlay {
+  background-color: rgba(26, 46, 31, 0.4);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+cart-drawer .discounts__discount {
+  color: var(--vitalo-green);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 749px) {
+  cart-drawer .drawer__inner {
+    max-width: 100vw;
+    padding: 0 var(--space-md);
+  }
+
+  cart-drawer .drawer__heading {
+    font-size: 20px;
+  }
+
+  cart-drawer .cart__checkout-button {
+    font-size: 16px !important;
+    padding: 16px 24px !important;
+  }
+}
