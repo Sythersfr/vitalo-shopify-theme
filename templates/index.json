@@ -66,7 +66,7 @@
           "type": "ai_gen_block_b7cdbbf",
           "settings": {
             "button_text": "View all products",
-            "catalog_link": "",
+            "catalog_link": "https://vitalo.io/collections/all",
             "alignment": "center",
             "desktop_width_percent": 100,
             "button_background_color": "#121212",
