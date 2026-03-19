@@ -70,9 +70,9 @@
             "alignment": "center",
             "desktop_width_percent": 100,
             "button_background_color": "#121212",
-            "button_text_color": "#FFFFFF",
+            "button_text_color": "#ffffff",
             "button_hover_background_color": "#000000",
-            "button_hover_text_color": "#FFFFFF",
+            "button_hover_text_color": "#ffffff",
             "button_border_color": "#121212",
             "button_hover_border_color": "#000000",
             "button_border_width": 0,
@@ -132,6 +132,7 @@
     },
     "pain_point": {
       "type": "vitalo-pain-point",
+      "disabled": true,
       "settings": {
         "heading": "What You Get Instead of Empty Promises",
         "body": "Supplements built on science, not marketing. Clinically dosed ingredients you can verify. Formulas targeting the real health needs of adults 50+ — energy, focus, joint comfort, heart health, blood sugar support, and more. Plus a 90-day guarantee that actually means something."
