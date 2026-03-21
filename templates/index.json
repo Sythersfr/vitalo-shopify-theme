@@ -30,6 +30,71 @@
         "padding_bottom": 48
       }
     },
+    "featured_collection_zdGy7P": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "best-sellers",
+        "products_to_show": 4,
+        "title": "Shop our Top products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "17738722317bff6888": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b7cdbbf_DTdTcX": {
+          "type": "ai_gen_block_b7cdbbf",
+          "settings": {
+            "button_text": "View all products",
+            "catalog_link": "https://vitalo.io/collections/all",
+            "alignment": "center",
+            "desktop_width_percent": 100,
+            "button_background_color": "#121212",
+            "button_text_color": "#ffffff",
+            "button_hover_background_color": "#000000",
+            "button_hover_text_color": "#ffffff",
+            "button_border_color": "#121212",
+            "button_hover_border_color": "#000000",
+            "button_border_width": 0,
+            "button_border_radius": 0,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 32,
+            "font_size": 16,
+            "font_weight": "500",
+            "show_icon": true,
+            "icon_position": "right",
+            "icon_size": 18,
+            "padding_top": 24,
+            "padding_bottom": 24
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b7cdbbf_DTdTcX"
+      ],
+      "settings": {}
+    },
     "trust_badges": {
       "type": "vitalo-trust-badges",
       "blocks": {
@@ -67,6 +132,7 @@
     },
     "pain_point": {
       "type": "vitalo-pain-point",
+      "disabled": true,
       "settings": {
         "heading": "What You Get Instead of Empty Promises",
         "body": "Supplements built on science, not marketing. Clinically dosed ingredients you can verify. Formulas targeting the real health needs of adults 50+ — energy, focus, joint comfort, heart health, blood sugar support, and more. Plus a 90-day guarantee that actually means something."
@@ -467,6 +533,8 @@
   "order": [
     "vitalo_hero",
     "vitalo_video",
+    "featured_collection_zdGy7P",
+    "17738722317bff6888",
     "trust_badges",
     "pain_point",
     "comparison",
