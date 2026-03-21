@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "sales_page": {
+      "type": "vitalo-sales-page",
+      "settings": {
+        "hero_badge": "For Adults 50+",
+        "cta_link": "shopify://collections/all"
+      }
+    }
+  },
+  "order": [
+    "sales_page"
+  ]
+}

@@ -1,0 +1,726 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<style>
+  /* Sales Page Scoped Styles */
+  .vsp { font-family: var(--font-body); color: var(--vitalo-text); }
+  .vsp * { box-sizing: border-box; }
+
+  .vsp-section {
+    padding: var(--space-3xl) var(--space-lg);
+  }
+  .vsp-section--alt { background: var(--vitalo-cream); }
+  .vsp-section--dark {
+    background: linear-gradient(180deg, #0F1F14 0%, var(--vitalo-green-deep) 100%);
+    color: var(--vitalo-cream);
+  }
+  .vsp-section--dark h2,
+  .vsp-section--dark h3 { color: var(--vitalo-cream); }
+  .vsp-section--dark p { color: #9AADA0; }
+  .vsp-section--dark .vsp-strong { color: var(--vitalo-cream); }
+
+  .vsp-container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .vsp-narrow {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .vsp h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(26px, 4vw, 38px);
+    color: var(--vitalo-dark);
+    line-height: 1.2;
+    margin-bottom: var(--space-lg);
+    font-weight: 700;
+  }
+  .vsp h3 {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    color: var(--vitalo-dark);
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  .vsp p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .vsp p:last-child { margin-bottom: 0; }
+
+  .vsp-eyebrow {
+    font-size: 13px;
+    color: var(--vitalo-gold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .vsp-strong {
+    color: var(--vitalo-dark);
+    font-weight: 600;
+  }
+  .vsp-muted { color: var(--vitalo-text-light); }
+  .vsp-gold { color: var(--vitalo-gold); }
+
+  .vsp-divider {
+    width: 40px;
+    height: 2px;
+    background: var(--vitalo-gold);
+    margin: 40px 0;
+  }
+
+  .vsp blockquote {
+    border-left: 3px solid var(--vitalo-gold);
+    padding: 16px 24px;
+    margin: 28px 0;
+    background: var(--vitalo-cream);
+    font-style: italic;
+    font-size: 17px;
+    color: var(--vitalo-text);
+  }
+  .vsp-section--dark blockquote {
+    background: rgba(74,124,89,0.12);
+    color: var(--vitalo-cream);
+  }
+
+  .vsp-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+  }
+  .vsp-check-list li {
+    padding: 10px 0 10px 32px;
+    position: relative;
+    font-size: 17px;
+  }
+  .vsp-check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--vitalo-green);
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .vsp-section--dark .vsp-check-list li::before {
+    color: var(--vitalo-gold);
+  }
+  .vsp-section--dark .vsp-check-list li {
+    color: var(--vitalo-cream);
+  }
+
+  /* Hero */
+  .vsp-hero {
+    background: linear-gradient(180deg, #0F1F14 0%, var(--vitalo-green-deep) 100%);
+    padding: 80px 24px 70px;
+    text-align: center;
+  }
+  .vsp-hero h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--vitalo-cream);
+    line-height: 1.15;
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+  .vsp-hero h1 em {
+    color: var(--vitalo-gold);
+    font-style: italic;
+  }
+  .vsp-hero .vsp-sub {
+    font-size: 18px;
+    color: #9AADA0;
+    max-width: 520px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+  }
+  .vsp-hero .vsp-trust-row {
+    font-size: 13px;
+    color: #6B9B7C;
+    letter-spacing: 1px;
+  }
+  .vsp-hero .vsp-trust-row span { margin: 0 10px; }
+  .vsp-gold-rule {
+    width: 50px;
+    height: 2px;
+    background: var(--vitalo-gold);
+    margin: 0 auto 28px;
+  }
+
+  /* Comparison Table */
+  .vsp-compare {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 28px 0;
+  }
+  .vsp-compare th {
+    background: var(--vitalo-green-deep);
+    color: var(--vitalo-cream);
+    font-family: var(--font-body);
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    text-align: center;
+  }
+  .vsp-compare th.vsp-gold-th { color: var(--vitalo-gold); font-weight: 700; }
+  .vsp-compare td {
+    padding: 16px;
+    border-bottom: 1px solid var(--vitalo-border);
+    text-align: center;
+    font-size: 15px;
+    vertical-align: top;
+  }
+  .vsp-compare td:first-child { color: var(--vitalo-text-light); }
+  .vsp-compare td:last-child { color: var(--vitalo-dark); font-weight: 600; }
+
+  /* Ingredient Cards */
+  .vsp-ingredient {
+    border-left: 3px solid var(--vitalo-gold);
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    background: rgba(74,124,89,0.12);
+  }
+  .vsp-ingredient h4 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    color: var(--vitalo-gold);
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+  .vsp-ingredient p {
+    font-size: 15px;
+    color: #9AADA0;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* Testimonial */
+  .vsp-testimonial {
+    background: var(--vitalo-cream);
+    padding: 32px;
+    text-align: center;
+    margin: 28px 0;
+  }
+  .vsp-section--dark .vsp-testimonial { background: rgba(74,124,89,0.12); }
+  .vsp-testimonial .vsp-stars { color: var(--vitalo-gold); font-size: 22px; margin-bottom: 12px; }
+  .vsp-testimonial .vsp-quote {
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: var(--vitalo-text);
+  }
+  .vsp-section--dark .vsp-testimonial .vsp-quote { color: var(--vitalo-cream); }
+  .vsp-testimonial .vsp-author {
+    font-size: 13px;
+    color: var(--vitalo-text-light);
+    letter-spacing: 1px;
+  }
+
+  /* Objections */
+  .vsp-objection { margin-bottom: 32px; }
+  .vsp-objection .vsp-q {
+    font-family: var(--font-heading);
+    font-size: 19px;
+    color: var(--vitalo-dark);
+    margin-bottom: 8px;
+    font-style: italic;
+    font-weight: 600;
+  }
+  .vsp-objection .vsp-a { font-size: 16px; }
+
+  /* Offer Box */
+  .vsp-offer {
+    border: 2px solid var(--vitalo-gold);
+    max-width: 480px;
+    margin: 0 auto 24px;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+  }
+  .vsp-offer .vsp-badge-bar {
+    background: var(--vitalo-green-deep);
+    color: var(--vitalo-gold);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 14px;
+  }
+  .vsp-offer .vsp-offer-body { padding: 28px 24px; }
+  .vsp-offer .vsp-old-price {
+    font-size: 16px;
+    color: #6B9B7C;
+    text-decoration: line-through;
+  }
+  .vsp-offer .vsp-price {
+    font-family: var(--font-heading);
+    font-size: 42px;
+    color: var(--vitalo-cream);
+    font-weight: 700;
+  }
+  .vsp-offer .vsp-price span {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    color: #6B9B7C;
+  }
+
+  /* Guarantee */
+  .vsp-guarantee {
+    background: var(--vitalo-green-deep);
+    color: var(--vitalo-cream);
+    padding: 40px 32px;
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .vsp-guarantee h3 {
+    color: var(--vitalo-gold);
+    font-family: var(--font-heading);
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .vsp-guarantee p { font-size: 16px; color: #9AADA0; }
+
+  /* CTA */
+  .vsp-cta {
+    text-align: center;
+    padding: var(--space-2xl) var(--space-lg);
+  }
+  .vsp-btn {
+    display: inline-block;
+    background: var(--vitalo-gold);
+    color: var(--vitalo-green-deep);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 56px;
+    transition: background var(--transition-fast);
+    font-family: var(--font-body);
+  }
+  .vsp-btn:hover { background: var(--vitalo-gold-light); color: var(--vitalo-green-deep); }
+  .vsp-cta-sub { font-size: 14px; color: var(--vitalo-text-light); margin-top: 14px; }
+
+  .vsp-section--dark a.vsp-text-link { color: #6B9B7C; font-size: 14px; text-decoration: underline; }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .vsp-section { padding: 48px 16px; }
+    .vsp-hero { padding: 60px 16px 50px; }
+    .vsp-compare td, .vsp-compare th { padding: 12px 8px; font-size: 13px; }
+    .vsp-btn { padding: 16px 36px; font-size: 14px; }
+  }
+</style>
+
+<div class="vsp">
+
+  <!-- =================== HERO =================== -->
+  <header class="vsp-hero">
+    <div class="vsp-container">
+      <p class="vsp-eyebrow">{{ section.settings.hero_badge | default: 'For Adults 50+' }}</p>
+      <h1>
+        You Don't Feel Like Yourself Anymore.<br>
+        <em>And It's Not Because You're Getting Old.</em>
+      </h1>
+      <div class="vsp-gold-rule"></div>
+      <p class="vsp-sub">
+        The fatigue. The foggy thinking. The joints that ache before you even get out of bed. You've been told this is "just aging." It isn't. And the proof is in what happens when you address the real cause.
+      </p>
+      <p class="vsp-trust-row">
+        <span>Clinically Dosed</span> &bull;
+        <span>Full Transparency</span> &bull;
+        <span>90-Day Guarantee</span>
+      </p>
+    </div>
+  </header>
+
+
+  <!-- =================== PROBLEM REFRAMING =================== -->
+  <section class="vsp-section">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">What nobody is telling you</p>
+      <h2>This Isn't "Getting Old." This Is Something Else Entirely.</h2>
+
+      <p>Let me describe someone. See if this sounds familiar.</p>
+      <p>You wake up after 7 or 8 hours of sleep &mdash; and you're still exhausted. Not "a little groggy." Genuinely tired. The kind of tired that coffee barely touches.</p>
+      <p>You walk into a room and forget why you're there. You're mid-sentence and the word vanishes. You used to be <em>sharp</em> &mdash; now you second-guess yourself constantly.</p>
+      <p>Your knees hurt going down stairs. Your back locks up after sitting too long. Getting off the couch now requires a strategy.</p>
+      <p>And the worst part? You're doing everything "right." Eating well. Staying active. Seeing your doctor. But your body keeps falling behind.</p>
+
+      <blockquote>
+        "I'm doing everything right but still feel off. My doctor says my bloodwork is normal. So why do I feel like I'm falling apart?" &mdash; Diane R., 63
+      </blockquote>
+
+      <p>If that's you, I need you to hear something important:</p>
+      <p class="vsp-strong" style="font-size: 20px;">
+        What you're experiencing is not the inevitable cost of getting older. It's a signal. A very specific one. And once you understand what it actually means, everything changes.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =================== AGITATION =================== -->
+  <section class="vsp-section vsp-section--alt">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">The real cost of ignoring this</p>
+      <h2>This Isn't Just About Health. It's About Who You Are.</h2>
+
+      <p>Here's what nobody talks about when they talk about "aging gracefully":</p>
+      <p>It's not the aches and fatigue that hurt most. It's the identity loss.</p>
+      <p>You used to be the one everyone counted on. The one who remembered everything, who had energy to burn, who could keep up with the grandkids without thinking twice.</p>
+      <p>Now you find yourself saying no to things you used to love. Canceling plans because you're too tired. Sitting out instead of joining in.</p>
+      <p>And deep down, there's a fear you don't talk about:</p>
+
+      <blockquote>"What if this is how it is from now on? What if I keep getting worse?"</blockquote>
+
+      <p>That fear is real. But it's based on a false premise &mdash; the premise that your body is simply breaking down with age and there's nothing you can do about it.</p>
+      <p class="vsp-strong">That's the biggest lie in modern health. And it's keeping millions of people stuck in a decline they don't have to accept.</p>
+
+      <div class="vsp-divider"></div>
+
+      <p>The truth is, your body isn't broken. It's depleted. And there's a critical difference between the two.</p>
+    </div>
+  </section>
+
+
+  <!-- =================== WHY EVERYTHING FAILED =================== -->
+  <section class="vsp-section">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">The missing piece</p>
+      <h2>"I've Tried Everything." Here's Why None of It Worked.</h2>
+
+      <p>If you're over 50 and dealing with fatigue, brain fog, or joint pain, you've probably tried a lot of things already:</p>
+
+      <ul class="vsp-check-list">
+        <li>Multivitamins that promised "total body support" but changed nothing</li>
+        <li>Fish oil capsules that were supposed to fix everything</li>
+        <li>Energy supplements that gave you jitters and a crash</li>
+        <li>Generic joint formulas that barely took the edge off</li>
+        <li>Doctor visits that ended with "your labs look fine for your age"</li>
+      </ul>
+
+      <p>Sound familiar? Here's the hard truth about why none of it worked:</p>
+      <p class="vsp-strong">Most supplements are designed to treat symptoms. They throw a vitamin or two at the surface problem and call it a day.</p>
+      <p>But your fatigue, your brain fog, your stiff joints &mdash; these aren't separate problems. They all share a single root cause. And until you address that cause, no amount of B-vitamins or turmeric is going to move the needle.</p>
+
+      <blockquote>"I've tried so many supplements that didn't work. I was starting to think nothing could help me." &mdash; Richard M., 58</blockquote>
+
+      <p>The supplement industry profits from this. They sell you underdosed formulas with token amounts of 15 different ingredients &mdash; just enough to print on the label, not enough to actually work. Proprietary blends that hide the real doses. Marketing dressed up as science.</p>
+      <p class="vsp-strong">They don't work for you &mdash; because they weren't designed to. They were designed to sell. There's a difference.</p>
+    </div>
+  </section>
+
+
+  <!-- =================== THE MECHANISM =================== -->
+  <section class="vsp-section vsp-section--dark">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">The discovery</p>
+      <h2>The Real Reason Your Body Is Slowing Down<br>(And It Has Nothing to Do With Age)</h2>
+
+      <p>Here's what emerging research in cellular biology and longevity science has made clear:</p>
+      <p class="vsp-strong">After age 45, your body begins to lose its ability to produce and absorb critical bioactive compounds &mdash; the same compounds that fuel your energy, protect your joints, and keep your brain firing on all cylinders.</p>
+      <p>These aren't exotic chemicals. They're naturally occurring compounds your body relied on for decades:</p>
+
+      <ul class="vsp-check-list">
+        <li>Acetylcholine precursors that drive memory, focus, and mental speed</li>
+        <li>Phospholipids that maintain brain cell membrane integrity</li>
+        <li>Anti-inflammatory botanicals that keep joints lubricated and mobile</li>
+        <li>Metabolic cofactors that regulate blood sugar and cellular energy production</li>
+      </ul>
+
+      <p>When you were younger, your body made enough of these on its own. But after 50, production drops dramatically. And when these compounds deplete, the downstream effects hit everywhere at once:</p>
+      <p class="vsp-strong">Your energy tanks. Your thinking slows. Your joints stiffen. Your metabolism stumbles.</p>
+      <p>It <em>looks</em> like aging. It <em>feels</em> like aging. But it's not aging &mdash; it's depletion.</p>
+      <p class="vsp-strong">And depletion can be reversed.</p>
+
+      <blockquote>"Think of it this way: your body is like a dimming light. It's not broken &mdash; it's just lost power. The right formula doesn't fix your body. It turns the power back on."</blockquote>
+    </div>
+  </section>
+
+
+  <!-- =================== SYNERGISTIC PROOF =================== -->
+  <section class="vsp-section">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">The science</p>
+      <h2>Why a "Synergistic Stack" Works When Single Ingredients Don't</h2>
+
+      <p>Here's the problem with most brain supplements, joint supplements, or energy supplements:</p>
+      <p>They pick <em>one</em> ingredient and build a whole product around it. Turmeric for joints. Ginkgo for memory. B12 for energy.</p>
+      <p>But your body doesn't work in isolation. Your brain, your joints, your metabolism &mdash; they're all interconnected systems. When one is depleted, they all suffer.</p>
+      <p class="vsp-strong">The most effective approach isn't a single silver bullet &mdash; it's a synergistic formula where multiple clinically studied compounds work together, amplifying each other's effects.</p>
+      <p>This is the principle behind what longevity researchers call "multi-pathway activation." Instead of pushing one lever, you gently restore balance across all the systems that have been depleted.</p>
+
+      <div class="vsp-divider"></div>
+
+      <p>The result? Your body doesn't just get a temporary boost. It starts functioning the way it's supposed to again. Energy returns. Thinking clears. Movement eases.</p>
+    </div>
+  </section>
+
+
+  <!-- =================== PRODUCT INTRODUCTION =================== -->
+  <section class="vsp-section vsp-section--alt">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">Introducing</p>
+      <h2>Vitalo: The Clinically Dosed Herbal Formula Built Specifically for Adults 50+</h2>
+
+      <p>Vitalo isn't another generic supplement trying to be everything for everyone.</p>
+      <p>It's a targeted system of formulas &mdash; each one designed to address a specific dimension of age-related depletion, using clinically studied compounds at the doses that research says actually work.</p>
+      <p class="vsp-strong">No proprietary blends. No hidden doses. Every single ingredient and its exact amount is listed right on the label.</p>
+
+      <div class="vsp-divider"></div>
+
+      <h3>What Makes Vitalo Different From Everything Else</h3>
+
+      <table class="vsp-compare">
+        <thead>
+          <tr>
+            <th>Other Brands</th>
+            <th class="vsp-gold-th">Vitalo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Proprietary blends that hide real doses</td>
+            <td>Every ingredient and dose on the label</td>
+          </tr>
+          <tr>
+            <td>Token amounts that look good in marketing</td>
+            <td>Full clinical doses backed by research</td>
+          </tr>
+          <tr>
+            <td>One-size-fits-all "general wellness" formulas</td>
+            <td>Specifically built for the 50+ body</td>
+          </tr>
+          <tr>
+            <td>30-day guarantee (or no guarantee)</td>
+            <td>Full 90-day money-back guarantee</td>
+          </tr>
+          <tr>
+            <td>Manufactured wherever is cheapest</td>
+            <td>GMP-certified, FDA-registered USA facility</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- =================== FORMULAS =================== -->
+  <section class="vsp-section vsp-section--dark">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">The formulas</p>
+      <h2>Four Targeted Solutions. One Complete Restoration System.</h2>
+      <p style="margin-bottom: 36px;">Each formula addresses a specific pathway of age-related depletion. Together, they restore what your body has lost.</p>
+
+      <h3 style="color: var(--vitalo-gold); margin-bottom: 16px;">Brain &amp; Focus Formula</h3>
+      <p style="color: var(--vitalo-text-light); margin-bottom: 6px; font-size: 15px;">For: Mental clarity, memory, focus, cognitive speed</p>
+      <p class="vsp-strong">After 50, your brain produces less acetylcholine &mdash; the neurotransmitter responsible for learning, recall, and focus. This formula directly supports acetylcholine production through multiple pathways: DMAE Bitartrate, Choline, and Huperzine A. Then it protects brain cell membranes with Phosphatidylserine, enhances memory retention with Bacopa Extract, and delivers the structural DHA your neural tissue needs.</p>
+      <div class="vsp-ingredient">
+        <h4>Key Compounds</h4>
+        <p>DMAE Bitartrate &bull; Bacopa Extract &bull; Phosphatidylserine &bull; Huperzine A &bull; Choline Bitartrate &bull; DHA (Omega-3) &bull; Green Tea Extract &bull; B-Vitamin Complex</p>
+      </div>
+
+      <div style="height: 40px;"></div>
+
+      <h3 style="color: var(--vitalo-gold); margin-bottom: 16px;">Joint Support Formula</h3>
+      <p style="color: var(--vitalo-text-light); margin-bottom: 6px; font-size: 15px;">For: Joint comfort, flexibility, mobility, stiffness reduction</p>
+      <p class="vsp-strong">Joint pain after 50 isn't just "wear and tear." It's the result of depleted lubrication, declining cartilage support, and an unchecked inflammatory response. This formula tackles all three: MSM and GlucosaGreen&reg; rebuild cartilage structure, Hyaluronic Acid restores lubrication, Boswellia and Turmeric calm inflammation, and White Willow Bark provides natural comfort support.</p>
+      <div class="vsp-ingredient">
+        <h4>Key Compounds</h4>
+        <p>MSM &bull; GlucosaGreen&reg; Vegetal Glucosamine &bull; Boswellia Serrata &bull; Turmeric &bull; Hyaluronic Acid &bull; White Willow Bark &bull; Black Pepper Extract</p>
+      </div>
+
+      <div style="height: 40px;"></div>
+
+      <h3 style="color: var(--vitalo-gold); margin-bottom: 16px;">Blood Sugar Support Formula</h3>
+      <p style="color: var(--vitalo-text-light); margin-bottom: 6px; font-size: 15px;">For: Healthy glucose metabolism, insulin sensitivity, energy crashes</p>
+      <p class="vsp-strong">The afternoon crashes, the sugar cravings, the stubborn weight &mdash; these are signs your metabolic system has lost its ability to regulate glucose efficiently. This formula combines Bitter Melon, Gymnema Sylvestre ("the sugar destroyer"), Cinnamon Bark, and Alpha Lipoic Acid to support insulin signaling, healthy glucose uptake, and steady energy throughout the day.</p>
+      <div class="vsp-ingredient">
+        <h4>Key Compounds</h4>
+        <p>Bitter Melon &bull; Gymnema Sylvestre &bull; Cinnamon Bark &bull; Alpha Lipoic Acid &bull; Chromium &bull; Banaba Extract &bull; Biotin &bull; Taurine</p>
+      </div>
+
+      <div style="height: 40px;"></div>
+
+      <h3 style="color: var(--vitalo-gold); margin-bottom: 16px;">Ashwagandha Plus (Energy &amp; Vitality)</h3>
+      <p style="color: var(--vitalo-text-light); margin-bottom: 6px; font-size: 15px;">For: Sustained energy, stress resilience, overall vitality</p>
+      <p class="vsp-strong">Fatigue after 50 isn't a caffeine deficiency. It's the result of depleted adaptogenic capacity &mdash; your body's ability to manage stress and produce sustained energy. This formula combines 600mg of KSM-66&reg; Ashwagandha (the gold standard), Panax Ginseng, Maca Root, and critical B-vitamins and D3 to restore your body's natural energy production &mdash; without stimulants, jitters, or crashes.</p>
+      <div class="vsp-ingredient">
+        <h4>Key Compounds</h4>
+        <p>KSM-66&reg; Ashwagandha 600mg &bull; Panax Ginseng &bull; Maca Root &bull; L-Arginine &bull; Shatavari &bull; Vitamin D3 &bull; Vitamin B6 &bull; Vitamin B12</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =================== SOCIAL PROOF =================== -->
+  <section class="vsp-section">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">Real results</p>
+      <h2>What Happens When You Address the Real Cause</h2>
+
+      <div class="vsp-testimonial">
+        <div class="vsp-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="vsp-quote">"I stopped expecting supplements to work years ago. My wife convinced me to try this. After about 3 weeks, I realized I wasn't hitting that wall at 2pm anymore. By week 6, I was thinking clearer than I had in years. I'm not exaggerating."</p>
+        <p class="vsp-author">&mdash; ROBERT K., AGE 67</p>
+      </div>
+
+      <div class="vsp-testimonial">
+        <div class="vsp-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="vsp-quote">"What sold me was seeing every single ingredient and dose listed on the label. No hiding behind 'proprietary blend.' That gave me trust. The results gave me everything else. My joints feel better than they have in a decade."</p>
+        <p class="vsp-author">&mdash; LINDA S., AGE 61</p>
+      </div>
+
+      <div class="vsp-testimonial">
+        <div class="vsp-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="vsp-quote">"I used to need a nap by lunchtime. Now I'm walking 3 miles a day and keeping up with my grandkids. My doctor asked what changed. I told him &mdash; he actually wrote down the name."</p>
+        <p class="vsp-author">&mdash; PATRICIA W., AGE 72</p>
+      </div>
+
+      <p style="text-align: center; margin-top: 20px;" class="vsp-muted">
+        Individual results may vary. These statements have not been evaluated by the FDA.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =================== OBJECTIONS =================== -->
+  <section class="vsp-section vsp-section--alt">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">Honest answers</p>
+      <h2>"I've Been Burned Before." We Understand. Let's Talk About It.</h2>
+
+      <div class="vsp-objection">
+        <p class="vsp-q">"Supplements don't work. I've tried too many."</p>
+        <p class="vsp-a">Most supplements don't work because they're underdosed, use cheap ingredient forms, or hide behind proprietary blends. Vitalo is different by design: every formula uses clinically studied doses, bioavailable forms, and full transparency. If the supplements you've tried didn't work, the problem wasn't you &mdash; it was the formula.</p>
+      </div>
+
+      <div class="vsp-objection">
+        <p class="vsp-q">"This is probably another scam."</p>
+        <p class="vsp-a">We understand that skepticism. It's earned. That's why we put every ingredient and exact dose on the label &mdash; you can verify it yourself. We manufacture in a GMP-certified, FDA-registered facility in the USA. And we back everything with a 90-day money-back guarantee. Not 30 days. 90.</p>
+      </div>
+
+      <div class="vsp-objection">
+        <p class="vsp-q">"It's too expensive."</p>
+        <p class="vsp-a">At $44.99 per bottle ($40.49 with Subscribe &amp; Save), that's $1.35 per day. Less than a cup of coffee. And unlike coffee, this addresses the actual root cause of your fatigue, fog, and stiffness. The question isn't whether you can afford it &mdash; it's whether you can afford another year feeling the way you feel right now.</p>
+      </div>
+
+      <div class="vsp-objection">
+        <p class="vsp-q">"How do I know it'll work for me?"</p>
+        <p class="vsp-a">You don't. Not yet. And anyone who promises you certainty before you've even tried it is lying to you. What we can promise: 8 clinically studied compounds at researched doses, manufactured to the highest standards, backed by a 90-day guarantee that means you risk nothing.</p>
+      </div>
+
+      <div class="vsp-objection">
+        <p class="vsp-q">"I don't trust online supplement brands."</p>
+        <p class="vsp-a">Smart. Neither do we &mdash; that's exactly why we built Vitalo the way we did. Full ingredient transparency. GMP-certified production. FDA-registered facility. A real support team you can call at (800) 555-0199.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =================== GUARANTEE =================== -->
+  <section class="vsp-section" style="text-align: center;">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">Our promise</p>
+      <h2>The 90-Day "Feel The Difference" Guarantee</h2>
+      <p style="max-width: 520px; margin: 0 auto 28px;">We don't ask you to believe us. We ask you to <em>test</em> us.</p>
+
+      <div class="vsp-guarantee">
+        <h3>90 Days. Full Refund. Zero Risk.</h3>
+        <p>Try any Vitalo formula for a full 90 days. If you don't feel a meaningful difference in your energy, clarity, comfort, or overall vitality &mdash; contact us and we'll refund every penny. No hoops. No fine print. No restocking fees.</p>
+      </div>
+
+      <p style="margin-top: 24px; font-size: 16px;">Why 90 days instead of 30? Because real, lasting results from clinically dosed compounds take time to build. We want you to experience the full effect.</p>
+    </div>
+  </section>
+
+
+  <!-- =================== OFFER + CTA =================== -->
+  <section class="vsp-section vsp-section--dark" style="text-align: center;">
+    <div class="vsp-container vsp-narrow">
+      <p class="vsp-eyebrow">Your next step</p>
+      <h2>You Have Two Choices Right Now.</h2>
+
+      <p style="max-width: 540px; margin: 0 auto 28px; text-align: left;">
+        <span class="vsp-strong">Choice one:</span> Close this page and go back to what you've been doing. Keep hoping the fatigue will pass. Keep pushing through the fog. Keep accepting the stiffness as "normal."
+      </p>
+      <p style="max-width: 540px; margin: 0 auto 28px; text-align: left;">
+        <span class="vsp-strong">Choice two:</span> Give your body what it's actually been missing. Try Vitalo for 90 days &mdash; completely risk-free. See what happens when you stop treating symptoms and start addressing the cause.
+      </p>
+
+      <div style="height: 20px;"></div>
+
+      <div class="vsp-offer">
+        <div class="vsp-badge-bar">Subscribe &amp; Save 10%</div>
+        <div class="vsp-offer-body">
+          <p class="vsp-old-price">$44.99/month</p>
+          <p class="vsp-price">$40.49<span>/month</span></p>
+          <p style="color: #9AADA0; font-size: 15px;">Delivered to your door. Cancel anytime.</p>
+          <p class="vsp-strong" style="font-size: 14px;">That's $1.35/day for clinical-grade support.</p>
+        </div>
+      </div>
+
+      <a href="{{ section.settings.cta_link | default: '/collections/all' }}" class="vsp-btn">Start Your 90-Day Trial &rarr;</a>
+      <p style="margin-top: 14px;">
+        <a href="{{ section.settings.cta_link | default: '/collections/all' }}" class="vsp-text-link" style="color: #6B9B7C; font-size: 14px; text-decoration: underline;">Or buy one-time for $44.99</a>
+      </p>
+
+      <div style="height: 32px;"></div>
+
+      <p style="color: #6B9B7C; font-size: 14px;">
+        &#10003; 90-Day Money-Back Guarantee &nbsp;&bull;&nbsp; &#10003; Free Shipping Over $75 &nbsp;&bull;&nbsp; &#10003; Cancel Anytime
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =================== FINAL CTA =================== -->
+  <div class="vsp-cta" style="background: var(--vitalo-cream);">
+    <div class="vsp-container">
+      <h2 style="font-size: 26px; margin-bottom: 8px;">Your sharpest, most energetic days are not behind you.</h2>
+      <p class="vsp-muted" style="margin-bottom: 24px;">They're waiting on the other side of one decision.</p>
+      <a href="{{ section.settings.cta_link | default: '/collections/all' }}" class="vsp-btn">Try Vitalo Risk-Free &rarr;</a>
+    </div>
+  </div>
+
+
+  <!-- =================== DISCLAIMER =================== -->
+  <div style="background: var(--vitalo-cream-dark); padding: 32px 24px; text-align: center;">
+    <p style="font-size: 12px; color: var(--vitalo-text-light); margin-bottom: 8px;"><strong>Vitalo</strong> &mdash; Clinically Dosed Supplements for Adults 50+</p>
+    <p style="font-size: 12px; color: var(--vitalo-text-light); margin-bottom: 8px;">GMP-Certified &bull; FDA-Registered Facility &bull; Made in USA</p>
+    <p style="font-size: 10px; color: var(--vitalo-text-light); font-style: italic; line-height: 1.5; font-weight: 300; max-width: 600px; margin: 0 auto;">
+      *These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before beginning any new supplement regimen.
+    </p>
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Vitalo Sales Page",
+  "tag": "section",
+  "class": "vitalo-sales-page-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hero_badge",
+      "label": "Hero Badge Text",
+      "default": "For Adults 50+"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Primary CTA Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vitalo Sales Page"
+    }
+  ]
+}
+{% endschema %}
