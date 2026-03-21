@@ -9,14 +9,15 @@
     padding: var(--space-3xl) var(--space-lg);
   }
   .vsp-section--alt { background: var(--vitalo-cream); }
-  .vsp-section--dark {
+  .vsp .vsp-section--dark {
     background: linear-gradient(180deg, #0F1F14 0%, var(--vitalo-green-deep) 100%);
     color: var(--vitalo-cream);
   }
-  .vsp-section--dark h2,
-  .vsp-section--dark h3 { color: var(--vitalo-cream); }
-  .vsp-section--dark p { color: #9AADA0; }
-  .vsp-section--dark .vsp-strong { color: var(--vitalo-cream); }
+  .vsp .vsp-section--dark h2,
+  .vsp .vsp-section--dark h3 { color: #FAF8F5 !important; }
+  .vsp .vsp-section--dark p { color: #9AADA0 !important; }
+  .vsp .vsp-section--dark .vsp-strong { color: #FAF8F5 !important; }
+  .vsp .vsp-section--dark .vsp-eyebrow { color: #C9A84A !important; }
 
   .vsp-container {
     max-width: 760px;
@@ -80,9 +81,9 @@
     font-size: 17px;
     color: var(--vitalo-text);
   }
-  .vsp-section--dark blockquote {
+  .vsp .vsp-section--dark blockquote {
     background: rgba(74,124,89,0.12);
-    color: var(--vitalo-cream);
+    color: #FAF8F5 !important;
   }
 
   .vsp-check-list {
@@ -103,11 +104,11 @@
     font-weight: 700;
     font-size: 18px;
   }
-  .vsp-section--dark .vsp-check-list li::before {
-    color: var(--vitalo-gold);
+  .vsp .vsp-section--dark .vsp-check-list li::before {
+    color: #C9A84A !important;
   }
-  .vsp-section--dark .vsp-check-list li {
-    color: var(--vitalo-cream);
+  .vsp .vsp-section--dark .vsp-check-list li {
+    color: #FAF8F5 !important;
   }
 
   /* Hero */
@@ -116,16 +117,16 @@
     padding: 80px 24px 70px;
     text-align: center;
   }
-  .vsp-hero h1 {
+  .vsp .vsp-hero h1 {
     font-family: var(--font-heading);
     font-size: clamp(32px, 5vw, 52px);
-    color: var(--vitalo-cream);
+    color: #FAF8F5 !important;
     line-height: 1.15;
     margin-bottom: 24px;
     font-weight: 700;
   }
-  .vsp-hero h1 em {
-    color: var(--vitalo-gold);
+  .vsp .vsp-hero h1 em {
+    color: #C9A84A !important;
     font-style: italic;
   }
   .vsp-hero .vsp-sub {
@@ -164,7 +165,7 @@
     padding: 14px 16px;
     text-align: center;
   }
-  .vsp-compare th.vsp-gold-th { color: var(--vitalo-gold); font-weight: 700; }
+  .vsp .vsp-compare th.vsp-gold-th { color: #C9A84A !important; font-weight: 700; }
   .vsp-compare td {
     padding: 16px;
     border-bottom: 1px solid var(--vitalo-border);
@@ -182,16 +183,16 @@
     margin-bottom: 14px;
     background: rgba(74,124,89,0.12);
   }
-  .vsp-ingredient h4 {
+  .vsp .vsp-ingredient h4 {
     font-family: var(--font-heading);
     font-size: 18px;
-    color: var(--vitalo-gold);
+    color: #C9A84A !important;
     margin-bottom: 6px;
     font-weight: 700;
   }
-  .vsp-ingredient p {
+  .vsp .vsp-ingredient p {
     font-size: 15px;
-    color: #9AADA0;
+    color: #9AADA0 !important;
     margin: 0;
     line-height: 1.6;
   }
@@ -203,7 +204,7 @@
     text-align: center;
     margin: 28px 0;
   }
-  .vsp-section--dark .vsp-testimonial { background: rgba(74,124,89,0.12); }
+  .vsp .vsp-section--dark .vsp-testimonial { background: rgba(74,124,89,0.12); }
   .vsp-testimonial .vsp-stars { color: var(--vitalo-gold); font-size: 22px; margin-bottom: 12px; }
   .vsp-testimonial .vsp-quote {
     font-style: italic;
@@ -212,7 +213,7 @@
     margin-bottom: 14px;
     color: var(--vitalo-text);
   }
-  .vsp-section--dark .vsp-testimonial .vsp-quote { color: var(--vitalo-cream); }
+  .vsp .vsp-section--dark .vsp-testimonial .vsp-quote { color: #FAF8F5 !important; }
   .vsp-testimonial .vsp-author {
     font-size: 13px;
     color: var(--vitalo-text-light);
@@ -254,10 +255,10 @@
     color: #6B9B7C;
     text-decoration: line-through;
   }
-  .vsp-offer .vsp-price {
+  .vsp .vsp-offer .vsp-price {
     font-family: var(--font-heading);
     font-size: 42px;
-    color: var(--vitalo-cream);
+    color: #FAF8F5 !important;
     font-weight: 700;
   }
   .vsp-offer .vsp-price span {
@@ -276,13 +277,13 @@
     max-width: 560px;
     margin: 0 auto;
   }
-  .vsp-guarantee h3 {
-    color: var(--vitalo-gold);
+  .vsp .vsp-guarantee h3 {
+    color: #C9A84A !important;
     font-family: var(--font-heading);
     font-size: 24px;
     margin-bottom: 16px;
   }
-  .vsp-guarantee p { font-size: 16px; color: #9AADA0; }
+  .vsp .vsp-guarantee p { font-size: 16px; color: #9AADA0 !important; }
 
   /* CTA */
   .vsp-cta {
@@ -516,7 +517,7 @@
       <h2>Four Targeted Solutions. One Complete Restoration System.</h2>
       <p style="margin-bottom: 36px;">Each formula addresses a specific pathway of age-related depletion. Together, they restore what your body has lost.</p>
 
-      <h3 style="color: var(--vitalo-gold); margin-bottom: 16px;">Brain &amp; Focus Formula</h3>
+      <h3 style="color: #C9A84A !important; margin-bottom: 16px;">Brain &amp; Focus Formula</h3>
       <p style="color: var(--vitalo-text-light); margin-bottom: 6px; font-size: 15px;">For: Mental clarity, memory, focus, cognitive speed</p>
       <p class="vsp-strong">After 50, your brain produces less acetylcholine &mdash; the neurotransmitter responsible for learning, recall, and focus. This formula directly supports acetylcholine production through multiple pathways: DMAE Bitartrate, Choline, and Huperzine A. Then it protects brain cell membranes with Phosphatidylserine, enhances memory retention with Bacopa Extract, and delivers the structural DHA your neural tissue needs.</p>
       <div class="vsp-ingredient">
@@ -526,7 +527,7 @@
 
       <div style="height: 40px;"></div>
 
-      <h3 style="color: var(--vitalo-gold); margin-bottom: 16px;">Joint Support Formula</h3>
+      <h3 style="color: #C9A84A !important; margin-bottom: 16px;">Joint Support Formula</h3>
       <p style="color: var(--vitalo-text-light); margin-bottom: 6px; font-size: 15px;">For: Joint comfort, flexibility, mobility, stiffness reduction</p>
       <p class="vsp-strong">Joint pain after 50 isn't just "wear and tear." It's the result of depleted lubrication, declining cartilage support, and an unchecked inflammatory response. This formula tackles all three: MSM and GlucosaGreen&reg; rebuild cartilage structure, Hyaluronic Acid restores lubrication, Boswellia and Turmeric calm inflammation, and White Willow Bark provides natural comfort support.</p>
       <div class="vsp-ingredient">
@@ -536,7 +537,7 @@
 
       <div style="height: 40px;"></div>
 
-      <h3 style="color: var(--vitalo-gold); margin-bottom: 16px;">Blood Sugar Support Formula</h3>
+      <h3 style="color: #C9A84A !important; margin-bottom: 16px;">Blood Sugar Support Formula</h3>
       <p style="color: var(--vitalo-text-light); margin-bottom: 6px; font-size: 15px;">For: Healthy glucose metabolism, insulin sensitivity, energy crashes</p>
       <p class="vsp-strong">The afternoon crashes, the sugar cravings, the stubborn weight &mdash; these are signs your metabolic system has lost its ability to regulate glucose efficiently. This formula combines Bitter Melon, Gymnema Sylvestre ("the sugar destroyer"), Cinnamon Bark, and Alpha Lipoic Acid to support insulin signaling, healthy glucose uptake, and steady energy throughout the day.</p>
       <div class="vsp-ingredient">
@@ -546,7 +547,7 @@
 
       <div style="height: 40px;"></div>
 
-      <h3 style="color: var(--vitalo-gold); margin-bottom: 16px;">Ashwagandha Plus (Energy &amp; Vitality)</h3>
+      <h3 style="color: #C9A84A !important; margin-bottom: 16px;">Ashwagandha Plus (Energy &amp; Vitality)</h3>
       <p style="color: var(--vitalo-text-light); margin-bottom: 6px; font-size: 15px;">For: Sustained energy, stress resilience, overall vitality</p>
       <p class="vsp-strong">Fatigue after 50 isn't a caffeine deficiency. It's the result of depleted adaptogenic capacity &mdash; your body's ability to manage stress and produce sustained energy. This formula combines 600mg of KSM-66&reg; Ashwagandha (the gold standard), Panax Ginseng, Maca Root, and critical B-vitamins and D3 to restore your body's natural energy production &mdash; without stimulants, jitters, or crashes.</p>
       <div class="vsp-ingredient">
