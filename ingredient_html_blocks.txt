@@ -1,0 +1,642 @@
+
+================================================================================
+PRODUCT: Ashwagandha Plus
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Each ingredient is carefully selected and dosed based on clinical research to deliver maximum wellness benefits.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">KSM-66® Ashwagandha Extract</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">600mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Gold-standard ashwagandha extract standardized to 5% Withanolides. Clinically shown to support healthy stress response, promote relaxation, and enhance overall vitality and resilience.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">L-Arginine</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">300mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Amino acid that supports healthy circulation and blood flow, promoting cardiovascular wellness, nutrient delivery, and physical performance.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Maca Root Powder</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">150mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Traditional Peruvian botanical celebrated for supporting stamina, energy levels, and hormonal balance. Particularly valued for its adaptogenic properties.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Panax Ginseng Powder</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">100mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Adaptogenic root herb that supports sustained energy, mental clarity, and physical endurance. Used for centuries in traditional wellness practices.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Shatavari Powder</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">50mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Revered Ayurvedic botanical (Asparagus racemosus) that supports overall vitality, healthy stress response, and balanced energy throughout the day.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Vitamin D3</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">20mcg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential fat-soluble vitamin as Cholecalciferol that supports bone health, immune function, mood regulation, and overall wellness.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Vitamin B6</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">2.5mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">As Pyridoxine Hydrochloride, supports normal energy metabolism, healthy nervous system function, and neurotransmitter production.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Vitamin B12</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">25mcg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Bioavailable Methylcobalamin form that supports energy metabolism, red blood cell formation, and nervous system health.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Brain & Focus Formula
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Each ingredient is carefully selected and dosed based on clinical research to deliver maximum cognitive benefits.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">DMAE Bitartrate</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Supports memory and cognitive function by promoting acetylcholine production — a key neurotransmitter involved in learning, focus, and mental clarity.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Bacopa Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Time-tested nootropic herb clinically studied for its ability to support memory retention, learning capacity, and overall mental clarity.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Phosphatidylserine</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential phospholipid that supports brain cell membrane integrity, promoting sharper cognitive function, memory recall, and mental processing speed.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Huperzine A</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Potent neuroprotective compound that supports memory and focus by maintaining healthy acetylcholine levels in the brain.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Choline Bitartrate</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential nutrient and precursor to acetylcholine, crucial for neurotransmitter production, memory formation, and overall brain health.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">DHA (Omega-3)</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Critical omega-3 fatty acid that forms a major structural component of brain tissue, supporting cognitive function and neural communication.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Green Tea Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Rich in L-Theanine and EGCG antioxidants that provide neuroprotective benefits while supporting calm, focused mental alertness.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">B-Vitamin Complex</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Comprehensive blend of B1, B2, B3, B5, B6, B12 and Folate — essential cofactors for nervous system function, energy metabolism, and cognitive performance.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Complete Multivitamin
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">A comprehensive daily formula with essential vitamins, minerals, and powerful botanical blends for total body wellness.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Full Vitamin Spectrum</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Complete A, C, D, E, and B-Complex vitamins to support immune function, energy metabolism, bone health, and cellular protection every single day.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Echinacea Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Immune-supporting herb traditionally used to help the body maintain its natural defenses, especially during seasonal changes.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Spirulina</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Nutrient-dense blue-green algae superfood packed with vitamins, minerals, and antioxidants to support immune resilience and overall vitality.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Green Tea Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Powerful antioxidant that helps protect cells from oxidative stress, supporting healthy aging and sustained energy throughout the day.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Lutein &amp; Lycopene</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Carotenoid duo that supports eye health, macular function, and prostate wellness — essential nutrients often missing from modern diets.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Hawthorn Berries</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Traditional botanical rich in flavonoids that supports cardiovascular function, healthy circulation, and antioxidant protection.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Essential Minerals</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Chelated forms of Magnesium, Zinc, Selenium, Copper, Manganese, and Chromium for optimal absorption and bioavailability.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Fat Burner with MCT
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Each ingredient is carefully selected and dosed to support metabolic performance and healthy weight management.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Medium Chain Triglycerides (MCT) Oil</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Premium MCTs that are rapidly absorbed and converted to energy, helping increase thermogenesis and support the body's natural fat-burning processes.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">CLA (Conjugated Linoleic Acid)</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Naturally occurring fatty acid clinically studied for its role in supporting lean body composition and healthy fat metabolism.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Garcinia Cambogia Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Standardized to 50% hydroxycitric acid (HCA), this tropical fruit extract supports healthy appetite management and helps inhibit fat storage.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">L-Carnitine</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential amino acid derivative that transports fatty acids into cells for energy conversion, supporting endurance and fat utilization during activity.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Chromium Polynicotinate</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Highly bioavailable chromium form that supports healthy blood sugar metabolism and helps reduce cravings for carbohydrates.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Turmeric Root Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Standardized to 95% curcuminoids, this powerful botanical supports healthy inflammatory response and metabolic function.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Coenzyme Q10</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Vital coenzyme for cellular energy production in the mitochondria, supporting metabolic efficiency and cardiovascular health.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Gymnema Sylvestre Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Ayurvedic herb known as the "sugar destroyer" — supports healthy glucose metabolism and helps manage sugar cravings.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Gut Health
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Each ingredient is carefully selected to support digestive health, gut flora balance, and optimal nutrient absorption.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Organic Apple Cider Vinegar Powder</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Made from organic apples, this fermented powder supports natural digestive function, healthy pH balance, and overall gut wellness.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Inulin (Jerusalem Artichoke Root)</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Premium prebiotic fiber sourced from Helianthus tuberosus that selectively nourishes beneficial gut bacteria, promoting a thriving microbiome.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Lactobacillus Acidophilus LA85</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Clinically studied probiotic strain that supports healthy intestinal flora balance, aids digestion, and helps maintain gut barrier integrity.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">DigeZyme® Multi-Enzyme Complex</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Patented blend of five digestive enzymes (amylase, protease, lipase, cellulase, lactase) that supports complete nutrient breakdown and optimal absorption.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Men's Vitality
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Each ingredient is carefully selected and dosed based on clinical research to support male energy, vitality, and peak performance.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Tongkat Ali Root</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">400mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Potent adaptogenic root traditionally used to support healthy testosterone levels, energy production, and overall male vitality and performance.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Maca Root</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">250mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Peruvian superfood renowned for supporting stamina, energy, physical performance, and hormonal balance in men.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">L-Arginine HCL</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">250mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Amino acid that supports nitric oxide production, promoting healthy circulation, muscular endurance, and cardiovascular wellness.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Ginseng Eleutherococcus Blend</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">125mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Dual adaptogenic blend of Panax Ginseng and Eleutherococcus Senticosus for sustained energy, stress resilience, and mental sharpness.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Zinc</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">50mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential mineral that plays a critical role in testosterone production, reproductive health, immune function, and protein synthesis.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Calcium</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">367mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Supports strong bones and teeth, proper muscle function, nerve signaling, and cardiovascular health — essential for active men.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Tribulus Terrestris</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Traditional herb used for centuries to support male vitality, physical strength, and healthy libido as part of our proprietary blend.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Omega-3 EPA 180mg + DHA 120mg
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Pharmaceutical-grade omega-3 fatty acids carefully sourced and dosed for maximum cardiovascular and cognitive benefits.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">EPA (Eicosapentaenoic Acid)</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">180mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential omega-3 fatty acid clinically recognized for supporting normal cholesterol metabolism, healthy triglyceride levels, and cardiovascular wellness.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">DHA (Docosahexaenoic Acid)</h3>
+<span style="color: #4A7C59; font-size: 18px; font-weight: 700; white-space: nowrap; margin-left: 16px;">120mg</span>
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Critical omega-3 that forms a major structural component of brain tissue and the retina, supporting cognitive function and visual acuity at every age.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Fish Oil Concentrate</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Premium purified fish oil concentrate providing a targeted, potent source of essential omega-3 fatty acids for comprehensive daily wellness support.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Vitamin E</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Natural antioxidant that protects omega-3 fatty acids from oxidation, supports cellular health, and promotes healthy skin and immune function.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Prostate Support
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Each ingredient is carefully selected and dosed based on clinical research to support prostate wellness and urinary function.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Saw Palmetto Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Gold-standard botanical extract from Serenoa repens fruit, clinically studied for supporting healthy prostate size and comfortable urinary flow.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Pygeum Africanum Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Standardized to 3% phytosterols, this traditional African bark extract supports prostate comfort and healthy urinary function.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Lycopene 5%</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Potent carotenoid antioxidant from tomato (Lycopersicum esculentum) that provides targeted protection and supports long-term prostate cellular health.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Pumpkin Seed Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Rich in zinc and phytosterols, pumpkin seed has been traditionally used for centuries to support prostate wellness and urinary tract comfort.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Nettle Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Leaf extract that works synergistically with saw palmetto to support healthy prostate function and comfortable urinary patterns.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Grape Seed Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Powerful source of proanthocyanidins that provides antioxidant protection, supports healthy circulation, and promotes cellular health.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Vitamin E</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Fat-soluble antioxidant (as dl-alpha tocopheryl acetate) that supports cellular health and protects prostate tissue from oxidative stress.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Vitamin B6</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential vitamin (as pyridoxine HCl) that supports healthy hormone metabolism and nervous system function.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Vision Support
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Each ingredient is carefully selected and dosed based on clinical research to support eye health and visual acuity.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Bilberry Powder</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">European berry rich in anthocyanins — powerful antioxidants that support visual acuity, night vision, and overall retinal health.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Eyebright Extract 10:1</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Concentrated whole-herb extract traditionally used for centuries to support eye comfort, reduce irritation, and maintain visual clarity.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Lutein 5%</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Carotenoid from Tagetes erecta flower that accumulates in the macula, filtering harmful blue light and supporting long-term macular health.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Vitamin C</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential antioxidant (as ascorbic acid) that protects delicate eye tissues from oxidative damage and supports healthy blood vessels in the eyes.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Vitamin E</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Fat-soluble antioxidant (as d-alpha tocopherol acetate) that works synergistically with Vitamin C to protect eye cell membranes from free radical damage.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Zinc</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential mineral (as zinc citrate) critical for retinal health, helping transport Vitamin A from the liver to the retina to produce protective melanin.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Copper</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Trace mineral (as copper gluconate) included to maintain proper zinc-copper balance, supporting healthy enzyme function and eye tissue integrity.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Vitalo Blood Sugar Support
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Each ingredient is carefully selected and dosed based on clinical research to support healthy glucose metabolism and insulin sensitivity.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Bitter Melon Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Traditional botanical (Momordica charantia) used for centuries to support healthy glucose metabolism and normal blood sugar levels.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Gymnema Sylvestre Powder</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Known as the "sugar destroyer" in Ayurveda, this leaf powder supports healthy insulin function and helps manage sugar cravings naturally.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Cinnamon Bark</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Cinnamomum cassia bark that supports insulin sensitivity, promotes healthy glucose uptake by cells, and aids metabolic function.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Alpha Lipoic Acid</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Powerful dual-action antioxidant (water and fat-soluble) that supports glucose metabolism, cellular energy production, and nerve health.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Chromium</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Essential trace mineral (as amino acid chelate) that enhances insulin signaling and supports healthy blood sugar regulation.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Banaba Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Standardized to 1% corosolic acid from Lagerstroemia speciosa leaf, clinically studied for supporting healthy blood sugar uptake into cells.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Biotin</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">B-vitamin that plays a key role in glucose metabolism, supporting the enzymes involved in carbohydrate and fat processing.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Taurine</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Amino acid that supports healthy insulin sensitivity, antioxidant defense, and metabolic function throughout the body.</p>
+</div>
+</div>
+
+
+================================================================================
+PRODUCT: Vitalo Joint Support
+================================================================================
+
+<div style="background: linear-gradient(180deg, #0F1F14 0%, #162A1C 50%, #1A2E1F 100%); padding: 50px 24px; border-radius: 16px; margin: 40px 0; max-width: 100%;">
+<h2 style="text-align: center; font-family: 'Playfair Display', serif; color: #FAF8F5; font-size: 36px; margin: 0 0 10px 0; font-weight: 700;">Premium Ingredients</h2>
+<p style="text-align: center; color: #6B7B6C; font-size: 14px; margin: 0 auto 36px auto; max-width: 500px; line-height: 1.5;">Each ingredient is carefully selected and dosed based on clinical research to support joint flexibility, comfort, and long-term mobility.</p>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">MSM (Methylsulfonylmethane)</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Organic sulfur compound clinically shown to support joint comfort, reduce stiffness, and promote healthy connective tissue and cartilage.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">GlucosaGreen® Vegetal Glucosamine HCl</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Patented plant-based glucosamine that supports cartilage structure and joint cushioning — a vegetarian-friendly alternative to shellfish-derived glucosamine.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Boswellia Serrata Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Standardized to 65% boswellic acids, this ancient resin extract supports a healthy inflammatory response and promotes joint mobility and comfort.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Turmeric Powder</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Golden root botanical rich in curcuminoids that supports healthy inflammatory response, antioxidant protection, and overall joint wellness.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Hyaluronic Acid</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Naturally occurring molecule that supports joint lubrication, cushioning between bones, and smooth, comfortable movement.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">White Willow Bark Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Natural source of salicin — the compound that inspired aspirin — traditionally used to support joint comfort and ease occasional discomfort.</p>
+</div>
+<div style="background: rgba(74, 124, 89, 0.12); border: 1px solid rgba(74, 124, 89, 0.25); border-radius: 12px; padding: 24px 28px; margin-bottom: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap;">
+<h3 style="color: #FAF8F5; font-size: 20px; margin: 0; font-weight: 600; font-family: 'Playfair Display', serif;">Black Pepper Extract</h3>
+
+</div>
+<p style="color: #9AADA0; font-size: 14px; margin: 0; line-height: 1.6;">Standardized to 95% piperine, this bioavailability enhancer significantly increases absorption of turmeric and other key nutrients in the formula.</p>
+</div>
+</div>
+
