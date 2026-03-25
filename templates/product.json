@@ -27,7 +27,7 @@
           "type": "emoji_benefits",
           "settings": {
             "icon_1": "✅",
-            "benefit_1": "Clinically dosed {product}",
+            "benefit_1": "Clinically dosed, science-backed formula",
             "icon_2": "📦",
             "benefit_2": "Free shipping on all orders",
             "icon_3": "💪",
@@ -171,7 +171,7 @@
         "marquee-4": {
           "type": "message",
           "settings": {
-            "text": "Science-Backed {product} 🔬"
+            "text": "Science-Backed Formulas 🔬"
           }
         },
         "marquee-5": {
@@ -183,7 +183,7 @@
         "marquee-6": {
           "type": "message",
           "settings": {
-            "text": "Clinically Dosed {product} 💊"
+            "text": "Clinically Dosed Formula 💊"
           }
         }
       },
@@ -420,6 +420,22 @@
             "question": "How long until I see results?",
             "answer": "Results vary by individual and product. Some customers notice improvements within the first 1-2 weeks, while others may take 30-60 days. Consistency is key — supplements work best when taken daily as directed. That's why we offer a full 90-day guarantee."
           }
+        },
+        "faq-7": {
+          "type": "faq",
+          "settings": {
+            "group": "Health & Usage",
+            "question": "Can I take this with my current medications?",
+            "answer": "While our products are made with natural, well-studied ingredients, we always recommend consulting with your healthcare provider before starting any new supplement — especially if you're taking prescription medications or have a pre-existing condition. Your doctor can review the full ingredient list on the label."
+          }
+        },
+        "faq-8": {
+          "type": "faq",
+          "settings": {
+            "group": "Health & Usage",
+            "question": "How should I take this supplement?",
+            "answer": "Take two (2) capsules daily with a meal and a full glass of water. For best results, take at the same time each day to build a consistent routine. Each bottle contains a full 30-day supply."
+          }
         }
       },
       "block_order": [
@@ -428,7 +444,9 @@
         "faq-3",
         "faq-4",
         "faq-5",
-        "faq-6"
+        "faq-6",
+        "faq-7",
+        "faq-8"
       ],
       "settings": {
         "heading": "Frequently Asked Questions"
@@ -468,7 +486,7 @@
         "testimonial-3"
       ],
       "settings": {
-        "heading": "What Customers Say About {product}"
+        "heading": "What Customers Say About"
       }
     }
   },

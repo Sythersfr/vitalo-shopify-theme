@@ -3368,3 +3368,24 @@ cart-drawer .discounts__discount {
     height: 48px;
   }
 }
+
+/* Full-width product ingredients layout */
+.vitalo-pit--full-width .vitalo-pit__inner {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.vitalo-pit__content--full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.vitalo-pit__description--ingredients {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.vitalo-pit__description--ingredients img {
+  display: none;
+}
