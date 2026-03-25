@@ -3369,6 +3369,12 @@ cart-drawer .discounts__discount {
   }
 }
 
+/* Hide Shop Pay installment banner on product pages */
+.installment.caption-large,
+shopify-payment-terms {
+  display: none !important;
+}
+
 /* Full-width product ingredients layout */
 .vitalo-pit--full-width .vitalo-pit__inner {
   display: block;

@@ -51,7 +51,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
         },
@@ -421,14 +421,6 @@
             "answer": "Results vary by individual and product. Some customers notice improvements within the first 1-2 weeks, while others may take 30-60 days. Consistency is key — supplements work best when taken daily as directed. That's why we offer a full 90-day guarantee."
           }
         },
-        "faq-7": {
-          "type": "faq",
-          "settings": {
-            "group": "Health & Usage",
-            "question": "Can I take this with my current medications?",
-            "answer": "While our products are made with natural, well-studied ingredients, we always recommend consulting with your healthcare provider before starting any new supplement — especially if you're taking prescription medications or have a pre-existing condition. Your doctor can review the full ingredient list on the label."
-          }
-        },
         "faq-8": {
           "type": "faq",
           "settings": {
@@ -445,7 +437,6 @@
         "faq-4",
         "faq-5",
         "faq-6",
-        "faq-7",
         "faq-8"
       ],
       "settings": {
@@ -486,7 +477,7 @@
         "testimonial-3"
       ],
       "settings": {
-        "heading": "What Customers Say About"
+        "heading": "What Customers Say About Us"
       }
     }
   },
