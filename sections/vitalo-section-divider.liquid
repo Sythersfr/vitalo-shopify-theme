@@ -1,0 +1,81 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-divider vitalo-divider--{{ section.settings.bg_color | default: 'green' }}">
+  <div class="vitalo-divider__track">
+    {% assign texts = "" %}
+    {% if section.settings.text_1 != blank %}{% assign texts = texts | append: section.settings.text_1 | append: "|||" %}{% endif %}
+    {% if section.settings.text_2 != blank %}{% assign texts = texts | append: section.settings.text_2 | append: "|||" %}{% endif %}
+    {% if section.settings.text_3 != blank %}{% assign texts = texts | append: section.settings.text_3 | append: "|||" %}{% endif %}
+    {% if section.settings.text_4 != blank %}{% assign texts = texts | append: section.settings.text_4 | append: "|||" %}{% endif %}
+    {% if section.settings.text_5 != blank %}{% assign texts = texts | append: section.settings.text_5 | append: "|||" %}{% endif %}
+    {% if section.settings.text_6 != blank %}{% assign texts = texts | append: section.settings.text_6 | append: "|||" %}{% endif %}
+    {% assign items = texts | split: "|||" %}
+    {% for i in (1..3) %}
+      {% for item in items %}
+        {% if item != blank %}
+          <span class="vitalo-divider__item"{% if i > 1 %} aria-hidden="true"{% endif %}>{{ item }}</span>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Section Divider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "Text 1",
+      "default": "Clinically Dosed ✅"
+    },
+    {
+      "type": "text",
+      "id": "text_2",
+      "label": "Text 2",
+      "default": "Full Transparency 👁️"
+    },
+    {
+      "type": "text",
+      "id": "text_3",
+      "label": "Text 3",
+      "default": "Made in the USA 🇺🇸"
+    },
+    {
+      "type": "text",
+      "id": "text_4",
+      "label": "Text 4",
+      "default": "90-Day Guarantee 🛡️"
+    },
+    {
+      "type": "text",
+      "id": "text_5",
+      "label": "Text 5",
+      "default": "No Proprietary Blends 💪"
+    },
+    {
+      "type": "text",
+      "id": "text_6",
+      "label": "Text 6",
+      "default": "Science-Backed 🔬"
+    },
+    {
+      "type": "select",
+      "id": "bg_color",
+      "label": "Background Color",
+      "options": [
+        { "value": "green", "label": "Green" },
+        { "value": "gold", "label": "Gold" },
+        { "value": "dark", "label": "Dark" }
+      ],
+      "default": "green"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Divider"
+    }
+  ]
+}
+{% endschema %}

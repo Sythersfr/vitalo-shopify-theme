@@ -1,0 +1,60 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-product-marquee vitalo-product-marquee--{{ section.settings.bg_color | default: 'green' }}">
+  <div class="vitalo-product-marquee__track">
+    {% for block in section.blocks %}
+      <span class="vitalo-product-marquee__item" {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
+    {% endfor %}
+    {% for block in section.blocks %}
+      <span class="vitalo-product-marquee__item" aria-hidden="true">{{ block.settings.text }}</span>
+    {% endfor %}
+    {% for block in section.blocks %}
+      <span class="vitalo-product-marquee__item" aria-hidden="true">{{ block.settings.text }}</span>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Marquee",
+  "settings": [
+    {
+      "type": "select",
+      "id": "bg_color",
+      "label": "Background Color",
+      "options": [
+        { "value": "green", "label": "Green" },
+        { "value": "gold", "label": "Gold" },
+        { "value": "dark", "label": "Dark" }
+      ],
+      "default": "green"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "message",
+      "name": "Message",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Message Text",
+          "default": "Free Shipping Included ✅"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Marquee",
+      "blocks": [
+        { "type": "message", "settings": { "text": "Free Shipping Included ✅" } },
+        { "type": "message", "settings": { "text": "Built for Adults 50+ 💪" } },
+        { "type": "message", "settings": { "text": "Used by Over 15,000+ Adults ✝️" } },
+        { "type": "message", "settings": { "text": "Science-Backed Formulas 🔬" } },
+        { "type": "message", "settings": { "text": "90-Day Money-Back Guarantee 🛡️" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

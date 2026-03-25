@@ -2955,3 +2955,416 @@ cart-drawer .discounts__discount {
     padding: 16px 24px !important;
   }
 }
+
+/* ============================================
+   PRODUCT PAGE — Star Rating
+   ============================================ */
+
+.vitalo-product-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: var(--space-sm);
+}
+
+.vitalo-product-rating__stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.vitalo-product-rating__star {
+  flex-shrink: 0;
+}
+
+.vitalo-product-rating__score {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--vitalo-dark);
+}
+
+.vitalo-product-rating__count {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--vitalo-text-light);
+}
+
+/* ============================================
+   PRODUCT PAGE — Emoji Benefits
+   ============================================ */
+
+.vitalo-product-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background: var(--vitalo-cream);
+  border-radius: 10px;
+  border: 1px solid var(--vitalo-border);
+}
+
+.vitalo-product-benefits__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--vitalo-dark);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.vitalo-product-benefits__icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   PRODUCT PAGE — Delivery Estimate
+   ============================================ */
+
+.vitalo-delivery-estimate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: var(--space-md) 0;
+  padding: 12px var(--space-md);
+  background: #f0f7f2;
+  border-radius: 8px;
+  border: 1px solid rgba(74, 124, 89, 0.15);
+}
+
+.vitalo-delivery-estimate__icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.vitalo-delivery-estimate__text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--vitalo-text);
+  line-height: 1.4;
+}
+
+.vitalo-delivery-estimate__date {
+  color: var(--vitalo-green-dark);
+  font-weight: 700;
+}
+
+/* ============================================
+   PRODUCT PAGE — Inline Testimonials
+   ============================================ */
+
+.vitalo-inline-testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--vitalo-border);
+}
+
+.vitalo-inline-testimonial {
+  padding: var(--space-md);
+  background: var(--vitalo-cream);
+  border-radius: 10px;
+  border: 1px solid var(--vitalo-border);
+}
+
+.vitalo-inline-testimonial__stars {
+  color: #C9A84A;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.vitalo-inline-testimonial__quote {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--vitalo-text);
+  margin: 0 0 8px;
+  font-style: italic;
+}
+
+.vitalo-inline-testimonial__name {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--vitalo-dark);
+}
+
+/* ============================================
+   PRODUCT PAGE — Marquee / Ticker
+   ============================================ */
+
+.vitalo-product-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 14px 0;
+}
+
+.vitalo-product-marquee--green {
+  background: var(--vitalo-green-deep);
+}
+
+.vitalo-product-marquee--gold {
+  background: linear-gradient(135deg, #C9A84A, #D4B965);
+}
+
+.vitalo-product-marquee--dark {
+  background: var(--vitalo-dark);
+}
+
+.vitalo-product-marquee__track {
+  display: inline-flex;
+  animation: vitalo-marquee-scroll 30s linear infinite;
+}
+
+.vitalo-product-marquee__item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 var(--space-2xl);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.vitalo-product-marquee--gold .vitalo-product-marquee__item {
+  color: var(--vitalo-green-deep);
+}
+
+@keyframes vitalo-marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+/* ============================================
+   PRODUCT PAGE — Image + Text Section
+   ============================================ */
+
+.vitalo-pit {
+  padding: var(--space-4xl) 0;
+}
+
+.vitalo-pit__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.vitalo-pit--right .vitalo-pit__media {
+  order: 2;
+}
+
+.vitalo-pit--right .vitalo-pit__content {
+  order: 1;
+}
+
+.vitalo-pit__media {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.vitalo-pit__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.vitalo-pit__placeholder {
+  background: var(--vitalo-cream-dark);
+  border-radius: 12px;
+  padding: var(--space-3xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+}
+
+.vitalo-pit__placeholder-svg {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+.vitalo-pit__heading {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  color: var(--vitalo-dark);
+  line-height: 1.2;
+  margin: 0 0 var(--space-lg);
+}
+
+.vitalo-pit__heading em {
+  color: var(--vitalo-green);
+  font-style: italic;
+}
+
+.vitalo-pit__description {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--vitalo-text);
+}
+
+.vitalo-pit__description p {
+  margin: 0 0 var(--space-md);
+}
+
+.vitalo-pit__description p:last-child {
+  margin-bottom: 0;
+}
+
+.vitalo-pit__description strong {
+  color: var(--vitalo-dark);
+  font-weight: 600;
+}
+
+@media (max-width: 749px) {
+  .vitalo-pit__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .vitalo-pit--right .vitalo-pit__media,
+  .vitalo-pit--right .vitalo-pit__content {
+    order: unset;
+  }
+
+  .vitalo-pit {
+    padding: var(--space-2xl) 0;
+  }
+}
+
+/* ============================================
+   PRODUCT PAGE — Animated Section Divider
+   ============================================ */
+
+.vitalo-divider {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.vitalo-divider--green {
+  background: var(--vitalo-green);
+}
+
+.vitalo-divider--gold {
+  background: var(--vitalo-gold);
+}
+
+.vitalo-divider--dark {
+  background: var(--vitalo-green-deep);
+}
+
+.vitalo-divider__track {
+  display: inline-flex;
+  animation: vitalo-divider-scroll 25s linear infinite;
+}
+
+.vitalo-divider__item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 var(--space-xl);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.vitalo-divider--gold .vitalo-divider__item {
+  color: var(--vitalo-green-deep);
+}
+
+@keyframes vitalo-divider-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+/* ============================================
+   PRODUCT PAGE — Guarantee Section
+   ============================================ */
+
+.vitalo-guarantee {
+  padding: var(--space-4xl) 0;
+  background: var(--vitalo-cream);
+}
+
+.vitalo-guarantee__inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+
+.vitalo-guarantee__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.vitalo-guarantee__badge svg {
+  flex-shrink: 0;
+}
+
+.vitalo-guarantee__badge-text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--vitalo-gold);
+}
+
+.vitalo-guarantee__heading {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  color: var(--vitalo-dark);
+  line-height: 1.2;
+  margin: 0 0 var(--space-lg);
+}
+
+.vitalo-guarantee__description {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--vitalo-text);
+  margin: 0 0 var(--space-lg);
+}
+
+.vitalo-guarantee__cta {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--vitalo-text-light);
+  margin: 0;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--vitalo-border);
+}
+
+@media (max-width: 749px) {
+  .vitalo-guarantee {
+    padding: var(--space-2xl) 0;
+  }
+
+  .vitalo-guarantee__badge svg {
+    width: 48px;
+    height: 48px;
+  }
+}

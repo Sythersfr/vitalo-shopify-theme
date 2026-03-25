@@ -1,0 +1,57 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-guarantee">
+  <div class="vitalo-guarantee__inner vitalo-animate">
+    <div class="vitalo-guarantee__badge">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="30" stroke="#C9A84A" stroke-width="3" fill="none"/>
+        <path d="M20 33l8 8 16-16" stroke="#C9A84A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      {% if section.settings.badge_text != blank %}
+        <span class="vitalo-guarantee__badge-text">{{ section.settings.badge_text }}</span>
+      {% endif %}
+    </div>
+    <h2 class="vitalo-guarantee__heading">{{ section.settings.heading }}</h2>
+    <p class="vitalo-guarantee__description">{{ section.settings.description }}</p>
+    {% if section.settings.cta_text != blank %}
+      <p class="vitalo-guarantee__cta">{{ section.settings.cta_text }}</p>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Guarantee",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "90-Day Money-Back Guarantee"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "We stand behind the quality of every Vitalo product, which is why we offer a 90-day money-back guarantee. No questions asked. Take time to experience the difference, and if you're not completely satisfied, we'll refund your purchase. It's that simple."
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "100% Risk-Free"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Contact Text",
+      "default": "Contact us at support@vitalo.io or call (800) 555-0199"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Guarantee"
+    }
+  ]
+}
+{% endschema %}

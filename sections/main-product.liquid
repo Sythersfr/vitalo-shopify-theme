@@ -674,6 +674,83 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'star_rating' -%}
+                <div class="vitalo-product-rating" {{ block.shopify_attributes }}>
+                  <div class="vitalo-product-rating__stars">
+                    {%- for i in (1..5) -%}
+                      <svg class="vitalo-product-rating__star" width="16" height="16" viewBox="0 0 24 24" fill="#C9A84A" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    {%- endfor -%}
+                  </div>
+                  <span class="vitalo-product-rating__score">{{ block.settings.rating }}</span>
+                  <span class="vitalo-product-rating__count">({{ block.settings.review_count }} Reviews)</span>
+                </div>
+              {%- when 'emoji_benefits' -%}
+                <div class="vitalo-product-benefits" {{ block.shopify_attributes }}>
+                  {%- if block.settings.benefit_1 != blank -%}
+                    <div class="vitalo-product-benefits__item">
+                      <span class="vitalo-product-benefits__icon">{{ block.settings.icon_1 }}</span>
+                      <span>{{ block.settings.benefit_1 }}</span>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.benefit_2 != blank -%}
+                    <div class="vitalo-product-benefits__item">
+                      <span class="vitalo-product-benefits__icon">{{ block.settings.icon_2 }}</span>
+                      <span>{{ block.settings.benefit_2 }}</span>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.benefit_3 != blank -%}
+                    <div class="vitalo-product-benefits__item">
+                      <span class="vitalo-product-benefits__icon">{{ block.settings.icon_3 }}</span>
+                      <span>{{ block.settings.benefit_3 }}</span>
+                    </div>
+                  {%- endif -%}
+                </div>
+              {%- when 'delivery_estimate' -%}
+                <div class="vitalo-delivery-estimate" {{ block.shopify_attributes }}>
+                  <span class="vitalo-delivery-estimate__icon">🚚</span>
+                  <span class="vitalo-delivery-estimate__text">
+                    Order today, delivered by <strong class="vitalo-delivery-estimate__date" data-days="{{ block.settings.delivery_days }}"></strong>
+                  </span>
+                </div>
+                <script>
+                  (function() {
+                    var els = document.querySelectorAll('.vitalo-delivery-estimate__date');
+                    els.forEach(function(el) {
+                      var days = parseInt(el.getAttribute('data-days')) || 7;
+                      var d = new Date();
+                      var added = 0;
+                      while (added < days) {
+                        d.setDate(d.getDate() + 1);
+                        if (d.getDay() !== 0 && d.getDay() !== 6) added++;
+                      }
+                      el.textContent = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+                    });
+                  })();
+                </script>
+              {%- when 'inline_testimonials' -%}
+                <div class="vitalo-inline-testimonials" {{ block.shopify_attributes }}>
+                  {%- if block.settings.quote_1 != blank -%}
+                    <div class="vitalo-inline-testimonial">
+                      <div class="vitalo-inline-testimonial__stars">★★★★★</div>
+                      <p class="vitalo-inline-testimonial__quote">"{{ block.settings.quote_1 }}"</p>
+                      <span class="vitalo-inline-testimonial__name">— {{ block.settings.name_1 }}</span>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.quote_2 != blank -%}
+                    <div class="vitalo-inline-testimonial">
+                      <div class="vitalo-inline-testimonial__stars">★★★★★</div>
+                      <p class="vitalo-inline-testimonial__quote">"{{ block.settings.quote_2 }}"</p>
+                      <span class="vitalo-inline-testimonial__name">— {{ block.settings.name_2 }}</span>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.quote_3 != blank -%}
+                    <div class="vitalo-inline-testimonial">
+                      <div class="vitalo-inline-testimonial__stars">★★★★★</div>
+                      <p class="vitalo-inline-testimonial__quote">"{{ block.settings.quote_3 }}"</p>
+                      <span class="vitalo-inline-testimonial__name">— {{ block.settings.name_3 }}</span>
+                    </div>
+                  {%- endif -%}
+                </div>
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2084,6 +2161,127 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "star_rating",
+      "name": "Star Rating",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "rating",
+          "label": "Rating",
+          "default": "4.8"
+        },
+        {
+          "type": "text",
+          "id": "review_count",
+          "label": "Review Count",
+          "default": "120"
+        }
+      ]
+    },
+    {
+      "type": "emoji_benefits",
+      "name": "Emoji Benefits",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon_1",
+          "label": "Icon 1",
+          "default": "✅"
+        },
+        {
+          "type": "text",
+          "id": "benefit_1",
+          "label": "Benefit 1",
+          "default": "Supports healthy glucose metabolism"
+        },
+        {
+          "type": "text",
+          "id": "icon_2",
+          "label": "Icon 2",
+          "default": "✅"
+        },
+        {
+          "type": "text",
+          "id": "benefit_2",
+          "label": "Benefit 2",
+          "default": "Clinically dosed, fully transparent formula"
+        },
+        {
+          "type": "text",
+          "id": "icon_3",
+          "label": "Icon 3",
+          "default": "✅"
+        },
+        {
+          "type": "text",
+          "id": "benefit_3",
+          "label": "Benefit 3",
+          "default": "Perfect for adults 50+"
+        }
+      ]
+    },
+    {
+      "type": "delivery_estimate",
+      "name": "Delivery Estimate",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "delivery_days",
+          "label": "Business Days to Deliver",
+          "min": 1,
+          "max": 14,
+          "step": 1,
+          "default": 7
+        }
+      ]
+    },
+    {
+      "type": "inline_testimonials",
+      "name": "Inline Testimonials",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote_1",
+          "label": "Quote 1",
+          "default": "I almost didn't order — but the 90-day guarantee convinced me. Three months later, I feel completely different."
+        },
+        {
+          "type": "text",
+          "id": "name_1",
+          "label": "Name 1",
+          "default": "Margaret T."
+        },
+        {
+          "type": "textarea",
+          "id": "quote_2",
+          "label": "Quote 2",
+          "default": "What sold me was seeing every ingredient and dose on the label. No proprietary blend nonsense."
+        },
+        {
+          "type": "text",
+          "id": "name_2",
+          "label": "Name 2",
+          "default": "Robert K."
+        },
+        {
+          "type": "textarea",
+          "id": "quote_3",
+          "label": "Quote 3",
+          "default": "My doctor was impressed with my latest checkup results. The clinical doses really make a difference."
+        },
+        {
+          "type": "text",
+          "id": "name_3",
+          "label": "Name 3",
+          "default": "James W."
         }
       ]
     }

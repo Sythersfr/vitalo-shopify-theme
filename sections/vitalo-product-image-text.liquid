@@ -1,0 +1,63 @@
+{{ 'vitalo-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="vitalo-pit">
+  <div class="vitalo-pit__inner vitalo-pit--{{ section.settings.image_position }}">
+    <div class="vitalo-pit__media vitalo-animate">
+      {% if section.settings.image != blank %}
+        {{ section.settings.image | image_url: width: 800 | image_tag: loading: 'lazy', class: 'vitalo-pit__img' }}
+      {% else %}
+        <div class="vitalo-pit__placeholder">
+          {{ 'product-1' | placeholder_svg_tag: 'vitalo-pit__placeholder-svg' }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="vitalo-pit__content vitalo-animate">
+      {% if section.settings.heading != blank %}
+        <h2 class="vitalo-pit__heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      {% if section.settings.description != blank %}
+        <div class="vitalo-pit__description">{{ section.settings.description }}</div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Image + Text",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image or GIF"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Every Ingredient at <em>Full Clinical Doses</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Most supplement brands use <strong>tiny, ineffective amounts</strong> of expensive ingredients just to put them on the label. Vitalo is different.</p>"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Image + Text"
+    }
+  ]
+}
+{% endschema %}

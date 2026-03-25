@@ -3,15 +3,26 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
+        "star_rating": {
+          "type": "star_rating",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "rating": "4.8",
+            "review_count": "120"
           }
         },
         "title": {
           "type": "title"
+        },
+        "emoji_benefits": {
+          "type": "emoji_benefits",
+          "settings": {
+            "icon_1": "✅",
+            "benefit_1": "Supports healthy glucose metabolism",
+            "icon_2": "✅",
+            "benefit_2": "Clinically dosed, fully transparent formula",
+            "icon_3": "✅",
+            "benefit_3": "Perfect for adults 50+"
+          }
         },
         "price": {
           "type": "price"
@@ -32,45 +43,84 @@
             "show_gift_card_recipient": false
           }
         },
-        "description": {
-          "type": "description"
+        "delivery_estimate": {
+          "type": "delivery_estimate",
+          "settings": {
+            "delivery_days": 7
+          }
+        },
+        "inline_testimonials": {
+          "type": "inline_testimonials",
+          "settings": {
+            "quote_1": "I almost didn't order — but the 90-day guarantee convinced me. Three months later, I feel completely different.",
+            "name_1": "Margaret T.",
+            "quote_2": "What sold me was seeing every ingredient and dose on the label. No proprietary blend nonsense.",
+            "name_2": "Robert K.",
+            "quote_3": "My doctor was impressed with my latest checkup results. The clinical doses really make a difference.",
+            "name_3": "James W."
+          }
+        },
+        "collapsible-whats-included": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What's Included in Your Package",
+            "icon": "box",
+            "content": "<p>Each bottle contains a full 30-day supply (60 capsules) of our clinically dosed formula. Every ingredient and its exact dose is listed on the label — no proprietary blends, no hidden fillers.</p>",
+            "page": ""
+          }
         },
         "collapsible-shipping": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
+            "heading": "Shipping",
             "icon": "truck",
-            "content": "<p>Free shipping on orders over $75. All orders ship within 1-2 business days. We offer a 90-day money-back guarantee — no questions asked.</p>",
+            "content": "<p>We offer free shipping on all orders over $75. All orders are processed and shipped within 1–2 business days from our US-based facility.</p>",
             "page": ""
           }
         },
-        "collapsible-usage": {
+        "collapsible-shipping-times": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Suggested Use",
-            "icon": "health",
-            "content": "<p>Take as directed on the label. For best results, use consistently for 60-90 days. Consult your healthcare provider before starting any supplement regimen.</p>",
+            "heading": "Shipping Times",
+            "icon": "plane",
+            "content": "<p><strong>USA:</strong> 4–7 business days<br><strong>Canada:</strong> 7–10 business days<br><strong>International:</strong> 10–16 business days</p><p>You'll receive a tracking number via email once your order ships.</p>",
             "page": ""
           }
         },
-        "share": {
-          "type": "share",
+        "collapsible-product-details": {
+          "type": "collapsible_tab",
           "settings": {
-            "share_label": "Share"
+            "heading": "Product Details",
+            "icon": "clipboard",
+            "content": "<p>Manufactured in a GMP-certified, FDA-registered facility in the United States. Every batch is third-party tested for purity and potency. Contains no artificial colors, flavors, or preservatives. Non-GMO. Gluten-free.</p>",
+            "page": ""
+          }
+        },
+        "collapsible-return-policy": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "90-Day Money-Back Guarantee",
+            "icon": "return",
+            "content": "<p><strong>Try it risk-free for 90 days.</strong></p><p>If you don't feel a difference, contact us for a full refund — no questions asked, no product return required. We stand behind our formulas because the science does too.</p><p>Email: support@vitalo.io | Phone: (800) 555-0199</p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "vendor",
+        "star_rating",
         "title",
+        "emoji_benefits",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
+        "delivery_estimate",
+        "inline_testimonials",
+        "collapsible-whats-included",
         "collapsible-shipping",
-        "collapsible-usage",
-        "share"
+        "collapsible-shipping-times",
+        "collapsible-product-details",
+        "collapsible-return-policy"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -83,6 +133,301 @@
         "image_zoom": "none",
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "product-marquee": {
+      "type": "vitalo-product-marquee",
+      "blocks": {
+        "marquee-1": {
+          "type": "message",
+          "settings": {
+            "text": "Free Shipping Included ✅"
+          }
+        },
+        "marquee-2": {
+          "type": "message",
+          "settings": {
+            "text": "Built for Adults 50+ 💪"
+          }
+        },
+        "marquee-3": {
+          "type": "message",
+          "settings": {
+            "text": "Used by Over 15,000+ Adults ✝️"
+          }
+        },
+        "marquee-4": {
+          "type": "message",
+          "settings": {
+            "text": "Science-Backed Formulas 🔬"
+          }
+        },
+        "marquee-5": {
+          "type": "message",
+          "settings": {
+            "text": "90-Day Money-Back Guarantee 🛡️"
+          }
+        },
+        "marquee-6": {
+          "type": "message",
+          "settings": {
+            "text": "No Proprietary Blends 👁️"
+          }
+        }
+      },
+      "block_order": ["marquee-1", "marquee-2", "marquee-3", "marquee-4", "marquee-5", "marquee-6"],
+      "settings": {}
+    },
+    "product-image-text-1": {
+      "type": "vitalo-product-image-text",
+      "settings": {
+        "heading": "Every Ingredient at <em>Full Clinical Doses</em>",
+        "description": "<p>Most supplement brands use <strong>tiny, ineffective amounts</strong> of expensive ingredients just to put them on the label. Vitalo is different. Every ingredient in our formula is included at the <strong>exact dosage used in published clinical research</strong> — so you get the results the science actually supports.</p><p>No token amounts. No pixie dusting. Just <strong>honest, effective formulas</strong> designed for real results.</p>",
+        "image_position": "left"
+      }
+    },
+    "product-stats": {
+      "type": "vitalo-stats",
+      "blocks": {
+        "stat-1": {
+          "type": "stat",
+          "settings": {
+            "number": "96%",
+            "label": "Reported improved levels within 90 days"
+          }
+        },
+        "stat-2": {
+          "type": "stat",
+          "settings": {
+            "number": "89%",
+            "label": "Felt a noticeable difference in 30 days"
+          }
+        },
+        "stat-3": {
+          "type": "stat",
+          "settings": {
+            "number": "50,000+",
+            "label": "Happy customers and counting"
+          }
+        }
+      },
+      "block_order": ["stat-1", "stat-2", "stat-3"],
+      "settings": {}
+    },
+    "divider-1": {
+      "type": "vitalo-section-divider",
+      "settings": {
+        "text_1": "Clinically Dosed ✅",
+        "text_2": "Full Transparency 👁️",
+        "text_3": "Made in the USA 🇺🇸",
+        "text_4": "90-Day Guarantee 🛡️",
+        "text_5": "No Proprietary Blends 💪",
+        "text_6": "Science-Backed 🔬",
+        "bg_color": "green"
+      }
+    },
+    "product-image-text-2": {
+      "type": "vitalo-product-image-text",
+      "settings": {
+        "heading": "Built Specifically for Adults <em>50 and Over</em>",
+        "description": "<p>Your body at 50+ has <strong>different nutritional needs</strong> than it did at 30. Generic one-size-fits-all supplements aren't designed for you.</p><p>Vitalo formulas target the specific health concerns that matter most after 50 — from <strong>blood sugar and joint comfort</strong> to <strong>heart health, cognitive function, and deep sleep</strong>. Every formula is developed with physicians who understand aging.</p>",
+        "image_position": "right"
+      }
+    },
+    "divider-2": {
+      "type": "vitalo-section-divider",
+      "settings": {
+        "text_1": "Real Results 💯",
+        "text_2": "Trusted by 50,000+ 👥",
+        "text_3": "GMP Certified 🏭",
+        "text_4": "FDA-Registered Facility 🏥",
+        "text_5": "Third-Party Tested 🧪",
+        "text_6": "No Fillers or Junk ❌",
+        "bg_color": "gold"
+      }
+    },
+    "product-comparison": {
+      "type": "vitalo-comparison",
+      "blocks": {
+        "row-1": {
+          "type": "row",
+          "settings": {
+            "label": "Formula Transparency",
+            "vitalo_value": "Every ingredient & dose listed",
+            "others_value": "Hidden behind proprietary blends"
+          }
+        },
+        "row-2": {
+          "type": "row",
+          "settings": {
+            "label": "Dosing",
+            "vitalo_value": "Full clinical doses",
+            "others_value": "Under-dosed or undisclosed"
+          }
+        },
+        "row-3": {
+          "type": "row",
+          "settings": {
+            "label": "Money-Back Guarantee",
+            "vitalo_value": "90 days, no questions asked",
+            "others_value": "30 days or none at all"
+          }
+        },
+        "row-4": {
+          "type": "row",
+          "settings": {
+            "label": "Manufacturing",
+            "vitalo_value": "GMP-certified, FDA-registered (USA)",
+            "others_value": "Unknown or overseas facilities"
+          }
+        },
+        "row-5": {
+          "type": "row",
+          "settings": {
+            "label": "Target Audience",
+            "vitalo_value": "Formulated specifically for 50+",
+            "others_value": "Generic one-size-fits-all"
+          }
+        },
+        "row-6": {
+          "type": "row",
+          "settings": {
+            "label": "Third-Party Testing",
+            "vitalo_value": "Every batch independently tested",
+            "others_value": "Rarely or never tested"
+          }
+        }
+      },
+      "block_order": ["row-1", "row-2", "row-3", "row-4", "row-5", "row-6"],
+      "settings": {
+        "heading": "How We Compare to Other Brands",
+        "subheading": "See why thousands of adults 50+ have switched to Vitalo.",
+        "col_label": "Feature",
+        "col_vitalo": "Vitalo",
+        "col_others": "Other Brands"
+      }
+    },
+    "divider-3": {
+      "type": "vitalo-section-divider",
+      "settings": {
+        "text_1": "Risk-Free 🛡️",
+        "text_2": "90-Day Guarantee ✅",
+        "text_3": "Full Refund 💰",
+        "text_4": "No Questions Asked 🤝",
+        "text_5": "No Return Required 📦",
+        "text_6": "We Trust You ❤️",
+        "bg_color": "green"
+      }
+    },
+    "product-guarantee": {
+      "type": "vitalo-product-guarantee",
+      "settings": {
+        "heading": "90-Day Money-Back Guarantee",
+        "description": "We stand behind the quality of every Vitalo product, which is why we offer a 90-day money-back guarantee. No questions asked. Take time to experience the difference, and if you're not completely satisfied, we'll refund your purchase. It's that simple.",
+        "badge_text": "100% Risk-Free",
+        "cta_text": "Contact us at support@vitalo.io or call (800) 555-0199"
+      }
+    },
+    "divider-4": {
+      "type": "vitalo-section-divider",
+      "settings": {
+        "text_1": "Honest Health 🌿",
+        "text_2": "No Gimmicks 🚫",
+        "text_3": "Physician Involved 🩺",
+        "text_4": "Built for You 🎯",
+        "text_5": "Transparent Labels 📋",
+        "text_6": "Real Science 🧬",
+        "bg_color": "gold"
+      }
+    },
+    "product-faq": {
+      "type": "vitalo-faq",
+      "blocks": {
+        "faq-1": {
+          "type": "faq",
+          "settings": {
+            "group": "Product & Ingredients",
+            "question": "What makes Vitalo different from other supplement brands?",
+            "answer": "Every Vitalo product features full formula transparency (no proprietary blends), clinically studied doses, GMP-certified manufacturing in the USA, and a 90-day money-back guarantee. We believe if a supplement company hides their formula, they have something to hide."
+          }
+        },
+        "faq-2": {
+          "type": "faq",
+          "settings": {
+            "group": "Product & Ingredients",
+            "question": "What does 'clinically studied doses' mean?",
+            "answer": "It means every ingredient in our formulas is included at the same dosage that was used in published clinical research. Many brands use tiny amounts of expensive ingredients just to put them on the label — we use the full effective dose, every time."
+          }
+        },
+        "faq-3": {
+          "type": "faq",
+          "settings": {
+            "group": "Product & Ingredients",
+            "question": "Where are your products manufactured?",
+            "answer": "All Vitalo products are manufactured in GMP-certified, FDA-registered facilities in the United States. Every batch is third-party tested for purity and potency."
+          }
+        },
+        "faq-4": {
+          "type": "faq",
+          "settings": {
+            "group": "Shipping & Returns",
+            "question": "How long does shipping take?",
+            "answer": "All orders are processed within 1-2 business days. Standard delivery within the USA takes 4-7 business days. You'll receive a tracking number via email as soon as your order ships."
+          }
+        },
+        "faq-5": {
+          "type": "faq",
+          "settings": {
+            "group": "Shipping & Returns",
+            "question": "What is your return policy?",
+            "answer": "We offer a 90-day money-back guarantee on all products. If you're not satisfied for any reason, contact us for a full refund — no product return required. We trust our customers."
+          }
+        },
+        "faq-6": {
+          "type": "faq",
+          "settings": {
+            "group": "Health & Usage",
+            "question": "How long until I see results?",
+            "answer": "Results vary by individual and product. Some customers notice improvements within the first 1-2 weeks, while others may take 30-60 days. Consistency is key — supplements work best when taken daily as directed. That's why we offer a full 90-day guarantee."
+          }
+        }
+      },
+      "block_order": ["faq-1", "faq-2", "faq-3", "faq-4", "faq-5", "faq-6"],
+      "settings": {
+        "heading": "Frequently Asked Questions"
+      }
+    },
+    "product-testimonials": {
+      "type": "vitalo-testimonials",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I'll be honest — I almost didn't order. I've wasted hundreds on supplements that did nothing. But the 90-day guarantee made me think, why not? Three months later, my joints feel completely different. I can garden again without dreading the next morning.",
+            "name": "Margaret T.",
+            "product_name": "Joint Support"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "What sold me was seeing every ingredient and dose on the label. No 'proprietary blend' nonsense. I've been taking Memory & Focus for four months and my wife says I'm noticeably sharper.",
+            "name": "Robert K.",
+            "product_name": "Memory & Focus"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "After reading about how supplement companies cut corners, I was suspicious of every brand. Vitalo's transparency won me over. I can actually verify what I'm putting in my body.",
+            "name": "Richard P.",
+            "product_name": "Blood Sugar Support"
+          }
+        }
+      },
+      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"],
+      "settings": {
+        "heading": "What Our Customers Think"
       }
     },
     "related-products": {
@@ -104,6 +449,18 @@
   },
   "order": [
     "main",
+    "product-marquee",
+    "product-image-text-1",
+    "product-stats",
+    "divider-1",
+    "product-image-text-2",
+    "divider-2",
+    "product-comparison",
+    "divider-3",
+    "product-guarantee",
+    "divider-4",
+    "product-faq",
+    "product-testimonials",
     "related-products"
   ]
 }
