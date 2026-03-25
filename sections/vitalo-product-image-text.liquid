@@ -5,6 +5,8 @@
     <div class="vitalo-pit__media vitalo-animate">
       {% if section.settings.image != blank %}
         {{ section.settings.image | image_url: width: 800 | image_tag: loading: 'lazy', class: 'vitalo-pit__img' }}
+      {% elsif section.settings.use_product_info and product.featured_image %}
+        {{ product.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', class: 'vitalo-pit__img' }}
       {% else %}
         <div class="vitalo-pit__placeholder">
           {{ 'product-1' | placeholder_svg_tag: 'vitalo-pit__placeholder-svg' }}
@@ -12,11 +14,16 @@
       {% endif %}
     </div>
     <div class="vitalo-pit__content vitalo-animate">
-      {% if section.settings.heading != blank %}
-        <h2 class="vitalo-pit__heading">{{ section.settings.heading }}</h2>
-      {% endif %}
-      {% if section.settings.description != blank %}
-        <div class="vitalo-pit__description">{{ section.settings.description }}</div>
+      {% if section.settings.use_product_info %}
+        <h2 class="vitalo-pit__heading">What's Inside <em>{{ product.title }}</em></h2>
+        <div class="vitalo-pit__description">{{ product.description }}</div>
+      {% else %}
+        {% if section.settings.heading != blank %}
+          <h2 class="vitalo-pit__heading">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <div class="vitalo-pit__description">{{ section.settings.description }}</div>
+        {% endif %}
       {% endif %}
     </div>
   </div>
@@ -26,6 +33,12 @@
 {
   "name": "Product Image + Text",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_product_info",
+      "label": "Show product ingredients automatically",
+      "default": false
+    },
     {
       "type": "image_picker",
       "id": "image",

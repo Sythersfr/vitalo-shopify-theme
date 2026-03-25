@@ -3,13 +3,13 @@
 <section class="vitalo-product-marquee vitalo-product-marquee--{{ section.settings.bg_color | default: 'green' }}">
   <div class="vitalo-product-marquee__track">
     {% for block in section.blocks %}
-      <span class="vitalo-product-marquee__item" {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
+      <span class="vitalo-product-marquee__item" {{ block.shopify_attributes }}>{{ block.settings.text | replace: '{product}', product.title }}</span>
     {% endfor %}
     {% for block in section.blocks %}
-      <span class="vitalo-product-marquee__item" aria-hidden="true">{{ block.settings.text }}</span>
+      <span class="vitalo-product-marquee__item" aria-hidden="true">{{ block.settings.text | replace: '{product}', product.title }}</span>
     {% endfor %}
     {% for block in section.blocks %}
-      <span class="vitalo-product-marquee__item" aria-hidden="true">{{ block.settings.text }}</span>
+      <span class="vitalo-product-marquee__item" aria-hidden="true">{{ block.settings.text | replace: '{product}', product.title }}</span>
     {% endfor %}
   </div>
 </section>

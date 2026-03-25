@@ -3,7 +3,7 @@
 <section class="vitalo-testimonials">
   <div class="vitalo-testimonials__inner">
     <div class="vitalo-testimonials__header vitalo-animate">
-      <h2 class="vitalo-testimonials__title">{{ section.settings.heading }}</h2>
+      <h2 class="vitalo-testimonials__title">{{ section.settings.heading | replace: '{product}', product.title }}</h2>
     </div>
 
     <div class="vitalo-testimonials__grid">
@@ -19,6 +19,8 @@
               <div class="vitalo-testimonial-card__name">{{ block.settings.name }}</div>
               {% if block.settings.product_name != blank %}
                 <div class="vitalo-testimonial-card__product">{{ block.settings.product_name }}</div>
+              {% elsif product %}
+                <div class="vitalo-testimonial-card__product">Verified {{ product.title }} Buyer</div>
               {% endif %}
             </div>
           </div>
@@ -80,7 +82,7 @@
         {
           "type": "testimonial",
           "settings": {
-            "quote": "What sold me was seeing every ingredient and dose on the label. No 'proprietary blend' nonsense. I've been taking Memory & Focus for four months and my wife says I'm noticeably sharper.",
+            "quote": "What sold me was seeing every ingredient and dose right on the label. Full transparency. I've been taking Memory & Focus for four months and my wife says I'm noticeably sharper.",
             "name": "Robert K.",
             "product_name": "Memory & Focus"
           }

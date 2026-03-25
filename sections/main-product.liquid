@@ -689,19 +689,19 @@
                   {%- if block.settings.benefit_1 != blank -%}
                     <div class="vitalo-product-benefits__item">
                       <span class="vitalo-product-benefits__icon">{{ block.settings.icon_1 }}</span>
-                      <span>{{ block.settings.benefit_1 }}</span>
+                      <span>{{ block.settings.benefit_1 | replace: '{product}', product.title }}</span>
                     </div>
                   {%- endif -%}
                   {%- if block.settings.benefit_2 != blank -%}
                     <div class="vitalo-product-benefits__item">
                       <span class="vitalo-product-benefits__icon">{{ block.settings.icon_2 }}</span>
-                      <span>{{ block.settings.benefit_2 }}</span>
+                      <span>{{ block.settings.benefit_2 | replace: '{product}', product.title }}</span>
                     </div>
                   {%- endif -%}
                   {%- if block.settings.benefit_3 != blank -%}
                     <div class="vitalo-product-benefits__item">
                       <span class="vitalo-product-benefits__icon">{{ block.settings.icon_3 }}</span>
-                      <span>{{ block.settings.benefit_3 }}</span>
+                      <span>{{ block.settings.benefit_3 | replace: '{product}', product.title }}</span>
                     </div>
                   {%- endif -%}
                 </div>
@@ -2263,7 +2263,7 @@
           "type": "textarea",
           "id": "quote_2",
           "label": "Quote 2",
-          "default": "What sold me was seeing every ingredient and dose on the label. No proprietary blend nonsense."
+          "default": "What sold me was seeing every ingredient and dose right on the label. Full transparency — I finally trust what I'm putting in my body."
         },
         {
           "type": "text",
