@@ -36,12 +36,14 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
@@ -136,10 +138,13 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
         "media_size": "large",
         "constrain_to_viewport": true,
+        "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "mobile_thumbnails": "show",
+        "media_position": "left",
         "image_zoom": "none",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -195,12 +200,16 @@
         "marquee-5",
         "marquee-6"
       ],
-      "settings": {}
+      "settings": {
+        "bg_color": "green"
+      }
     },
     "product-image-text-1": {
       "type": "vitalo-product-image-text",
       "settings": {
         "use_product_info": true,
+        "heading": "Every Ingredient at <em>Full Clinical Doses</em>",
+        "description": "<p>Most supplement brands use <strong>tiny, ineffective amounts</strong> of expensive ingredients just to put them on the label. Vitalo is different.</p>",
         "image_position": "left"
       }
     },
