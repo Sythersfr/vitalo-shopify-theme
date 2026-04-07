@@ -261,6 +261,7 @@
       "type": "vitalo-product-image-text",
       "settings": {
         "use_product_info": false,
+        "image": "shopify://shop_images/0406_1_1.gif",
         "heading": "Built Specifically for Adults <em>50 and Over</em>",
         "description": "<p>Your body at 50+ has <strong>different nutritional needs</strong> than it did at 30. Generic one-size-fits-all supplements aren't designed for you.</p><p>Vitalo formulas target the specific health concerns that matter most after 50 — from <strong>blood sugar and joint comfort</strong> to <strong>heart health, cognitive function, and deep sleep</strong>. Every formula is developed with physicians who understand aging.</p>",
         "image_position": "right"
